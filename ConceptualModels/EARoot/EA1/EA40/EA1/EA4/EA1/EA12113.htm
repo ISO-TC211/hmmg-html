@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Profile E4. Unstructured (line) based</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA12114.png" usemap="#EA12114" border="0" />
+
+<MAP NAME="EA12114">
+<area shape="rect" coords="519,10,769,121" href="../EA6/EA12174.htm" target="_self">
+<area shape="rect" coords="386,324,769,408" href="EA12131.htm" target="_self">
+<area shape="rect" coords="10,298,350,408" href="EA12122.htm" target="_self">
+<area shape="rect" coords="10,166,217,256" href="../EA6/EA12173.htm" target="_self">
+<area shape="rect" coords="10,10,479,126" href="EA12128.htm" target="_self">
+<area shape="rect" coords="514,170,769,307" href="../EA6/EA12175.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Profile E4. Unstructured (line) based : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">05.11.2008 00:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">05.11.2011 12:13:04</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">jdafonseca</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">2012</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{5FAD6433-76C4-4a09-BD00-6AEBF2ECD124}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;br/&gt;Version History:&lt;br/&gt;1.1 - Changed class name of specialized FaceString to UnstructuredLine;&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Added /derivedLADM stereotype to association;&lt;br/&gt;1.2 Repeated attributes were removed and profile renamed to Unstructured.&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>
