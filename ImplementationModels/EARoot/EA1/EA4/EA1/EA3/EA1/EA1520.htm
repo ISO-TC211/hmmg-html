@@ -514,29 +514,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1513.htm">«type» FC_Constraint</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> constrainedBy<br />
-						Role that links this feature type to the constraints placed upon it.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1609" onclick="parent.toggleDiv('detailsDIVLink1609','DetailsImageLink1609')" />Details:
-							<div id="detailsDIVLink1609" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA1512.htm">«Abstract» FC_CarrierOfCharacteristics</a><br />
 						Class &nbsp;
 					</td>
@@ -551,10 +528,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1610" onclick="parent.toggleDiv('detailsDIVLink1610','DetailsImageLink1610')" />Details:
-							<div id="detailsDIVLink1610" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1609" onclick="parent.toggleDiv('detailsDIVLink1609','DetailsImageLink1609')" />Details:
+							<div id="detailsDIVLink1609" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">Operations, attributes and association roles which belong to this feature type. Each member must specify at least the member name, the definition of the member, the value type and cardinality.&#160;&#160;&lt;br/&gt;&lt;br/&gt;</div>
 
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA1513.htm">«type» FC_Constraint</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> constrainedBy<br />
+						Role that links this feature type to the constraints placed upon it.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1610" onclick="parent.toggleDiv('detailsDIVLink1610','DetailsImageLink1610')" />Details:
+							<div id="detailsDIVLink1610" class="DetailsDiv" >
+							&nbsp;
 							</div>
 						</div>
 					</td>
@@ -571,16 +571,16 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1508.htm">«type» FC_AssociationRole</a><br />
+						<a href="EA1521.htm">«type» FC_InheritanceRelation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
+						<strong>Name:</strong> inheritsTo<br />
+						The role that links this feature type to a set of subclasses which inherit its operations, associations and properties.
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> rolePlayer<br />
-						type of the target value of this association role	
+						<strong>Name:</strong> supertype<br />
+						Identifies one feature type from which the associated subtype class inherits properties, associations and operations. 	
 					</td>
 				</tr>
 				<tr>
@@ -594,16 +594,16 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1521.htm">«type» FC_InheritanceRelation</a><br />
+						<a href="EA1508.htm">«type» FC_AssociationRole</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> inheritsTo<br />
-						The role that links this feature type to a set of subclasses which inherit its operations, associations and properties.
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> supertype<br />
-						Identifies one feature type from which the associated subtype class inherits properties, associations and operations. 	
+						<strong>Name:</strong> rolePlayer<br />
+						type of the target value of this association role	
 					</td>
 				</tr>
 				<tr>
@@ -674,17 +674,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1516.htm">«type» FC_FeatureAssociation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA1518.htm">«type» FC_FeatureCatalogue</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Weak</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1516.htm">«type» FC_FeatureAssociation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Constraint and Advisory::NT_TemporalConstraint</title>
+<title>Constraint and Advisory::NT_AdvisorySpatialRelation</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NT_TemporalConstraint", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NT_AdvisorySpatialRelation", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,15 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{4E099F18-2138-41e0-9FEF-50F427255CB6}</td>
+			<td class="ObjectDetailsValue">{DE73D968-8E07-4fe2-8F6F-CD70F51D2BB7}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA8042.htm">Main</a>, <a href="EA8028.htm">Context Diagram: NT_Constraint</a>, <a href="EA8036.htm">Context Diagram: NT_TemporalConstraint</a>, <a href="../EA4/EA8079.htm">Main</a></td>
+			<td class="ObjectDetailsValue"><a href="EA8047.htm">Main</a>, <a href="EA8029.htm">Context Diagram: NT_AdvisoryElement</a>, <a href="EA8031.htm">Context Diagram: NT_AdvisorySpatialRelation</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This class specifies when a network entity may be traversed. The constraint may be listed in two distinct manner&lt;br/&gt;when the network entity is close to traffic&lt;br/&gt;or when it is opened. Co-constraints on this entity may further specify vehicles types.&lt;br/&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
@@ -109,118 +108,50 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA7/EA1/EA1/EA2723.htm">TM_Primitive</a></i><br /><strong>&nbsp;&nbsp;allowedTime</strong>
+					<i>Public <a href="EA8063.htm">NT_SpatialRelation</a></i><br /><strong>&nbsp;&nbsp;spatialRelationship</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15042')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15042" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15049')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15049" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15042_00" style="display: none;">
+						<tr id="DetailsImageAttributes15049_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_01" style="display: none;">
+						<tr id="DetailsImageAttributes15049_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_02" style="display: none;">
+						<tr id="DetailsImageAttributes15049_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_03" style="display: none;">
+						<tr id="DetailsImageAttributes15049_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_04" style="display: none;">
+						<tr id="DetailsImageAttributes15049_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_05" style="display: none;">
+						<tr id="DetailsImageAttributes15049_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15042_06" style="display: none;">
+						<tr id="DetailsImageAttributes15049_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15042_07" style="display: none;">
+							<tr id="DetailsImageAttributes15049_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Time when the entity is open for use. If NULL, the value is assumed to be the complement of the &quot;forbiddenTime.&quot;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA7/EA1/EA1/EA2723.htm">TM_Primitive</a></i><br /><strong>&nbsp;&nbsp;forbiddenTime</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15043')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15043" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes15043_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes15043_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes15043_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Time when the entity is closed for use. If NULL, the value is assumed to be the complement of the &quot;allowedTime.&quot;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
@@ -238,8 +169,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15044" onclick="parent.toggleDiv('detailsDIVScenario15044','DetailsImageScenario15044')" />Details:
-						<div id="detailsDIVScenario15044" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15050" onclick="parent.toggleDiv('detailsDIVScenario15050','DetailsImageScenario15050')" />Details:
+						<div id="detailsDIVScenario15050" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -256,7 +187,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA8055.htm">NT_Constraint</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA8058.htm">«Abstract» NT_AdvisoryElement</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

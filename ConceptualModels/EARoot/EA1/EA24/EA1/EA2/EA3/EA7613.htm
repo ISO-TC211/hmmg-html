@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Geomatics Services::LBS_MapService</title>
+<title>Geomatics Services::LBS_AddressParsing</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_MapService", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_AddressParsing", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">23.07.2009 14:00:13</td>
+			<td class="ObjectDetailsValue">23.07.2009 14:00:34</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{7A1AD230-2BDE-459b-AF55-8F2C20DD2643}</td>
+			<td class="ObjectDetailsValue">{25BF3188-498D-40bb-A99E-FD7D4D7730C4}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA2/EA7581.htm">Context Diagram: LBS_Resource</a>, <a href="EA7596.htm">Fig 19: Main</a>, <a href="EA7606.htm">Fig 24: Context Diagram: LBS_MapService</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA7585.htm">Context Diagram: LBS_Resource</a>, <a href="EA7600.htm">Fig 19: Main</a>, <a href="EA7604.htm">Fig 21: Context Diagram: LBS_AddressParsing</a></td>
 		</tr>
 	</table>
 	
@@ -109,51 +109,32 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>map</strong>(					<a href="#" onclick="parent.toggleData('param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}" border="0" />locations[0..*]: <a href="../../EA3/EA7709.htm">LBS_Location</a></a>, 
+					<strong>parseAddress</strong>(					<a href="#" onclick="parent.toggleData('param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}" border="0" />inputText: <a href="../../../../EA4/EA2/EA1/EA3/EA5/EA1323.htm">CharacterString</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}00" style="display: none;">
+						<tr id="param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}01" style="display: none;">
+						<tr id="param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}02" style="display: none;">
+						<tr id="param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{13E99A6B-CE0B-4c29-99A7-7F442CBB14A1}03" style="display: none;">
+						<tr id="param{527ECB4E-F4D0-4f8f-9A8D-8E1CD844C93D}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-					<a href="#" onclick="parent.toggleData('param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}" border="0" />display: <a href="../../EA3/EA7704.htm">LBS_DisplayParameters</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{79A59D0D-7A08-4c4b-8A66-D2B1023C70ED}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../../../EA25/EA1/EA4/EA8146.htm">Map</a>
+):<a href="../../EA3/EA7704.htm">LBS_Address</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations14682" onclick="parent.toggleDiv('detailsDIVOperations14682','DetailsImageOperations14682')" />Details:
-						<div id="detailsDIVOperations14682" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations14697" onclick="parent.toggleDiv('detailsDIVOperations14697','DetailsImageOperations14697')" />Details:
+						<div id="detailsDIVOperations14697" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -182,8 +163,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14683" onclick="parent.toggleDiv('detailsDIVScenario14683','DetailsImageScenario14683')" />Details:
-						<div id="detailsDIVScenario14683" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14698" onclick="parent.toggleDiv('detailsDIVScenario14698','DetailsImageScenario14698')" />Details:
+						<div id="detailsDIVScenario14698" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -200,7 +181,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA7591.htm">«type» LBS_Resource</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA7595.htm">«type» LBS_Resource</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

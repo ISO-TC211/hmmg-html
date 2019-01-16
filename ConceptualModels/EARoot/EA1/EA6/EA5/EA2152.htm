@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Topology</title>
+<title> Geometry</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Topology", " : "))</script>  : Public  &lt;&lt;normative&gt;&gt; Package</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier(" Geometry", " : "))</script>  : Public  &lt;&lt;normative&gt;&gt; Package</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:10</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:11</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:10</td>
+			<td class="ObjectDetailsValue">10.04.2008 12:16:12</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{62FEE15B-186A-4b3a-BBC6-294B798A6B8D}</td>
+			<td class="ObjectDetailsValue">{BE8F1E52-EEFC-4e85-9D08-A6DDC2E4D93A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2148.htm">Main</a>, <a href="EA2144.htm">Context Diagram: Package Suppliers of Topology</a>, <a href="EA2140.htm">Context Diagram: Package Clients of Topology</a>, <a href="EA2138.htm">Context Diagram: Package Clients of  Geometry</a>, <a href="../../EA4/EA2/EA967.htm">Context Diagram: Package Clients of Basic Types</a>, <a href="../../EA4/EA2/EA1/EA979.htm">Context Diagram: Package Clients of Primitive</a>, <a href="../../EA4/EA2/EA1/EA977.htm">Context Diagram: Package Clients of Implementation</a>, <a href="../../EA25/EA1/EA7741.htm">Context Diagram: Package Suppliers of Network</a>, <a href="../../EA49/EA6/EA15100.htm">Main</a>, <a href="../../EA49/EA6/EA15098.htm">Context Diagram: Package Suppliers of Application Schema</a>, <a href="../../EA49/EA6/EA1/EA15112.htm">Context Diagram: Package Suppliers of  Topology Simple</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA50/EA15496.htm">Context Diagram: Package Suppliers of Xamples</a>, <a href="../../EA50/EA15492.htm">Context Diagram: Package Suppliers of Other Location Services</a>, <a href="../../EA50/EA4/EA15642.htm">Context Diagram: Package Suppliers of Features</a>, <a href="../../EA50/EA4/EA1/EA15667.htm">Main</a>, <a href="../../EA50/EA7/EA15957.htm">Main</a>, <a href="../../EA50/EA7/EA15953.htm">Context Diagram: Package Suppliers of Norwegian Land Information Spatial Schema</a>, <a href="../../EA50/EA7/EA1/EA15992.htm">Fig 01: Package Dependencies</a>, <a href="../../EA12/EA3/EA1/EA4562.htm">Fig 1 Related Package Diagram</a>, <a href="../../EA4/EA2/EA968.htm">Context Diagram: Package Clients of Basic Types</a>, <a href="../../EA4/EA2/EA1/EA980.htm">Context Diagram: Package Clients of Primitive</a>, <a href="../../EA4/EA2/EA1/EA976.htm">Context Diagram: Package Clients of Derived</a>, <a href="../../EA4/EA2/EA1/EA978.htm">Context Diagram: Package Clients of Implementation</a>, <a href="../../EA17/EA3/EA6517.htm">Context Diagram: Package Suppliers of Coverages</a>, <a href="../../EA25/EA1/EA7750.htm">Context Diagram: Package Suppliers of Tracking</a>, <a href="../../EA25/EA1/EA7746.htm">Context Diagram: Package Suppliers of Network</a>, <a href="../../EA29/EA1/EA9571.htm">Main</a>, <a href="../../EA29/EA1/EA9569.htm">Context Diagram: Package Suppliers of Geometry</a>, <a href="../../EA31/EA1/EA9781.htm">Main</a>, <a href="../../EA50/EA6/EA15735.htm">Main</a>, <a href="../../EA50/EA6/EA15733.htm">Context Diagram: Package Suppliers of Application Schema</a>, <a href="../../EA50/EA6/EA1/EA15747.htm">Context Diagram: Package Suppliers of  Topology Simple</a>, <a href="EA2149.htm">Main</a>, <a href="EA2145.htm">Context Diagram: Package Suppliers of Topology</a>, <a href="EA2143.htm">Context Diagram: Package Suppliers of  Geometry</a>, <a href="EA2139.htm">Context Diagram: Package Clients of  Geometry</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">computational topology,&lt;br/&gt;combinatorial topology,&lt;br/&gt;algebraic topology&lt;br/&gt;&lt;br/&gt;topological concepts, structures and algebra that aid, enhance or define operations usually performed in computational geometry&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The geometry packages (Figure 4) contain the various classes for coordinate geometry. All of these classes through the root class GM_Object inherit an optional association to a coordinate reference system. All direct positions exposed through the interfaces defined in this standard shall be in the coordinate reference system of the geometric object accessed. All elements of a geometric complex, composite, or aggregate shall be associated to the same coordinate reference system. When instances of GM_Object are aggregated in another GM_Object (such as a GM_Aggregate, or GM_Complex) which already has a coordinate reference system specified, then these elements are assumed to be in that same coordinate reference system unless otherwise specified. &lt;br/&gt;The geometry package has several internal packages that separate primitive geometric objects, aggregates and complexes, which have a more elaborate internal structure than simple aggregates. Figure 4 shows the dependencies between the geometry packages as well as a list of classes for each package&lt;br/&gt;Figure 5 shows the basic classes defined in the geometry packages. Any object that inherits the semantics of the GM_Object acts as a set of direct positions. Its behavior will be determined by which direct positions it contains. Objects under GM_Primitive will be open, that is, they will not contain their boundary points; curves will not contain their end points, surfaces will not contain their boundary curves, and solids will not contain their bounding surfaces. Objects under GM_Complex will be closed, that is, they will contain their boundary points. This leads to some apparent ambiguity. A representation of a line as a primitive must reference its end points, but will not contain these points as a set of direct positions. A representation of a line as a complex will also reference its end points, and will contain these points as a set of direct positions. This means that identical digital representations will have slightly different semantics depending on whether they are accessed as primitives or complexes. &lt;br/&gt;This difference of semantics is most striking in the GM_CompositeCurve. Composite curves are used to represent features whose geometry could also be represented as curve primitives. From a cartographic point of view, these two representations are not different. From a topological point of view, they are different. This distinction appears in the inheritance diagram (Figure 5) as an inheritance relationship between GM_CompositeCurve and GM_OrientableCurve. The primary semantics of a GM_CompositeCurve (see 6.6.5) is as a closed GM_Object, but it may also act as an open GM_Object under GM_Primitive operations (see 6.3.10). Interface protocols depending upon the topological details of this object will have to be distinguished as to whether they have been inherited from GM_Primitive or GM_Complex, where the distinction first occurs. Even though these protocols have been inherited from the same operations defined at GM_Object, they will act differently depending upon the branch of the inheritance tree from which they have inherited semantics. Creators of implementation profiles may take this into account and use a proxy mechanism for realization relationships that cause semantic dissonance. Such a procedure will be necessary in object-oriented programming and databases in systems that disallow multiple inheritance or make limiting assumptions about method binding.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,80 +110,269 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA49/EA6/EA1/EA1/EA15144.htm"> Topology Simple</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA29/EA1/EA1/EA9587.htm">Geometry</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA24/EA1/EA7491.htm">ISO 19132 Edition 1</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA11/EA3841.htm">ISO 19112 Spatial referencing by geographic identifier</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA987.htm">Basic Types</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA10/EA2/EA3623.htm">ISO 19111 Edition 2</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA2/EA3190.htm">ISO 19109 Edition 1</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA1/EA2810.htm">ISO 19109 Edition 2</a></td>
-					<td width="10%" class="TableRow" valign="top">Package</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA3/EA1240.htm">Primitive</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA10/EA1/EA3462.htm">ISO 19111 Edition 3</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA49/EA6/EA1/EA15120.htm">«informative» Application Schema</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA13/EA2/EA5748.htm">ISO 19116 Edition 1</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA25/EA1/EA3/EA7987.htm">Network</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA10/EA2/EA3623.htm">ISO 19111 Edition 2</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA2/EA1095.htm">Implementation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA10/EA1/EA3462.htm">ISO 19111 Edition 3</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA13/EA1/EA5683.htm">ISO 19116 Edition 2</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA6/EA1/EA15755.htm">«informative» Application Schema</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA25/EA1/EA3/EA7992.htm">Network</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA2/EA211.htm">ISO 6709 Edition 1 (Corrigendum 1)</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA21/EA1/EA6899.htm">ISO 19129 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA28/EA1/EA8773.htm">ISO 19136-1 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA24/EA1/EA7496.htm">ISO 19132 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="./EA2/EA2535.htm">«normative» Topology</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA1/EA998.htm">Derived</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA28/EA1/EA8767.htm">ISO 19136 Edition 1</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA972.htm">ISO/TS 19103 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA12/EA4/EA4731.htm">ISO 19115-2 Edition 1</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="./EA1/EA2177.htm">«normative»  Geometry</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA2/EA1096.htm">Implementation</a></td>
 					<td width="10%" class="TableRow" valign="top">Package</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA988.htm">Basic Types</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA31/EA1/EA9783.htm">ISO 19141 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA25/EA1/EA5/EA8179.htm">Tracking</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA29/EA1/EA9573.htm">ISO 19137 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA2/EA3191.htm">ISO 19109 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA2/EA1/EA3/EA1241.htm">Primitive</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA4/EA1/EA15669.htm">«Leaf» Features</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA12/EA3/EA1/EA2/EA4611.htm">Extended Spatial representation information</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA12/EA3/EA1/EA4/EA4679.htm">Acquisition information</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA7/EA1/EA16004.htm">«Leaf» Norwegian Land Information Spatial Schema</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA7/EA1/EA2/EA2781.htm">«Leaf» Temporal Reference System</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA1/EA203.htm">ISO 6709 Edition 2</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA28/EA2/EA9207.htm">ISO 19136 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA6/EA1/EA1/EA15779.htm"> Topology Simple</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA5/EA15695.htm">«informative» Other Location Services</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA26/EA1/EA8360.htm">ISO 19134 Edition 1</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA8/EA1/EA2811.htm">ISO 19109 Edition 2</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA12/EA5/EA4944.htm">ISO 19115 Edition 1 (Corrigendum 1)</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA50/EA7/EA15959.htm">«informative» Xamples</a></td>
+					<td width="10%" class="TableRow" valign="top">Package</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

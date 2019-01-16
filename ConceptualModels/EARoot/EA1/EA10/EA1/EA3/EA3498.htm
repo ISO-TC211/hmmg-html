@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate Reference Systems::CRS</title>
+<title>Coordinate Reference Systems::CompoundCRS</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CRS", " : "))</script>  : Public abstract &lt;&lt;interface&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CompoundCRS", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.08.2018 11:14:41</td>
+			<td class="ObjectDetailsValue">09.08.2018 11:37:00</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue">Easy</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,125 +87,21 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{DB2C5898-3C6E-4b68-9660-05EF13F86AF5}</td>
+			<td class="ObjectDetailsValue">{78A44392-5757-423c-8C96-FB3248266698}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA3468.htm">Identified Object with subtypes</a>, <a href="../EA2/EA3478.htm">Relation to Geometry</a>, <a href="EA3490.htm">Coordinate Reference Systems</a>, <a href="../EA6/EA3568.htm">Operations with Data Epoch</a>, <a href="../EA6/EA3562.htm">Operations Part 1</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3491.htm">Coordinate Reference Systems</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">coordinate reference system which is usually single but may be compound&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">coordinate reference system describing the position of points through two or more independent single coordinate reference systems&lt;br/&gt;Note: two coordinate reference systems are independent of each other if coordinate values in one cannot be converted or transformed into coordinate values in the other.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA17/EA3/EA4/EA6690.htm">«type» CV_ReferenceableGrid</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> crs<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> grid<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3953" onclick="parent.toggleDiv('detailsDIVLink3953','DetailsImageLink3953')" />Details:
-							<div id="detailsDIVLink3953" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA6/EA4/EA2/EA1537.htm">Geometry</a><br />
-						Interface &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> crs<br />
-						coordinate reference system for the geometry. Derived from the rsid attribute.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> geometry<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3954" onclick="parent.toggleDiv('detailsDIVLink3954','DetailsImageLink3954')" />Details:
-							<div id="detailsDIVLink3954" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA17/EA3/EA4/EA6680.htm">«type» CV_Grid</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> crs<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> grid<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3955" onclick="parent.toggleDiv('detailsDIVLink3955','DetailsImageLink3955')" />Details:
-							<div id="detailsDIVLink3955" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA6/EA3574.htm">«interface» CoordinateOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> targetCRS<br />
-						coordinate reference system to which the coordinate set output from this coordinate operation is referenced
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordOperationTo<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3956" onclick="parent.toggleDiv('detailsDIVLink3956','DetailsImageLink3956')" />Details:
-							<div id="detailsDIVLink3956" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The &quot;sourceCRS&quot; and &quot;targetCRS&quot; associations are mandatory for coordinate transformations only. Coordinate conversions have a source CRS and a target CRS that are NOT specified through these associations, but through associations from GeneralDerivedCRS to SingleCRS.&lt;br/&gt;&lt;br/&gt;For a concatenated coordinate operation sequence of n coordinate operations: &lt;br/&gt;source CRS (concatenated coordinate operation) = source CRS (coordinate operation step 1) &lt;br/&gt;target CRS (coordinate operation step i) = source CRS (coordinate operation step i+1); i = 1 ...(n-1) &lt;br/&gt;target CRS (concatenated coordinate operation) = target CRS (coordinate operation step n) &lt;br/&gt;Instead of a forward coordinate operation, an inverse coordinate operation may be used for one or more of the coordinate operation steps mentioned above, if the inverse coordinate operation is uniquely defined by the forward coordinate operation method.&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -215,246 +111,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA6/EA5/EA1/EA1/EA2321.htm">DirectPosition</a><br />
+						<a href="EA3513.htm">«interface» SingleCRS</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> directPosition<br />
-						&nbsp;
+						<strong>Name:</strong> componentReferenceSystem<br />
+						coordinate reference system that is a component of this compound coordinate reference system
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3957" onclick="parent.toggleDiv('detailsDIVLink3957','DetailsImageLink3957')" />Details:
-							<div id="detailsDIVLink3957" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						GPLR_CRSSupport<br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> crs<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3958" onclick="parent.toggleDiv('detailsDIVLink3958','DetailsImageLink3958')" />Details:
-							<div id="detailsDIVLink3958" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA6/EA4/EA1/EA2/EA1468.htm">GeometricCoordinateSystem</a><br />
-						Interface &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> geometricCoordinates<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3959" onclick="parent.toggleDiv('detailsDIVLink3959','DetailsImageLink3959')" />Details:
-							<div id="detailsDIVLink3959" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA29/EA1/EA1/EA9152.htm">SP_Object</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> theSC_CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3960" onclick="parent.toggleDiv('detailsDIVLink3960','DetailsImageLink3960')" />Details:
-							<div id="detailsDIVLink3960" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA29/EA1/EA1/EA9152.htm">SP_Object</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> theSC_CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3961" onclick="parent.toggleDiv('detailsDIVLink3961','DetailsImageLink3961')" />Details:
-							<div id="detailsDIVLink3961" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA6/EA3574.htm">«interface» CoordinateOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordOperationFrom<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sourceCRS<br />
-						coordinate reference system to which the coordinate set input into this coordinate operation is referenced	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3962" onclick="parent.toggleDiv('detailsDIVLink3962','DetailsImageLink3962')" />Details:
-							<div id="detailsDIVLink3962" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA12/EA5/EA14/EA5378.htm">EX_VerticalExtent</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> verticalCRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3963" onclick="parent.toggleDiv('detailsDIVLink3963','DetailsImageLink3963')" />Details:
-							<div id="detailsDIVLink3963" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA6/EA5/EA1/EA5/EA2513.htm">«type» GM_Object</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> object<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3964" onclick="parent.toggleDiv('detailsDIVLink3964','DetailsImageLink3964')" />Details:
-							<div id="detailsDIVLink3964" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The association &quot;CRS&quot; links this GM_Object to the coordinate reference system, as defined in ISO150456-9, used in its DirectPosition coordinates&lt;br/&gt;GM_Object::CRS : CRS&lt;br/&gt;NOTE This association shall only be navigable from GM_Object to CRS. This means that the coordinate reference system objects in a data set do not keep a list of GM_Objects that use them. A detailed description of reference systems may be found in ISO 15046 Part 11.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA17/EA3/EA4/EA6690.htm">«type» CV_ReferenceableGrid</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> grid<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> crs<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3965" onclick="parent.toggleDiv('detailsDIVLink3965','DetailsImageLink3965')" />Details:
-							<div id="detailsDIVLink3965" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA17/EA3/EA1/EA6570.htm">«type» CV_Coverage</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3966" onclick="parent.toggleDiv('detailsDIVLink3966','DetailsImageLink3966')" />Details:
-							<div id="detailsDIVLink3966" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA13/EA2/EA1/EA5811.htm">PS_ReferenceSystem</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> spatialReferenceSystem<br />
+						<strong>Name:</strong> compoundCRS<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -462,31 +127,8 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3967" onclick="parent.toggleDiv('detailsDIVLink3967','DetailsImageLink3967')" />Details:
 							<div id="detailsDIVLink3967" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA6/EA3574.htm">«interface» CoordinateOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordOperation<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> interpolationCRS<br />
-						"coordinate reference system to which gridded data files are referenced which this coordinate operation uses to  transform coordinates between two other coordinate reference systems
-Note: InterpolationCRS is only used when it is different from both sourceCRS and targetCRS."	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3968" onclick="parent.toggleDiv('detailsDIVLink3968','DetailsImageLink3968')" />Details:
-							<div id="detailsDIVLink3968" class="DetailsDiv" >
-							&nbsp;
+							<div class="ObjectDetailsNotes">Ordered sequence of associations to the component coordinate reference systems included in this compound coordinate reference system.&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -506,8 +148,8 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3969" onclick="parent.toggleDiv('detailsDIVScenario3969','DetailsImageScenario3969')" />Details:
-						<div id="detailsDIVScenario3969" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3968" onclick="parent.toggleDiv('detailsDIVScenario3968','DetailsImageScenario3968')" />Details:
+						<div id="detailsDIVScenario3968" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -519,8 +161,8 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3970" onclick="parent.toggleDiv('detailsDIVScenario3970','DetailsImageScenario3970')" />Details:
-						<div id="detailsDIVScenario3970" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3969" onclick="parent.toggleDiv('detailsDIVScenario3969','DetailsImageScenario3969')" />Details:
+						<div id="detailsDIVScenario3969" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -532,8 +174,8 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3971" onclick="parent.toggleDiv('detailsDIVScenario3971','DetailsImageScenario3971')" />Details:
-						<div id="detailsDIVScenario3971" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3970" onclick="parent.toggleDiv('detailsDIVScenario3970','DetailsImageScenario3970')" />Details:
+						<div id="detailsDIVScenario3970" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -545,8 +187,8 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3972" onclick="parent.toggleDiv('detailsDIVScenario3972','DetailsImageScenario3972')" />Details:
-						<div id="detailsDIVScenario3972" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3971" onclick="parent.toggleDiv('detailsDIVScenario3971','DetailsImageScenario3971')" />Details:
+						<div id="detailsDIVScenario3971" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -557,8 +199,8 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3973" onclick="parent.toggleDiv('detailsDIVScenario3973','DetailsImageScenario3973')" />Details:
-						<div id="detailsDIVScenario3973" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3972" onclick="parent.toggleDiv('detailsDIVScenario3972','DetailsImageScenario3972')" />Details:
+						<div id="detailsDIVScenario3972" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -576,28 +218,7 @@ Note: InterpolationCRS is only used when it is different from both sourceCRS and
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3497.htm">«interface» CompoundCRS</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA1/EA1/EA2/EA9238.htm">CT_CRS</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3512.htm">«interface» SingleCRS</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA3476.htm">«interface» ObjectUsage</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3499.htm">«interface» CRS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

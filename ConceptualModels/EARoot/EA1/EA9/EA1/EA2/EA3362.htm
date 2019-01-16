@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Feature Cataloguing::FC_InheritanceRelation</title>
+<title>Feature Cataloguing::FC_FeatureType</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FC_InheritanceRelation", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FC_FeatureType", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{BC8EB032-D434-452f-B7FB-18BAC0A99AE3}</td>
+			<td class="ObjectDetailsValue">{348D2194-D8DF-4ab6-8801-3455A9C2F081}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA3281.htm">Fig D.2 Feature Catalogue Register Items</a>, <a href="EA3340.htm">Fig B4 - Feature cataloguing classes as realizations of General Feature Model metaclasses</a>, <a href="EA3298.htm">Context Diagram: FC_FeatureCatalogue</a>, <a href="EA3300.htm">Context Diagram: FC_FeatureType</a>, <a href="EA3302.htm">Context Diagram: FC_InheritanceRelation</a>, <a href="EA3334.htm">Fig B1 - Conceptual model of a feature catalogue</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1/EA3282.htm">Fig D.2 Feature Catalogue Register Items</a>, <a href="EA3345.htm">Fig B6 - Operation Derivation from GFM</a>, <a href="EA3341.htm">Fig B4 - Feature cataloguing classes as realizations of General Feature Model metaclasses</a>, <a href="EA3347.htm">Fig B7 - Constraint Derivation from GFM</a>, <a href="EA3343.htm">Fig B5 - Some GFM Derivations</a>, <a href="EA3323.htm">Context Diagram: FC_FeatureAssociation</a>, <a href="EA3299.htm">Context Diagram: FC_FeatureCatalogue</a>, <a href="EA3317.htm">Context Diagram: FC_AssociationRole</a>, <a href="EA3301.htm">Context Diagram: FC_FeatureType</a>, <a href="EA3303.htm">Context Diagram: FC_InheritanceRelation</a>, <a href="EA3335.htm">Fig B1 - Conceptual model of a feature catalogue</a>, <a href="EA3337.htm">Fig B2 - Definition source and reference</a>, <a href="EA3339.htm">Fig B3 - Global Properties</a>, <a href="EA3307.htm">Context Diagram: FC_CarrierOfCharacteristics</a>, <a href="EA3333.htm">Context Diagram: FC_BoundAssociationRole</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">FC_InheritanceRelation realizes GF_InheritanceRelation. &lt;br/&gt;#lt;ocl#gt;&lt;br/&gt;FC_InheritanceRelation always assumes that its GF_InheritanceRelation::uniqueInstance is TRUE.&lt;br/&gt;#lt;/ocl#gt;&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Class of real world phenomena with common properties&lt;br/&gt;&lt;br/&gt;#lt;ocl#gt;&lt;br/&gt;typeName realizes GF_FeatureType::typeName;&lt;br/&gt;isAbstract realizes GF_FeatureType::isAbstract;&lt;br/&gt;constrainedBy realizes GF_FeatureType::constrainedBy&lt;br/&gt;#lt;/ocl#gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -102,6 +102,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -111,7 +112,65 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;name</strong>
+					<i>Public <a href="../../../EA4/EA1/EA4/EA794.htm">LocalName</a></i><br /><strong>&nbsp;&nbsp;typeName</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3682')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3682" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3682_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3682_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3682_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			text string that uniquely identifies this feature type within the feature catalogue that contains this feature type&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;definition</strong>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +219,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			text string that uniquely identifies this inheritance relation within the feature catalogue that contains this inheritance relation&lt;br/&gt;
+			definition of the feature type in a natural language. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +228,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;code</strong>
 				</td>
 			</tr>
 			<tr>
@@ -195,7 +254,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes3684_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes3684_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -218,7 +277,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			natural language description of this inheritance relation&lt;br/&gt;
+			code that uniquely identifies this feature type within the feature catalogue that contains this feature type&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +286,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA704.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;uniqueInstance</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;isAbstract</strong>
 				</td>
 			</tr>
 			<tr>
@@ -241,7 +300,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes3685_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>FALSE</td>
 						</tr>
 						<tr id="DetailsImageAttributes3685_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -276,7 +335,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			indicates if an instance of the supertype can be an instance of at most one of its subtypes&lt;br/&gt;
+			indicates if the feature type is abstract or not&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +344,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;designation</strong>
+					<i>Public <a href="../../../EA4/EA1/EA4/EA794.htm">LocalName</a></i><br /><strong>&nbsp;&nbsp;aliases</strong>
 				</td>
 			</tr>
 			<tr>
@@ -311,7 +370,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes3686_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
 						<tr id="DetailsImageAttributes3686_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -334,7 +393,65 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			designation of the inheritance relation in a natural language&lt;br/&gt;
+			equivalent name(s) of this feature type.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;designation</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3687')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3687" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3687_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3687_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3687_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			designation of the feature type in a natural language&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -353,45 +470,46 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3361.htm">FC_FeatureType</a><br />
+						<a href="EA3354.htm">FC_CarrierOfCharacteristics</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> inheritsFrom<br />
-						role that links this feature type to a set of superclasses from which it inherits operations, associations and properties
+						<strong>Name:</strong> featureType<br />
+						role that links the local and bound properties with the feature type that contain them
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> subtype<br />
-						identifies one feature type to which the associated superclass feature type supplies inherited properties, associations and operation	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3687" onclick="parent.toggleDiv('detailsDIVLink3687','DetailsImageLink3687')" />Details:
-							<div id="detailsDIVLink3687" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3361.htm">FC_FeatureType</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> inheritsTo<br />
-						role that links this feature type to a set of subclasses which inherit its operations, associations and properties
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> supertype<br />
-						identifies one feature type from which the associated subtype class inherits properties, associations and operations. 	
+						<strong>Name:</strong> carrierOfCharacteristics<br />
+						role that links this feature type to the property types that it contains	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3688" onclick="parent.toggleDiv('detailsDIVLink3688','DetailsImageLink3688')" />Details:
 							<div id="detailsDIVLink3688" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Operations, attributes and association roles which belong to this feature type. Each member must specify at least the member name, the definition of the member, the value type and cardinality.&#160;&#160;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3360.htm">FC_FeatureCatalogue</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureType<br />
+						role that links this feature catalogue to the feature types that it contains
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureCatalogue<br />
+						role that links this feature type to the feature catalogue that contains it	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3689" onclick="parent.toggleDiv('detailsDIVLink3689','DetailsImageLink3689')" />Details:
+							<div id="detailsDIVLink3689" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -399,22 +517,68 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA1/EA3292.htm">FR_RegisteredInheritanceRelation</a><br />
+						<a href="../EA1/EA3292.htm">FR_RegisteredFeatureType</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> definedInheritanceRelation<br />
+						<strong>Name:</strong> definedFeaturetype<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> registeredInheritanceRelation<br />
+						<strong>Name:</strong> registeredFeatureType<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3689" onclick="parent.toggleDiv('detailsDIVLink3689','DetailsImageLink3689')" />Details:
-							<div id="detailsDIVLink3689" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3690" onclick="parent.toggleDiv('detailsDIVLink3690','DetailsImageLink3690')" />Details:
+							<div id="detailsDIVLink3690" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3355.htm">FC_Constraint</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> constrainedBy<br />
+						role that links this feature type to the constraints placed upon it.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3691" onclick="parent.toggleDiv('detailsDIVLink3691','DetailsImageLink3691')" />Details:
+							<div id="detailsDIVLink3691" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3356.htm">FC_DefinitionReference</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> definitionReference<br />
+						role that links this feature type to the source of its definition	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3692" onclick="parent.toggleDiv('detailsDIVLink3692','DetailsImageLink3692')" />Details:
+							<div id="detailsDIVLink3692" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -432,7 +596,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3359.htm">FC_FeatureCatalogue</a><br />
+						<a href="EA3350.htm">FC_AssociationRole</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -440,14 +604,83 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> inheritanceRelation<br />
-						role that links this feature catalogue to the inheritance relationships that it contains	
+						<strong>Name:</strong> rolePlayer<br />
+						type of the target value of this association role	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3690" onclick="parent.toggleDiv('detailsDIVLink3690','DetailsImageLink3690')" />Details:
-							<div id="detailsDIVLink3690" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3693" onclick="parent.toggleDiv('detailsDIVLink3693','DetailsImageLink3693')" />Details:
+							<div id="detailsDIVLink3693" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3363.htm">FC_InheritanceRelation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> inheritsFrom<br />
+						role that links this feature type to a set of superclasses from which it inherits operations, associations and properties
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subtype<br />
+						identifies one feature type to which the associated superclass feature type supplies inherited properties, associations and operation	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3694" onclick="parent.toggleDiv('detailsDIVLink3694','DetailsImageLink3694')" />Details:
+							<div id="detailsDIVLink3694" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3352.htm">FC_BoundAssociationRole</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> rolePlayer<br />
+						target feature type of this association role	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3695" onclick="parent.toggleDiv('detailsDIVLink3695','DetailsImageLink3695')" />Details:
+							<div id="detailsDIVLink3695" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3363.htm">FC_InheritanceRelation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> inheritsTo<br />
+						role that links this feature type to a set of subclasses which inherit its operations, associations and properties
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> supertype<br />
+						identifies one feature type from which the associated subtype class inherits properties, associations and operations. 	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3696" onclick="parent.toggleDiv('detailsDIVLink3696','DetailsImageLink3696')" />Details:
+							<div id="detailsDIVLink3696" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -468,8 +701,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3691" onclick="parent.toggleDiv('detailsDIVScenario3691','DetailsImageScenario3691')" />Details:
-						<div id="detailsDIVScenario3691" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3697" onclick="parent.toggleDiv('detailsDIVScenario3697','DetailsImageScenario3697')" />Details:
+						<div id="detailsDIVScenario3697" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -481,8 +714,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3692" onclick="parent.toggleDiv('detailsDIVScenario3692','DetailsImageScenario3692')" />Details:
-						<div id="detailsDIVScenario3692" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3698" onclick="parent.toggleDiv('detailsDIVScenario3698','DetailsImageScenario3698')" />Details:
+						<div id="detailsDIVScenario3698" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -494,8 +727,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3693" onclick="parent.toggleDiv('detailsDIVScenario3693','DetailsImageScenario3693')" />Details:
-						<div id="detailsDIVScenario3693" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3699" onclick="parent.toggleDiv('detailsDIVScenario3699','DetailsImageScenario3699')" />Details:
+						<div id="detailsDIVScenario3699" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -507,8 +740,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3694" onclick="parent.toggleDiv('detailsDIVScenario3694','DetailsImageScenario3694')" />Details:
-						<div id="detailsDIVScenario3694" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3700" onclick="parent.toggleDiv('detailsDIVScenario3700','DetailsImageScenario3700')" />Details:
+						<div id="detailsDIVScenario3700" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -519,8 +752,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3695" onclick="parent.toggleDiv('detailsDIVScenario3695','DetailsImageScenario3695')" />Details:
-						<div id="detailsDIVScenario3695" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3701" onclick="parent.toggleDiv('detailsDIVScenario3701','DetailsImageScenario3701')" />Details:
+						<div id="detailsDIVScenario3701" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -528,7 +761,32 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">definition is mandatory if definition not provided by definition source </td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3702" onclick="parent.toggleDiv('detailsDIVConstraints3702','DetailsImageConstraints3702')" />Details:
+							<div id="detailsDIVConstraints3702" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">count(definition)+count(definitionReference)#gt;0&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -538,16 +796,30 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA3292.htm">FR_RegisteredInheritanceRelation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3358.htm">FC_FeatureAssociation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3360.htm">FC_FeatureCatalogue</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Weak</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA3/EA3169.htm">«Metaclass» InheritanceRelation</a></td>
-					<td width="10%" class="TableRow" valign="top">Association Class</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA3/EA3168.htm">«Metaclass» FeatureType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA3292.htm">FR_RegisteredFeatureType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

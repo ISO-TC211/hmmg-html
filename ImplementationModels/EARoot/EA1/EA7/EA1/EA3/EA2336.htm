@@ -527,6 +527,30 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2334.htm">«interface» RE_AdditionInformation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> item<br />
+						The role "item"  identifies that the information in the class RE_AdditionInformation is related to a register item.
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> additionInformation<br />
+						The role "additionInformation"  identifies the class RE_AdditionInformation for addtional information about the registerItem.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3661" onclick="parent.toggleDiv('detailsDIVLink3661','DetailsImageLink3661')" />Details:
+							<div id="detailsDIVLink3661" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &quot;Addition&quot; connects an instance of RE_RegisterItem to one or more instances of RE_AdditionInformation that contain information about the process of adding this RE_RegisterItem to the register. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
 						<a href="EA2339.htm">«interface» RE_ClarificationInformation</a><br />
 						Class &nbsp;
 					</td>
@@ -541,33 +565,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3661" onclick="parent.toggleDiv('detailsDIVLink3661','DetailsImageLink3661')" />Details:
-							<div id="detailsDIVLink3661" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The conditional association &quot;Clarification&quot;&lt;i&gt; &lt;/i&gt;connects an instance of RE_RegisterItem to zero or more instances of RE_ClarificationInformation that contain information about the process of clarifying this RE_RegisterItem. &lt;b&gt;This association shall be present if there have been any proposals to clarify the item&lt;/b&gt;.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2338.htm">«interface» RE_AmendmentInformation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> item<br />
-						The role "item"  identifies that the information in the class RE_AmendmentInformation is related to a register item.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> amendmentInformation<br />
-						The role "amendmentInformation"  identifies that amendment information to the register item may be available in the RE_AmendmentInformation class.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3662" onclick="parent.toggleDiv('detailsDIVLink3662','DetailsImageLink3662')" />Details:
 							<div id="detailsDIVLink3662" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The conditional association &quot;Amendment&quot;&lt;i&gt; &lt;/i&gt;connects the RE_RegisterItem to zero or more instances of RE_AmendmentInformation that contain information about the process of amending this RE_RegisterItem. &lt;br/&gt;&lt;b&gt;This association shall be present if there have been any proposals to amend the item.&lt;/b&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">The conditional association &quot;Clarification&quot;&lt;i&gt; &lt;/i&gt;connects an instance of RE_RegisterItem to zero or more instances of RE_ClarificationInformation that contain information about the process of clarifying this RE_RegisterItem. &lt;b&gt;This association shall be present if there have been any proposals to clarify the item&lt;/b&gt;.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -599,23 +599,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2334.htm">«interface» RE_AdditionInformation</a><br />
+						<a href="EA2338.htm">«interface» RE_AmendmentInformation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> item<br />
-						The role "item"  identifies that the information in the class RE_AdditionInformation is related to a register item.
+						The role "item"  identifies that the information in the class RE_AmendmentInformation is related to a register item.
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> additionInformation<br />
-						The role "additionInformation"  identifies the class RE_AdditionInformation for addtional information about the registerItem.	
+						<strong>Name:</strong> amendmentInformation<br />
+						The role "amendmentInformation"  identifies that amendment information to the register item may be available in the RE_AmendmentInformation class.	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3664" onclick="parent.toggleDiv('detailsDIVLink3664','DetailsImageLink3664')" />Details:
 							<div id="detailsDIVLink3664" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The association &quot;Addition&quot; connects an instance of RE_RegisterItem to one or more instances of RE_AdditionInformation that contain information about the process of adding this RE_RegisterItem to the register. &lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">The conditional association &quot;Amendment&quot;&lt;i&gt; &lt;/i&gt;connects the RE_RegisterItem to zero or more instances of RE_AmendmentInformation that contain information about the process of amending this RE_RegisterItem. &lt;br/&gt;&lt;b&gt;This association shall be present if there have been any proposals to amend the item.&lt;/b&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -718,16 +718,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">TermRegisterEntry</td>
+					<td width="30%" class="TableRow" valign="top">CL_ClassificationRuleItem</td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">CD_Concept</td>
-					<td width="10%" class="TableRow" valign="top">Interface</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="30%" class="TableRow" valign="top">TermRegisterEntry</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
@@ -739,28 +739,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">CL_ClassificationRuleItem</td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top">LC_ClassCharacteristicDescriptorItem</td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA2301.htm">«interface» RegisterItem</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top">LC_ElementCharacteristicDescriptorItem</td>
+					<td width="30%" class="TableRow" valign="top">LC_ElementDescriptorItem</td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -774,9 +753,30 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">LC_ElementDescriptorItem</td>
+					<td width="30%" class="TableRow" valign="top">LC_ElementCharacteristicDescriptorItem</td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA2301.htm">«interface» RegisterItem</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">LC_ClassCharacteristicDescriptorItem</td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">CD_Concept</td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

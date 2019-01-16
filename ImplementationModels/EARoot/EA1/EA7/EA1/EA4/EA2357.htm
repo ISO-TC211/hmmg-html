@@ -110,30 +110,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA2300.htm">«interface» ItemClass</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> subregister<br />
-						The role subregister connects an instance of an item class to a subregister
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containedItemClass<br />
-						The role "containedItemClass" describes that the "ItemClass" for the association "SubregisterContentDescription" contains the item classes in the subregister.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3754" onclick="parent.toggleDiv('detailsDIVLink3754','DetailsImageLink3754')" />Details:
-							<div id="detailsDIVLink3754" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">In the case of a hierarchical register, the conditional association &quot;SubregisterContentDescription&lt;i&gt;&quot;&lt;/i&gt; connects the ItemClass to the instance of SubregisterDescription that describes a subregister in which items of that item class are contained. &lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA2/EA2302.htm">«interface» RegisterStakeholder</a><br />
 						Class &nbsp;
 					</td>
@@ -148,9 +124,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3754" onclick="parent.toggleDiv('detailsDIVLink3754','DetailsImageLink3754')" />Details:
+							<div id="detailsDIVLink3754" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">In the case of a hierarchical register, the conditional association &quot;SubregisterManagement&quot;&lt;i&gt; &lt;/i&gt;connects the &quot;RegisterStakeholder&quot; to the instance of &quot;SubregisterDescription that describes a subregister managed by the stakeholder in the capacity as a manager.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA2/EA2300.htm">«interface» ItemClass</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subregister<br />
+						The role subregister connects an instance of an item class to a subregister
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedItemClass<br />
+						The role "containedItemClass" describes that the "ItemClass" for the association "SubregisterContentDescription" contains the item classes in the subregister.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3755" onclick="parent.toggleDiv('detailsDIVLink3755','DetailsImageLink3755')" />Details:
 							<div id="detailsDIVLink3755" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">In the case of a hierarchical register, the conditional association &quot;SubregisterManagement&quot;&lt;i&gt; &lt;/i&gt;connects the &quot;RegisterStakeholder&quot; to the instance of &quot;SubregisterDescription that describes a subregister managed by the stakeholder in the capacity as a manager.&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">In the case of a hierarchical register, the conditional association &quot;SubregisterContentDescription&lt;i&gt;&quot;&lt;/i&gt; connects the ItemClass to the instance of SubregisterDescription that describes a subregister in which items of that item class are contained. &lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -169,17 +169,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA2301.htm">«interface» RegisterItem</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA2344.htm">«interface» RE_SubregisterDescription</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA2301.htm">«interface» RegisterItem</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

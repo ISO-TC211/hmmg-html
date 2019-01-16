@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ExtendedModel::RE_AlternativeExpression</title>
+<title>ExtendedModel::RE_ProposalManagementInformation</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RE_AlternativeExpression", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("RE_ProposalManagementInformation", " : "))</script>  : Public abstract &lt;&lt;interface&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:35</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:34</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.03.2013 10:35:02</td>
+			<td class="ObjectDetailsValue">01.03.2013 13:38:21</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,22 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B0C29C4C-B23B-4651-AB36-BCEE933B2AE9}</td>
+			<td class="ObjectDetailsValue">{B53DF1CF-8B47-4681-93F0-09F86F14F956}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../../EA5/EA1/EA1348.htm"> ISO 19104 Full Model</a>, <a href="../../../EA5/EA1/EA1356.htm">TermRegisterEntry</a>, <a href="EA8530.htm">Fig B3 RE_RegisterItem</a>, <a href="EA8532.htm">Fig B4 RE_ItemCLass</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../EA5/EA1/EA1349.htm"> ISO 19104 Full Model</a>, <a href="../../../EA5/EA1/EA1351.htm"> ISO 19104 Overview</a>, <a href="../../../EA5/EA1/EA1353.htm">TermManagement</a>, <a href="../EA8506.htm">Fig B1 Full model</a>, <a href="EA8539.htm">Fig B5 RE_ProposalManagementInformation</a>, <a href="EA8543.htm">Fig B7 RE_Amendment,  RE_Clarification and RE_AdditionalInformation</a>, <a href="../../../EA34/EA1/EA10450.htm">Overview</a>, <a href="../../../EA34/EA1/EA10448.htm">Management Classes</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The class RE_AlternativeExpression is a data type used to provide information about a register item in an alternative language. Subclasses of RE_AlternativeExpression may be specified in order to add additional attributes appropriate for particular item classes.&lt;br/&gt;&lt;br/&gt;EXAMPLE&#160;&#160;A specification for a metadata element register could identify a subclass of RE_AlternativeExpression that would include the data dictionary fields specified in ISO 19115-1(obligation/condition, data type, and domain) as additional attributes.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The class RE_ProposalManagementInformation specifies elements of management information to be recorded for each proposal to add or modify a register item.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -109,7 +111,65 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;name</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA1/EA671.htm">Date</a></i><br /><strong>&nbsp;&nbsp;dateProposed</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15730')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15730" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15730_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15730_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15730_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &quot;dateProposed&quot; is represented as an instance of the class #lt;Date#gt; [ISO 19103] and specify the (full precision) date on which the item was entered into the register.&lt;br/&gt;EXAMPLE 2002-11-27.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;justification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -158,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &quot;name&quot;&lt;i&gt; &lt;/i&gt;is represented as a CharacterString whose content meets the requirements of RE_RegisterItem.name&lt;i&gt; &lt;/i&gt;except that the applicable locale is that specified in RE_AlternativeExpression.locale.&lt;br/&gt;
+			The attribute &quot;justification&quot;&lt;i&gt; &lt;/i&gt;is represented as a CharacterString that explains why the proposed change should be implemented.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;definition</strong>
+					<i>Public <a href="EA8575.htm">RE_DecisionStatus</a></i><br /><strong>&nbsp;&nbsp;status</strong>
 				</td>
 			</tr>
 			<tr>
@@ -193,7 +253,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes15732_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes15732_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -216,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute &quot;definition&quot;&lt;i&gt; &lt;/i&gt; is represented as a CharacterString whose content meets the requirements of RE_RegisterItem.definition&lt;i&gt; &lt;/i&gt;except that the applicable locale is that specified in RE_AlternativeExpression.locale.&lt;br/&gt;
+			The attribute &quot;status&quot;&lt;i&gt; &lt;/i&gt; is represented as an instance of RE_DecisionStatus that identifies the standing of the proposed change within the approval process. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA695.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
+					<i>Public <a href="EA8577.htm">RE_Disposition</a></i><br /><strong>&nbsp;&nbsp;disposition</strong>
 				</td>
 			</tr>
 			<tr>
@@ -274,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute description&lt;i&gt; &lt;/i&gt;is represented as a CharacterString whose content meets the requirements of RE_RegisterItem.description&lt;i&gt; &lt;/i&gt;except that the applicable locale is that specified in RE_AlternativeExpression.locale.&lt;br/&gt;
+			The conditional attribute &quot;disposition&lt;i&gt;&quot; &lt;/i&gt;is represented as an instance of RE_Disposition that identifies the disposition of the proposal. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -283,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA50/EA15508.htm">Set&lt;RE_FieldOfApplication&gt;</a></i><br /><strong>&nbsp;&nbsp;fieldOfApplication</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA1/EA671.htm">Date</a></i><br /><strong>&nbsp;&nbsp;dateDisposed</strong>
 				</td>
 			</tr>
 			<tr>
@@ -332,7 +392,181 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The attribute fieldOfApplication&lt;i&gt; &lt;/i&gt;is represented as a set of instances of RE_FieldOfApplication whose content meets the requirements of RE_RegisterItem.fieldOfApplication&lt;i&gt; &lt;/i&gt;except that the applicable locale is that specified in RE_AlternativeExpression.locale&lt;br/&gt;
+			The conditional attribute &quot;dateDisposed&quot;&lt;i&gt; &lt;/i&gt;is represented as an instance of the class #lt;Date#gt; [ISO 19103] and specify the (full precision) date on which the disposition of the proposal was determined. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;controlBodyDecisionEvent</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15735')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15735" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15735_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15735_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15735_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &quot;controlBodyDecisionEvent&quot;&lt;i&gt; &lt;/i&gt;is represented as a CharacterString that identifies a meeting or other event associated with the control body&#8217;s decision concerning the proposed change.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;controlBodyNotes</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15736')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15736" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15736_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15736_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15736_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &quot;controlBodyNotes&quot; is represented as a CharacterString containing notes relevant to the control body&#8217;s decision concerning the proposal. Individual entries within the notes should be dated. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;registerManagerNotes</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15737')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15737" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes15737_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes15737_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes15737_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The attribute &quot;registerManagerNotes&quot;&lt;i&gt; &lt;/i&gt;is represented as a CharacterString containing notes relevant to the register manager&#8217;s handling of the proposal. Individual entries within the notes should be dated. &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +576,7 @@ function nameClassifier(name, separator)
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsToTable">
+		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -351,23 +585,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA8574.htm">«interface» RE_Locale</a><br />
+						<a href="EA8571.htm">RE_RegisterStakeholder</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> expression<br />
-						The role "expression"  identifies the class RE_AlternativeExpression for language information as specified in RE_Locale.
+						<strong>Name:</strong> sponsor<br />
+						The role "sponsor "  identifies the class RE_RegisterStakeholder to be submitting proposal management information to the registry.
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> locale<br />
-						The role "locale"  identifies the class RE_Locale for further information about the language used for the alternative expression.	
+						<strong>Name:</strong> proposalInformation<br />
+						The role "proposalnformation"  identifies that the stakeholder in the function of a proposer has proposed proposal managment information to the registry.	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15735" onclick="parent.toggleDiv('detailsDIVLink15735','DetailsImageLink15735')" />Details:
-							<div id="detailsDIVLink15735" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The association Milieu&lt;i&gt; &lt;/i&gt;connects an instance of RE_AlternativeExpression to the instance of RE_Locale that applies to the values of the attributes of this instance of RE_AlternativeExpression. That instance of&lt;br/&gt;RE_Locale is one of those included in the instance of RE_ItemClass.alternativeLanguages&lt;i&gt; &lt;/i&gt;that is associated with a register item.&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink15738" onclick="parent.toggleDiv('detailsDIVLink15738','DetailsImageLink15738')" />Details:
+							<div id="detailsDIVLink15738" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &quot;Proposal&quot;&lt;i&gt; &lt;/i&gt;shall connect an instance of RE_ProposalManagementInformation to the&lt;br/&gt;RE_SubmittingOrganization that proposed that the associated item&lt;i&gt; &lt;/i&gt;be added or modified.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -388,15 +622,90 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15736" onclick="parent.toggleDiv('detailsDIVScenario15736','DetailsImageScenario15736')" />Details:
-						<div id="detailsDIVScenario15736" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15739" onclick="parent.toggleDiv('detailsDIVScenario15739','DetailsImageScenario15739')" />Details:
+						<div id="detailsDIVScenario15739" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>	</div>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">status <> #pending implies disposition
+-> notEmpty</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15740" onclick="parent.toggleDiv('detailsDIVConstraints15740','DetailsImageConstraints15740')" />Details:
+							<div id="detailsDIVConstraints15740" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/a value shall be provided if the value of &lt;i&gt;status &lt;/i&gt;is &#8220;tentative&#8221; or &#8220;final&#8221;./&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">status <> #pending implies dateDisposed ->
+notEmpty</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints15741" onclick="parent.toggleDiv('detailsDIVConstraints15741','DetailsImageConstraints15741')" />Details:
+							<div id="detailsDIVConstraints15741" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">/a date shall be provided if the value of &lt;i&gt;status &lt;/i&gt;is &#8220;tentative&#8221; or &#8220;final&#8221;. The date&lt;br/&gt;shall be revised when the value of &lt;i&gt;status &lt;/i&gt;is changed from &#8220;tentative&#8221; to &#8220;final&#8221;./&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA8562.htm">«interface» RE_AdditionInformation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA8567.htm">«interface» RE_ClarificationInformation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA8566.htm">«interface» RE_AmendmentInformation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

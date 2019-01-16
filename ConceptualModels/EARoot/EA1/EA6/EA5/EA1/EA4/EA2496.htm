@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Geometric primitive::GM_Shell</title>
+<title>Geometric primitive::GM_Ring</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Shell", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Ring", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">01.07.2008 13:34:26</td>
+			<td class="ObjectDetailsValue">01.07.2008 13:33:24</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9FAA8124-2583-42de-B185-31576ABF3940}</td>
+			<td class="ObjectDetailsValue">{4B3109F0-D42E-4aba-BCC3-E3810FA3971B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2469.htm">Fig 07: Geometry Boundary Data Types</a>, <a href="EA2459.htm">Context Diagram: GM_SolidBoundary</a>, <a href="EA2455.htm">Context Diagram: GM_Shell</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA50/EA7/EA1/EA15994.htm">Fig 02: Curves</a>, <a href="../../../../EA50/EA7/EA1/EA15996.htm">Fig 03: Surfaces</a>, <a href="../../../../EA50/EA7/EA1/EA15984.htm">Context Diagram: NL_Ring</a>, <a href="../../../../EA28/EA2/EA10/EA9386.htm">Context Diagram: LinearRing</a>, <a href="../../../../EA28/EA2/EA10/EA9390.htm">Figure D.47 ? A GM_Surface with a single GM_Polygon patch</a>, <a href="EA2470.htm">Fig 07: Geometry Boundary Data Types</a>, <a href="EA2464.htm">Context Diagram: GM_SurfaceBoundary</a>, <a href="EA2454.htm">Context Diagram: GM_Ring</a>, <a href="../../../../EA28/EA1/EA10/EA8952.htm">Context Diagram: LinearRing</a>, <a href="../../../../EA28/EA1/EA10/EA8956.htm">Figure D.47 ? A GM_Surface with a single GM_Polygon patch</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A GM_Shell is used to represent a single connected component of a GM_SolidBoundary. It consists of a number of references to GM_OrientableSurfaces connected in a topological cycle (an object whose boundary is empty). Unlike a GM_Ring, a GM_Shell&#39;s elements have no natural sort order. Like GM_Rings, GM_Shells are simple.&lt;br/&gt;GM_Shell:&lt;br/&gt;{isSimple() = TRUE}&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A GM_Ring is used to represent a single connected component of a GM_SurfaceBoundary. It consists of a number of references to GM_OrientableCurves connected in a cycle (an object whose boundary is empty). &lt;br/&gt;A GM_Ring is structurally similar to a GM_CompositeCurve in that the endPoint of each GM_OrientedCurve OrientableCurve in the sequence is the startPoint of the next GM_ OrientableCurve in the Sequence. Since the sequence is circular, there is no exception to this rule. Each ring, like all boundaries is a cycle and each ring is simple.&lt;br/&gt;GM_Ring:&lt;br/&gt;{isSimple() = TRUE}&lt;br/&gt;{isCycle() = TRUE}&lt;br/&gt;&lt;br/&gt;NOTE Even though each GM_Ring is simple, the boundary need not be simple. The easiest case of this is where one of the interior rings of a surface is tangent to its exterior ring. Implementations may enforce stronger restrictions on the interaction of boundary elements.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -112,30 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2498.htm">«type» GM_SolidBoundary</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> exterior<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2485" onclick="parent.toggleDiv('detailsDIVLink2485','DetailsImageLink2485')" />Details:
-							<div id="detailsDIVLink2485" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2498.htm">«type» GM_SolidBoundary</a><br />
+						<a href="EA2501.htm">«type» GM_SurfaceBoundary</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -149,8 +126,31 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2486" onclick="parent.toggleDiv('detailsDIVLink2486','DetailsImageLink2486')" />Details:
-							<div id="detailsDIVLink2486" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2500" onclick="parent.toggleDiv('detailsDIVLink2500','DetailsImageLink2500')" />Details:
+							<div id="detailsDIVLink2500" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2501.htm">«type» GM_SurfaceBoundary</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> exterior<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2501" onclick="parent.toggleDiv('detailsDIVLink2501','DetailsImageLink2501')" />Details:
+							<div id="detailsDIVLink2501" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -171,8 +171,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2487" onclick="parent.toggleDiv('detailsDIVScenario2487','DetailsImageScenario2487')" />Details:
-						<div id="detailsDIVScenario2487" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2502" onclick="parent.toggleDiv('detailsDIVScenario2502','DetailsImageScenario2502')" />Details:
+						<div id="detailsDIVScenario2502" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -193,8 +193,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2488" onclick="parent.toggleDiv('detailsDIVConstraints2488','DetailsImageConstraints2488')" />Details:
-							<div id="detailsDIVConstraints2488" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2503" onclick="parent.toggleDiv('detailsDIVConstraints2503','DetailsImageConstraints2503')" />Details:
+							<div id="detailsDIVConstraints2503" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -207,8 +207,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2489" onclick="parent.toggleDiv('detailsDIVConstraints2489','DetailsImageConstraints2489')" />Details:
-							<div id="detailsDIVConstraints2489" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2504" onclick="parent.toggleDiv('detailsDIVConstraints2504','DetailsImageConstraints2504')" />Details:
+							<div id="detailsDIVConstraints2504" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -227,10 +227,31 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA2430.htm">«type» GM_CompositeSurface</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA28/EA1/EA10/EA8961.htm">«type» LinearRing</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA7/EA1/EA16020.htm">NL_Ring</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA2428.htm">«type» GM_CompositeCurve</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA28/EA2/EA10/EA9395.htm">«type» LinearRing</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

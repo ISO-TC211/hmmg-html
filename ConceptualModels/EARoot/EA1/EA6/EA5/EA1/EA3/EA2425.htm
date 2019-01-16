@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Geometric complex::GM_ComplexBoundary</title>
+<title>Geometric complex::GM_Complex</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_ComplexBoundary", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Complex", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:12</td>
+			<td class="ObjectDetailsValue">14.07.2015 11:33:32</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,261 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{17B5131A-4926-4d58-B8EA-A6BBA2EAAE78}</td>
+			<td class="ObjectDetailsValue">{3E30956E-35C8-4f4f-9762-6F6F55E66196}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2396.htm">Context Diagram: GM_ComplexBoundary</a>, <a href="../EA4/EA2469.htm">Fig 07: Geometry Boundary Data Types</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA50/EA7/EA1/EA16002.htm">Fig 06: Map</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA2996.htm">Fig 26: Spatial complex</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA2998.htm">Fig 27: Spatial composite</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA3010.htm">Fig 33: Independent spatial complex</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA3008.htm">Fig 32: Independent spatial complex application</a>, <a href="../../../../EA25/EA1/EA3/EA4/EA8078.htm">Context Diagram: NT_Network</a>, <a href="../../../../EA29/EA1/EA1/EA9583.htm">geometry root</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA1/EA15798.htm">Main</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA1/EA15786.htm">Context Diagram: CellularComplex</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA3/EA15841.htm">Main 2</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA3/EA15831.htm">Context Diagram: GR_Graph</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15893.htm">Fig D3: Feature Components Realizations</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15881.htm">Context Diagram: TS_Theme</a>, <a href="../../../../EA50/EA6/EA1/EA3/EA15940.htm">Main</a>, <a href="../../../../EA50/EA6/EA1/EA3/EA15930.htm">Context Diagram: SimplicialComplex</a>, <a href="../../../EA4/EA14/EA1/EA2059.htm">Main 2</a>, <a href="../../../EA4/EA14/EA1/EA2051.htm">Context Diagram: Graph</a>, <a href="../EA2176.htm">Fig 05: Geometry basic classes </a>, <a href="../EA2/EA2367.htm">Complex</a>, <a href="EA2409.htm">Fig 25: Geometry Complexes</a>, <a href="EA2411.htm">Fig 26: Composite</a>, <a href="EA2395.htm">Context Diagram: GM_Complex</a>, <a href="EA2399.htm">Context Diagram: GM_Composite</a>, <a href="../EA4/EA2472.htm">Fig 08: GM_Primitive</a>, <a href="../EA4/EA2470.htm">Fig 07: Geometry Boundary Data Types</a>, <a href="../EA4/EA2450.htm">Context Diagram: GM_Primitive</a>, <a href="../EA5/EA2508.htm">Fig 06: GM_Object</a>, <a href="../EA5/EA2510.htm">Geometry Root</a>, <a href="../EA5/EA2504.htm">Context Diagram: GM_Boundary</a>, <a href="../../EA2/EA2531.htm">Fig 33: Relation between geometry and topology</a>, <a href="../../EA2/EA1/EA2542.htm">Fig 46: Complex View</a>, <a href="../../EA2/EA1/EA2540.htm">Context Diagram: TP_Complex</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The boundary operation for GM_Complex objects shall return a GM_ComplexBoundary, which is a collection of primitives and a GM_Complex of dimension 1 less than the original object. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">geometric complex&lt;br/&gt;set of disjoint geometric primitives such that the boundary of each primitive can be represented as the union of other geometric primitives within the complex&lt;br/&gt;&lt;br/&gt;NOTE:&#160;&#160;The geometric primitives in the set are mutually exclusive in the sense that no point is interior to more than one primitive.&#160;&#160;The set is closed under boundary operations, meaning that for each element in the complex, there is a collection (also a complex) of geometric primitives that represents the boundary of that element.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>isMaximal</strong>():<a href="../../../../EA4/EA2/EA1/EA3/EA6/EA1341.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2405" onclick="parent.toggleDiv('detailsDIVOperations2405','DetailsImageOperations2405')" />Details:
+						<div id="detailsDIVOperations2405" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA4/EA2494.htm">«type» GM_Primitive</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> complex<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> element<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2406" onclick="parent.toggleDiv('detailsDIVLink2406','DetailsImageLink2406')" />Details:
+							<div id="detailsDIVLink2406" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A GM_Primitive may be in several GM_Complexes. See Clause 6.6.2.This association may not be navigable in this direction, depending on the application schema. &lt;br/&gt;GM_Primitive::complex [0..*] : Reference#lt;GM_Complex#gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2425.htm">«type» GM_Complex</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> superComplex<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subComplex<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2407" onclick="parent.toggleDiv('detailsDIVLink2407','DetailsImageLink2407')" />Details:
+							<div id="detailsDIVLink2407" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">subcomplex (of a larger complex)&lt;br/&gt;complex all of whose elements are also in the larger complex&lt;br/&gt;&lt;br/&gt;NOTE: Since the definition of complex requires only that the boundary operator be closed, then the set of any primitives of a particular dimension and below is always a subcomplex of the original, larger complex.&#160;&#160;Thus, any full planar topological complex contains an edge-node graph as a subcomplex.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA2/EA1/EA2546.htm">«type» TP_Complex</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> geometry<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> topology<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2408" onclick="parent.toggleDiv('detailsDIVLink2408','DetailsImageLink2408')" />Details:
+							<div id="detailsDIVLink2408" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3040.htm">«FeatureType» RoadNetwork</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> pavement<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2409" onclick="parent.toggleDiv('detailsDIVLink2409','DetailsImageLink2409')" />Details:
+							<div id="detailsDIVLink2409" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3030.htm">«FeatureType» Parcel</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> spatialConfiguration<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2410" onclick="parent.toggleDiv('detailsDIVLink2410','DetailsImageLink2410')" />Details:
+							<div id="detailsDIVLink2410" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3041.htm">«FeatureType» RoadNetwork</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> spatialConfiguration<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2411" onclick="parent.toggleDiv('detailsDIVLink2411','DetailsImageLink2411')" />Details:
+							<div id="detailsDIVLink2411" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3040.htm">«FeatureType» RoadNetwork</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> routing<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2412" onclick="parent.toggleDiv('detailsDIVLink2412','DetailsImageLink2412')" />Details:
+							<div id="detailsDIVLink2412" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2425.htm">«type» GM_Complex</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> superComplex<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> subComplex<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2413" onclick="parent.toggleDiv('detailsDIVLink2413','DetailsImageLink2413')" />Details:
+							<div id="detailsDIVLink2413" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">subcomplex (of a larger complex)&lt;br/&gt;complex all of whose elements are also in the larger complex&lt;br/&gt;&lt;br/&gt;NOTE: Since the definition of complex requires only that the boundary operator be closed, then the set of any primitives of a particular dimension and below is always a subcomplex of the original, larger complex.&#160;&#160;Thus, any full planar topological complex contains an edge-node graph as a subcomplex.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -113,8 +354,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2395" onclick="parent.toggleDiv('detailsDIVScenario2395','DetailsImageScenario2395')" />Details:
-						<div id="detailsDIVScenario2395" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2414" onclick="parent.toggleDiv('detailsDIVScenario2414','DetailsImageScenario2414')" />Details:
+						<div id="detailsDIVScenario2414" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -131,10 +372,73 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA2512.htm">«Abstract» GM_Boundary</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA6/EA1/EA3/EA15945.htm">SimplicialComplex</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA6/EA1/EA1/EA3/EA15846.htm">GR_Graph</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA2/EA1538.htm">Geometry</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA6/EA1/EA1/EA1/EA15802.htm">«type» CellularComplex</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA2513.htm">«Abstract» GM_Boundary</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15915.htm">TS_Theme</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA2/EA1533.htm">Complex</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2427.htm">«type» GM_Composite</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA2514.htm">«type» GM_Object</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA14/EA1/EA2064.htm">Graph</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Message Data Types::LBS_Preference</title>
+<title>Message Data Types::LBS_Maneuver</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_Preference", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_Maneuver", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">23.07.2009 14:08:39</td>
+			<td class="ObjectDetailsValue">23.07.2009 14:11:00</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,77 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{1A0CB668-DB49-41b8-A63B-E631D51541F2}</td>
+			<td class="ObjectDetailsValue">{56AEA88A-FD69-40ab-84C1-375DB6E9BEC7}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA7639.htm">Fig 33: Message  DataTypes</a>, <a href="EA7677.htm">Fig 52: Context Diagram: LBS_RouteCriteria</a>, <a href="EA7671.htm">Fig 49: Context Diagram: LBS_Preference</a></td>
+			<td class="ObjectDetailsValue"><a href="EA7644.htm">Fig 33: Message  DataTypes</a>, <a href="EA7664.htm">Fig 43: Context Diagram: LBS_Instruction</a>, <a href="EA7668.htm">Fig 45: Context Diagram: LBS_Maneuver</a>, <a href="EA7678.htm">Fig 50: Context Diagram: LBS_Route</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">#lt;UsedBy#gt;&lt;br/&gt;#lt;NameSpace#gt;ISO 19132 Location Based Services Reference Model#lt;/NameSpace#gt;&lt;br/&gt;#lt;Class#gt;LBS_RouteCriteria#lt;/Class#gt;&lt;br/&gt;#lt;Package#gt;Message Data Types#lt;/Package#gt;&lt;br/&gt;#lt;Attribute#gt;preferences[0..*]#lt;/Attribute#gt;&lt;br/&gt;#lt;Type#gt;LBS_Preference#lt;/Type#gt;&lt;br/&gt;#lt;UsedBy#gt;&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The class LBS_Maneuver describes a means to execute all or part of a route. It&#39;s associated instruction (if it has one) details that maneuver in some manner. If the maneuver does not have an instruction, then it must reflect the main road rule for the route/network. &lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7712.htm">«type» LBS_Instruction</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> maneuver<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink14753" onclick="parent.toggleDiv('detailsDIVLink14753','DetailsImageLink14753')" />Details:
+							<div id="detailsDIVLink14753" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA7720.htm">«type» LBS_Route</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> maneuver<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink14754" onclick="parent.toggleDiv('detailsDIVLink14754','DetailsImageLink14754')" />Details:
+							<div id="detailsDIVLink14754" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -113,8 +170,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14736" onclick="parent.toggleDiv('detailsDIVScenario14736','DetailsImageScenario14736')" />Details:
-						<div id="detailsDIVScenario14736" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14755" onclick="parent.toggleDiv('detailsDIVScenario14755','DetailsImageScenario14755')" />Details:
+						<div id="detailsDIVScenario14755" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -131,7 +188,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA2/EA3/EA7956.htm">«CodeList» NS_RoutePreferences</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA3/EA6/EA8114.htm">«type» NT_Maneuver</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

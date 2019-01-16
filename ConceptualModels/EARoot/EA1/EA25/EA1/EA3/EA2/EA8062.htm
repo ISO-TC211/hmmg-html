@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Constraint and Advisory::NT_VehicleConstraint</title>
+<title>Constraint and Advisory::NT_LaneConstraint</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NT_VehicleConstraint", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NT_LaneConstraint", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6A1407A5-8395-40f2-B6B4-1D7204F5D184}</td>
+			<td class="ObjectDetailsValue">{0C460885-05CE-490a-A1EA-39F4B16361A9}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA8043.htm">Main</a>, <a href="EA8029.htm">Context Diagram: NT_Constraint</a>, <a href="EA8041.htm">Context Diagram: NT_VehicleConstraint</a>, <a href="../EA4/EA8080.htm">Main</a></td>
+			<td class="ObjectDetailsValue"><a href="EA8047.htm">Main</a>, <a href="EA8033.htm">Context Diagram: NT_Constraint</a>, <a href="EA8037.htm">Context Diagram: NT_LaneConstraint</a>, <a href="../EA4/EA8084.htm">Main</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This is a constraint on the type or size of a vehicle that is allowed to traverse a link or a turn.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This class is used to list lane restrictions. Lane numbers are counted from the normal outside edge of allowable travel (rightmost in the US&lt;br/&gt;the Americas&lt;br/&gt;and most of Europe; leftmost in the UK&lt;br/&gt;Australia&lt;br/&gt;and Japan).&lt;br/&gt;&lt;br/&gt;Allowed Lanes are ones from which the turn can be made both legally or physically if the vehicle has a large turning radius). The turning radii&lt;br/&gt;if given&lt;br/&gt;are ordered in the same manner as the allowed lanes&lt;br/&gt;and are the minimum turning radius required of a vehicle making this turn from this lane.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -109,43 +109,43 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8061.htm">NT_Vehicle</a></i><br /><strong>&nbsp;&nbsp;allowedVehicle</strong>
+					<i>Public <a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1059.htm">Distance</a></i><br /><strong>&nbsp;&nbsp;turningRadius</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15083')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15083" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15063')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15063" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15083_00" style="display: none;">
+						<tr id="DetailsImageAttributes15063_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_01" style="display: none;">
+						<tr id="DetailsImageAttributes15063_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_02" style="display: none;">
+						<tr id="DetailsImageAttributes15063_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_03" style="display: none;">
+						<tr id="DetailsImageAttributes15063_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_04" style="display: none;">
+						<tr id="DetailsImageAttributes15063_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td>Range:0 to *</td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_05" style="display: none;">
+						<tr id="DetailsImageAttributes15063_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15083_06" style="display: none;">
+						<tr id="DetailsImageAttributes15063_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15083_07" style="display: none;">
+							<tr id="DetailsImageAttributes15063_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -157,235 +157,159 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA8061.htm">NT_Vehicle</a></i><br /><strong>&nbsp;&nbsp;disallowedVehicle</strong>
+					<i>Public <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1305.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;allowedLanes</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15084')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15084" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15064')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15064" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15084_00" style="display: none;">
+						<tr id="DetailsImageAttributes15064_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_01" style="display: none;">
+						<tr id="DetailsImageAttributes15064_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_02" style="display: none;">
+						<tr id="DetailsImageAttributes15064_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_03" style="display: none;">
+						<tr id="DetailsImageAttributes15064_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_04" style="display: none;">
+						<tr id="DetailsImageAttributes15064_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td>Range:0 to *</td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_05" style="display: none;">
+						<tr id="DetailsImageAttributes15064_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15084_06" style="display: none;">
+						<tr id="DetailsImageAttributes15064_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15084_07" style="display: none;">
+							<tr id="DetailsImageAttributes15064_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The allowed lanes from which the turn can be made. &quot;+1&quot; is the left most lane. Positive numbers count from the left. &lt;br/&gt;&quot;-1&quot; is the right most lane. Negative numbers count from the right.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1058.htm">Distance</a></i><br /><strong>&nbsp;&nbsp;turnRadius</strong>
+					<i>Public <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1305.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;disallowedLanes</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15085')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15085" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15065')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15065" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15085_00" style="display: none;">
+						<tr id="DetailsImageAttributes15065_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_01" style="display: none;">
+						<tr id="DetailsImageAttributes15065_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_02" style="display: none;">
+						<tr id="DetailsImageAttributes15065_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_03" style="display: none;">
+						<tr id="DetailsImageAttributes15065_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_04" style="display: none;">
+						<tr id="DetailsImageAttributes15065_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
+							<td>Range:0 to *</td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_05" style="display: none;">
+						<tr id="DetailsImageAttributes15065_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15085_06" style="display: none;">
+						<tr id="DetailsImageAttributes15065_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15085_07" style="display: none;">
+							<tr id="DetailsImageAttributes15065_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The disallowed lanes from which the turn cannot be made. &quot;+1&quot; is the left most lane. Positive numbers count from the left. &lt;br/&gt;&quot;-1&quot; is the right most lane. Negative numbers count from the right.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1054.htm">Angle</a></i><br /><strong>&nbsp;&nbsp;grade</strong>
+					<i>Public <a href="EA8065.htm">NT_Vehicle</a></i><br /><strong>&nbsp;&nbsp;applicableVehicleTypes</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15086')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15086" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15066')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15066" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes15086_00" style="display: none;">
+						<tr id="DetailsImageAttributes15066_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_01" style="display: none;">
+						<tr id="DetailsImageAttributes15066_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_02" style="display: none;">
+						<tr id="DetailsImageAttributes15066_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_03" style="display: none;">
+						<tr id="DetailsImageAttributes15066_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_04" style="display: none;">
+						<tr id="DetailsImageAttributes15066_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 2</td>
+							<td>Range:0 to *</td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_05" style="display: none;">
+						<tr id="DetailsImageAttributes15066_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes15086_06" style="display: none;">
+						<tr id="DetailsImageAttributes15066_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes15086_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1080.htm">Weight</a></i><br /><strong>&nbsp;&nbsp;maxWeight</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15087')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15087" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes15087_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes15087_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes15087_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1058.htm">Distance</a></i><br /><strong>&nbsp;&nbsp;maxClearance</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes15088')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes15088" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes15088_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes15088_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes15088_07" style="display: none;">
+							<tr id="DetailsImageAttributes15066_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -410,8 +334,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15089" onclick="parent.toggleDiv('detailsDIVScenario15089','DetailsImageScenario15089')" />Details:
-						<div id="detailsDIVScenario15089" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario15067" onclick="parent.toggleDiv('detailsDIVScenario15067','DetailsImageScenario15067')" />Details:
+						<div id="detailsDIVScenario15067" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -428,7 +352,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA8056.htm">NT_Constraint</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA8060.htm">NT_Constraint</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

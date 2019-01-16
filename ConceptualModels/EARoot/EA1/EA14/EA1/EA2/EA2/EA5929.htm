@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Symbol::SY_AreaFill</title>
+<title>Symbol::SY_AreaComponent</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_AreaFill", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_AreaComponent", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.10.2008 14:44:43</td>
+			<td width="85%" class="ObjectDetailsValue">18.07.2008 09:21:47</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13.06.2010 12:01:32</td>
+			<td class="ObjectDetailsValue">30.09.2009 19:18:26</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,50 +87,110 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{0244465E-F56C-449e-827F-BBD391E399B1}</td>
+			<td class="ObjectDetailsValue">{D697F2D8-A3B1-4e3a-A1F4-08DBF91946C6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA5872.htm">SY_AreaFill</a>, <a href="EA5870.htm">SY_AreaComponent</a>, <a href="EA5908.htm">Symbol</a>, <a href="../../EA3/EA3/EA5989.htm">Symbol - Compound</a>, <a href="../../EA3/EA4/EA6005.htm">Symbol - Complex</a>, <a href="../../EA3/EA5/EA6017.htm">Symbol - Reusable</a></td>
+			<td class="ObjectDetailsValue"><a href="EA5873.htm">SY_AreaFill</a>, <a href="EA5871.htm">SY_AreaComponent</a>, <a href="EA5909.htm">Symbol</a>, <a href="EA5901.htm">SY_SymbolComponent</a>, <a href="../../EA3/EA3/EA5984.htm">SY_TransformedAreaComponent</a>, <a href="../../EA3/EA3/EA5978.htm">SY_CompoundAreaComponent</a>, <a href="../../EA3/EA3/EA5990.htm">Symbol - Compound</a>, <a href="../../EA3/EA4/EA6000.htm">SY_HatchFill</a>, <a href="../../EA3/EA4/EA6006.htm">Symbol - Complex</a>, <a href="../../EA3/EA4/EA6002.htm">SY_PatternFill</a>, <a href="../../EA3/EA5/EA6018.htm">Symbol - Reusable</a>, <a href="../../EA3/EA5/EA6012.htm">SY_ExternalAreaComponent</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SY_GraphicsFill specializes SY_AreaFill as an abstract graphic element of an area fill. This type is realized by a fill in a defined graphics language.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">SY_AreaFill specializes SY_Presentation as an abstract area fill.&#160;&#160;The area fill has a coordinate reference system defined for the fill area.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="ConstraintsTable">
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>areaCRS</strong>():<a href="../../../../EA10/EA2/EA2/EA3717.htm">SC_CRS</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12889" onclick="parent.toggleDiv('detailsDIVOperations12889','DetailsImageOperations12889')" />Details:
+						<div id="detailsDIVOperations12889" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;lineCRS&quot; returns a two dimensional coordinate reference system that is defined for the fill area.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content->forAll(isKindOf(SY_GraphicProperty))</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5999.htm">«type» SY_TransformedAreaComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformedElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformation<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12869" onclick="parent.toggleDiv('detailsDIVConstraints12869','DetailsImageConstraints12869')" />Details:
-							<div id="detailsDIVConstraints12869" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12890" onclick="parent.toggleDiv('detailsDIVLink12890','DetailsImageLink12890')" />Details:
+							<div id="detailsDIVLink12890" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content.size() >= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5998.htm">«type» SY_CompoundAreaComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> element<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compound<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12870" onclick="parent.toggleDiv('detailsDIVConstraints12870','DetailsImageConstraints12870')" />Details:
-							<div id="detailsDIVConstraints12870" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12891" onclick="parent.toggleDiv('detailsDIVLink12891','DetailsImageLink12891')" />Details:
+							<div id="detailsDIVLink12891" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -149,10 +209,66 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA5928.htm">«type» SY_AreaComponent</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6011.htm">«type» SY_PatternFill</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_PatternFill specializes the type "SY_AreaFill" as a pattern fill with a tile pattern of point symbols. As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5999.htm">«type» SY_TransformedAreaComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6010.htm">«type» SY_HatchFill</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_HatchFill specializes the type "SY_AreaFill" as a hatch fill. As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5998.htm">«type» SY_CompoundAreaComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5919.htm">«type» SY_SymbolComponent</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA5/EA6023.htm">«type» SY_ExternalAreaComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5999.htm">«type» SY_TransformedAreaComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_TransformedAreaFill specializes the type "SY_AreaFill" as a geometricaly transformed fill. As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5998.htm">«type» SY_CompoundAreaComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_CompoundAreaFill specializes the type "SY_AreaFill" as a compound of multiple subfills. As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5930.htm">«type» SY_AreaFill</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">SY_GraphicsFill specializes the type "SY_AreaFill" as a graphic representation of an area fill. As such it shall implement all inherited attributes, operations and associations.</td>
 				</tr>
 

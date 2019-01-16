@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Message Data Types::LBS_TrackingLocation</title>
+<title>Message Data Types::LBS_Route</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_TrackingLocation", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LBS_Route", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">23.07.2009 14:11:35</td>
+			<td class="ObjectDetailsValue">23.07.2009 14:10:51</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,19 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{4C6D2A00-6784-4b76-908A-8DBEAA3E1A4A}</td>
+			<td class="ObjectDetailsValue">{9796D728-85FF-4db7-8673-3E38A9388B1A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA7639.htm">Fig 33: Message  DataTypes</a>, <a href="EA7661.htm">Fig 44: Context Diagram: LBS_Location</a>, <a href="EA7683.htm">Fig 55: Context Diagram: LBS_TrackingLocation</a></td>
+			<td class="ObjectDetailsValue"><a href="EA7644.htm">Fig 33: Message  DataTypes</a>, <a href="EA7678.htm">Fig 50: Context Diagram: LBS_Route</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A realization of a &quot;LBS_TrackingLocation&quot; describes the location of a tracked object as some point in time, and to some accuracy, potentially as triggered by an event. &lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The class &quot;LBS_Route&quot; is a sequence of maneuvers that will take a traveller from one location to the next as specified in a route request. &lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -110,56 +110,66 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA7/EA1/EA1/EA2723.htm">TM_Primitive</a></i><br /><strong>&nbsp;&nbsp;time</strong>
+					<i>Public <a href="EA7712.htm">LBS_Instruction</a></i><br /><strong>&nbsp;&nbsp;mainRouteRule</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes14752')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes14752" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes14767')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes14767" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes14752_00" style="display: none;">
+						<tr id="DetailsImageAttributes14767_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_01" style="display: none;">
+						<tr id="DetailsImageAttributes14767_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_02" style="display: none;">
+						<tr id="DetailsImageAttributes14767_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_03" style="display: none;">
+						<tr id="DetailsImageAttributes14767_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_04" style="display: none;">
+						<tr id="DetailsImageAttributes14767_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_05" style="display: none;">
+						<tr id="DetailsImageAttributes14767_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes14752_06" style="display: none;">
+						<tr id="DetailsImageAttributes14767_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes14752_07" style="display: none;">
+							<tr id="DetailsImageAttributes14767_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The &quot;mainRouteRule&quot; is the default instruction that normally followed when executing a route in lieu of an instruction. For example, in highway navigation, the main route rule would indicate some means of determining which way is the equivalent of &#39;follow current route.&#39; It would normally be &#39;as straight as possible&#39; unless there is a routing sign indicating a turn. When the main route rule is violated by a maneuver, it must have an associated instruction. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsFromTable">
+		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -168,7 +178,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA7721.htm">«type» LBS_TrackingLocationSeq</a><br />
+						<a href="EA7714.htm">«type» LBS_Maneuver</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -176,14 +186,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> location<br />
+						<strong>Name:</strong> maneuver<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink14753" onclick="parent.toggleDiv('detailsDIVLink14753','DetailsImageLink14753')" />Details:
-							<div id="detailsDIVLink14753" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink14768" onclick="parent.toggleDiv('detailsDIVLink14768','DetailsImageLink14768')" />Details:
+							<div id="detailsDIVLink14768" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -204,8 +214,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14754" onclick="parent.toggleDiv('detailsDIVScenario14754','DetailsImageScenario14754')" />Details:
-						<div id="detailsDIVScenario14754" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario14769" onclick="parent.toggleDiv('detailsDIVScenario14769','DetailsImageScenario14769')" />Details:
+						<div id="detailsDIVScenario14769" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -222,21 +232,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA7708.htm">«type» LBS_Location</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA7721.htm">«type» LBS_TrackingLocationSeq</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA5/EA6/EA8319.htm">TK_TrackingLocation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA3/EA6/EA8115.htm">«type» NT_Route</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

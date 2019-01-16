@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Topological primitive::TP_DirectedNode</title>
+<title>Topological primitive::TP_DirectedFace</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TP_DirectedNode", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TP_DirectedFace", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">03.07.2015 12:00:27</td>
+			<td class="ObjectDetailsValue">19.06.2015 15:55:22</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,17 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2AFB0E45-E0CD-4048-8B9F-3FA3C940DD93}</td>
+			<td class="ObjectDetailsValue">{52CBA392-EC71-4503-A2DC-1F5ECA3EB2B8}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA2528.htm">Fig 32: Topological Class Diagram</a>, <a href="EA2600.htm">Fig 42: Edge Context Diagram</a>, <a href="EA2598.htm">Fig 41: Node Context Diagram</a>, <a href="EA2588.htm">Fig 36: Main</a>, <a href="EA2596.htm">Fig 40: Directed Topo</a>, <a href="EA2594.htm">Fig 39: TP_DirectedTopo subclasses</a>, <a href="EA2586.htm">Fig 35: boundary and coboundary  ops</a>, <a href="EA2554.htm">Context Diagram: TP_DirectedNode</a>, <a href="EA2560.htm">Context Diagram: TP_Edge</a>, <a href="EA2572.htm">Context Diagram: TP_Node</a>, <a href="EA2562.htm">Context Diagram: TP_EdgeBoundary</a>, <a href="../../../../EA49/EA6/EA1/EA1/EA4/EA15264.htm">TS Directed Topo</a>, <a href="../../../../EA49/EA6/EA1/EA1/EA4/EA15224.htm">Context Diagram: TS_DirectedNode</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15899.htm">TS Directed Topo</a>, <a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15857.htm">Context Diagram: TS_DirectedFace</a>, <a href="../EA2529.htm">Fig 32: Topological Class Diagram</a>, <a href="EA2605.htm">Fig 44: Solid Context Diagram</a>, <a href="EA2601.htm">Fig 42: Edge Context Diagram</a>, <a href="EA2603.htm">Fig 43: Face Context Diagram</a>, <a href="EA2589.htm">Fig 36: Main</a>, <a href="EA2597.htm">Fig 40: Directed Topo</a>, <a href="EA2595.htm">Fig 39: TP_DirectedTopo subclasses</a>, <a href="EA2587.htm">Fig 35: boundary and coboundary  ops</a>, <a href="EA2553.htm">Context Diagram: TP_DirectedFace</a>, <a href="EA2561.htm">Context Diagram: TP_Edge</a>, <a href="EA2569.htm">Context Diagram: TP_Face</a>, <a href="EA2583.htm">Context Diagram: TP_Solid</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">oriented face&lt;br/&gt;face with a vector on and orthogonal to the surface , indicating which side of the surface is to be considered its &quot;top&quot;&lt;br/&gt;NOTE: The orientation of the face&#39;s exterior boundary will appear counterclockwise from the direction of this vector; the orientation of a solid&#39;s boundary will point away from the solid.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -110,7 +112,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2632.htm">«type» TP_Node</a><br />
+						<a href="EA2631.htm">«type» TP_Face</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -124,8 +126,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2615" onclick="parent.toggleDiv('detailsDIVLink2615','DetailsImageLink2615')" />Details:
-							<div id="detailsDIVLink2615" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2631" onclick="parent.toggleDiv('detailsDIVLink2631','DetailsImageLink2631')" />Details:
+							<div id="detailsDIVLink2631" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -133,7 +135,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2626.htm">«type» TP_Edge</a><br />
+						<a href="EA2638.htm">«type» TP_Solid</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -147,8 +149,41 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2616" onclick="parent.toggleDiv('detailsDIVLink2616','DetailsImageLink2616')" />Details:
-							<div id="detailsDIVLink2616" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2632" onclick="parent.toggleDiv('detailsDIVLink2632','DetailsImageLink2632')" />Details:
+							<div id="detailsDIVLink2632" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2627.htm">«type» TP_Edge</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hub<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> spoke<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2633" onclick="parent.toggleDiv('detailsDIVLink2633','DetailsImageLink2633')" />Details:
+							<div id="detailsDIVLink2633" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -169,8 +204,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2617" onclick="parent.toggleDiv('detailsDIVScenario2617','DetailsImageScenario2617')" />Details:
-						<div id="detailsDIVScenario2617" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2634" onclick="parent.toggleDiv('detailsDIVScenario2634','DetailsImageScenario2634')" />Details:
+						<div id="detailsDIVScenario2634" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -187,31 +222,31 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2625.htm">«type» TP_DirectedTopo</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA49/EA6/EA1/EA1/EA4/EA15270.htm">TS_DirectedNode</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2632.htm">«type» TP_Node</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA7/EA1747.htm">DirectedNode</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA4/EA9/EA1754.htm">DirectedFace</a></td>
 					<td width="10%" class="TableRow" valign="top">Interface</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2626.htm">«type» TP_DirectedTopo</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2631.htm">«type» TP_Face</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA50/EA6/EA1/EA1/EA4/EA15904.htm">TS_DirectedFace</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

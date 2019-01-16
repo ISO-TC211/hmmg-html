@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{F67B7E74-9A4C-41d2-8439-4A26ADC699F0}</td>
+			<td class="ObjectDetailsValue">{DACB4AA7-B7F2-4b65-BA9D-7D60842341BE}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA8637.htm">Context Diagram: RE_RegisterItem</a></td>
+			<td class="ObjectDetailsValue"><a href="EA8652.htm">Context Diagram: RE_Subregister</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">See 8.8.4 for derivation of status.&lt;br/&gt;{if &lt;br/&gt;exists -#gt; (self.amendmentInformation.amendmentType = #retirement&lt;br/&gt;and self.amendmentInformation.disposition = #accepted&lt;br/&gt;and self.amendmentInformation.status = #final)&lt;br/&gt;then self.status = #retired&lt;br/&gt;else if&lt;br/&gt;exists -#gt; (self.amendmentInformation.amendmentType = #supersession&lt;br/&gt;and self.amendmentInformation.disposition = #accepted&lt;br/&gt;and self.amendmentInformation.status = #final)&lt;br/&gt;then self.status = #superseded&lt;br/&gt;else if&lt;br/&gt;exists -#gt; (self.additionInformation.disposition = #accepted&lt;br/&gt;and self.additionInformation.status = #final)&lt;br/&gt;then self.status = #valid&lt;br/&gt;else&lt;br/&gt;self.status = #notValid&lt;br/&gt;endif}&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">See 8.14.4 for contraints.&lt;br/&gt;{self.itemClass.name = &#39;Subregister&#39;}&lt;br/&gt;{self.itemClass.technicalStandard.CI_Citation.title = &#39;ISO 19135 Geographic information - Procedures for registration of items of geographic information&#39;}&lt;br/&gt;{self.itemClass.technicalStandard.CI_Citation.alternateTitle = ISO 19135:2004&#39;}&lt;br/&gt;{self.itemClass.technicalStandard.CI_Citation.date.CI_Date.date = &#39;2004&#39;}&lt;br/&gt;{self.itemClass.technicalStandard.CI_Citation.otherCitationDetails = &#39;Clause 8.14&#39;}&lt;br/&gt;</div>
 
 <div class="pageFooter"></div>
  

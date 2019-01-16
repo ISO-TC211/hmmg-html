@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Names::LocalName</title>
+<title>Names::GenericName</title>
 <link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LocalName", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GenericName", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue">Easy</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,20 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C9F2AE8D-EC75-464f-9A16-F2D41DC5ACE4}</td>
+			<td class="ObjectDetailsValue">{8A241C11-F4C1-45cc-997A-EA3357CF76ED}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../../../../EA49/EA4/EA1/EA15022.htm">Context Diagram: FE_Feature</a>, <a href="../../../../../EA49/EA4/EA1/EA15024.htm">Context Diagram: FE_FeatureAttribute</a>, <a href="EA1164.htm">Context Diagram: TypeName</a>, <a href="EA1156.htm">Context Diagram: LocalName</a>, <a href="EA1158.htm">Context Diagram: MemberName</a>, <a href="EA1166.htm">Name Spaces</a>, <a href="EA1154.htm">Context Diagram: GenericName</a>, <a href="../EA3/EA1194.htm">Context Diagram: Schema</a>, <a href="../../../../../EA8/EA1/EA3/EA3118.htm">Context Diagram: FeatureType</a>, <a href="../../../../../EA8/EA1/EA3/EA3128.htm">Context Diagram: PropertyType</a>, <a href="../../../../../EA8/EA2/EA1/EA3210.htm">Context Diagram: GF_FeatureType</a>, <a href="../../../../../EA8/EA2/EA1/EA3220.htm">Context Diagram: GF_PropertyType</a>, <a href="../../../../../EA28/EA1/EA1/EA8824.htm">Context Diagram: NCNameList</a>, <a href="../../../../../EA49/EA6/EA1/EA1/EA2/EA15178.htm">Context Diagram: FT_Node</a>, <a href="../../../../../EA49/EA6/EA1/EA1/EA2/EA15180.htm">Context Diagram: FT_Primitive</a>, <a href="../../../../../EA49/EA6/EA1/EA1/EA4/EA15232.htm">Context Diagram: TS_Feature</a>, <a href="../../../../../EA49/EA6/EA1/EA1/EA4/EA15234.htm">Context Diagram: TS_FeatureComponent</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1157.htm">Context Diagram: LocalName</a>, <a href="EA1167.htm">Name Spaces</a>, <a href="EA1161.htm">Context Diagram: NameSpace</a>, <a href="EA1155.htm">Context Diagram: GenericName</a>, <a href="EA1163.htm">Context Diagram: ScopedName</a>, <a href="../../../../../EA8/EA2/EA1/EA3209.htm">Context Diagram: GF_FeatureDomain</a>, <a href="../../../../../EA25/EA1/EA5/EA1/EA8190.htm">Context Diagram: FD_FeatureName</a>, <a href="../../../../../EA28/EA2/EA1/EA9264.htm">Context Diagram: NCNameList</a>, <a href="../../../../../EA28/EA2/EA1/EA9258.htm">Context Diagram: NameList</a>, <a href="../../../../../EA28/EA2/EA6/EA9350.htm">Context Diagram: Direction</a>, <a href="../../../../../EA28/EA2/EA13/EA9417.htm">Context Diagram: AbstractGML</a>, <a href="../../../../../EA28/EA2/EA17/EA9483.htm">Context Diagram: UnitDefinition</a>, <a href="../../../../../EA28/EA2/EA18/EA9513.htm">Context Diagram: CodeOrNilReason</a>, <a href="../../../../../EA38/EA1/EA1/EA2/EA11181.htm">VersionedObject (with subclasses),  Oid,  and Rational</a>, <a href="../../../../../EA12/EA5/EA9/EA5260.htm">Context Diagram: MD_FeatureCatalogueDescription</a>, <a href="../../../../../EA28/EA1/EA1/EA8830.htm">Context Diagram: NCNameList</a>, <a href="../../../../../EA28/EA1/EA1/EA8824.htm">Context Diagram: NameList</a>, <a href="../../../../../EA28/EA1/EA6/EA8916.htm">Context Diagram: Direction</a>, <a href="../../../../../EA28/EA1/EA13/EA8983.htm">Context Diagram: AbstractGML</a>, <a href="../../../../../EA28/EA1/EA17/EA9049.htm">Context Diagram: UnitDefinition</a>, <a href="../../../../../EA28/EA1/EA18/EA9079.htm">Context Diagram: CodeOrNilReason</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A LocalName references a local object directly accessible the NameSpace.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName. A LocalName references a local object directly accessible from the NameSpace. A ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="OperationsTable">
@@ -111,13 +111,13 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>aName</strong>():<a href="../../EA3/EA5/EA1322.htm">CharacterString</a>
+					<strong>depth</strong>():<a href="../../EA3/EA4/EA1305.htm">Integer</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations977" onclick="parent.toggleDiv('detailsDIVOperations977','DetailsImageOperations977')" />Details:
-						<div id="detailsDIVOperations977" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations972" onclick="parent.toggleDiv('detailsDIVOperations972','DetailsImageOperations972')" />Details:
+						<div id="detailsDIVOperations972" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -132,9 +132,110 @@ function nameClassifier(name, separator)
 					</div>
 				</td>
 			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getObject</strong>():<a href="../EA3/EA1207.htm">Any</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations973" onclick="parent.toggleDiv('detailsDIVOperations973','DetailsImageOperations973')" />Details:
+						<div id="detailsDIVOperations973" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Any name must be mappable to its object referenced. Local names are local objects, and scoped names are probably not local. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>parsedName</strong>():Sequence&lt;LocalName&gt;
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations974" onclick="parent.toggleDiv('detailsDIVOperations974','DetailsImageOperations974')" />Details:
+						<div id="detailsDIVOperations974" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Depending on the syntax of the implementation, there is a character string that can be used as the sequence of local names that move through name spaces until the target object is found. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
 
 		</table>
-</div><div class="ItemBody" id="TaggedValTable">
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA1173.htm">«type» NameSpace</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> name<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> scope<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink975" onclick="parent.toggleDiv('detailsDIVLink975','DetailsImageLink975')" />Details:
+							<div id="detailsDIVLink975" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -146,53 +247,15 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario978" onclick="parent.toggleDiv('detailsDIVScenario978','DetailsImageScenario978')" />Details:
-						<div id="detailsDIVScenario978" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario976" onclick="parent.toggleDiv('detailsDIVScenario976','DetailsImageScenario976')" />Details:
+						<div id="detailsDIVScenario976" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="ConstraintsTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">depth = 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Superseeded</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints979" onclick="parent.toggleDiv('detailsDIVConstraints979','DetailsImageConstraints979')" />Details:
-							<div id="detailsDIVConstraints979" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">self = parsedName()</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Superseeded</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints980" onclick="parent.toggleDiv('detailsDIVConstraints980','DetailsImageConstraints980')" />Details:
-							<div id="detailsDIVConstraints980" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -202,23 +265,37 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1176.htm">«type» TypeName</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA25/EA1/EA5/EA1/EA8199.htm">FD_FeatureName</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1171.htm">«type» LocalName</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1169.htm">«type» GenericName</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA38/EA1/EA1/EA1/EA4/EA11150.htm">«datatype» Oid</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1171.htm">«type» MemberName</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1176.htm">«type» ScopedName</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA11/EA2/EA1/EA3884.htm">SI_LocationInstance</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

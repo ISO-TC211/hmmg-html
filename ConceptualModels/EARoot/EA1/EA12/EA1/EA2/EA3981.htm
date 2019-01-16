@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Content information::MD_ImagingConditionCode</title>
+<title>Content information::MD_ImageDescription</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MD_ImagingConditionCode", " : "))</script>  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MD_ImageDescription", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,19 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{66B1158D-79BE-4ebf-A0D9-5FBAF11EB674}</td>
+			<td class="ObjectDetailsValue">{ED8AFD42-DC7A-4993-B84E-F6EDBBCD8066}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3969.htm">Fig. 13: Content information</a>, <a href="EA3963.htm">Context Diagram: MD_ImagingConditionCode</a>, <a href="EA3961.htm">Context Diagram: MD_ImageDescription</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3970.htm">Fig. 13: Content information</a>, <a href="EA3958.htm">Context Diagram: MD_CoverageDescription</a>, <a href="EA3962.htm">Context Diagram: MD_ImageDescription</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">code which indicates conditions which may affect the image&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">information about an image&#39;s suitability for use&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -108,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;blurredImage</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA2/EA687.htm">Real</a></i><br /><strong>&nbsp;&nbsp;illuminationElevationAngle</strong>
 				</td>
 			</tr>
 			<tr>
@@ -134,7 +135,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5256_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5256_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -157,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is blurred&lt;br/&gt;
+			illumination elevation measured in degrees clockwise from the target plane at intersection of the optical line of sight with the Earth&#39;s surface. For images from a scanning device, refer to the centre pixel of the image&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -166,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;cloud</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA2/EA687.htm">Real</a></i><br /><strong>&nbsp;&nbsp;illuminationAzimuthAngle</strong>
 				</td>
 			</tr>
 			<tr>
@@ -192,7 +193,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5257_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5257_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -215,7 +216,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is partially obscured by cloud cover&lt;br/&gt;
+			illumination azimuth measured in degrees clockwise from true north at the time the image is taken. For images from a scanning device, refer to the centre pixel of the image&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -224,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;degradingObliquity</strong>
+					<i>Public <a href="EA3982.htm">MD_ImagingConditionCode</a></i><br /><strong>&nbsp;&nbsp;imagingCondition</strong>
 				</td>
 			</tr>
 			<tr>
@@ -250,7 +251,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5258_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5258_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -273,7 +274,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			acute angle between the plane of the ecliptic (the plane of the Earth&#39;s orbit) and the plane of the celestial equator&lt;br/&gt;
+			conditions affected the image&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -282,7 +283,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;fog</strong>
+					<i>Public <a href="../../EA2/EA1/EA4121.htm">MD_Identifier</a></i><br /><strong>&nbsp;&nbsp;imageQualityCode</strong>
 				</td>
 			</tr>
 			<tr>
@@ -308,7 +309,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5259_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5259_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -331,7 +332,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is partially obscured by fog&lt;br/&gt;
+			code in producers code space that specifies the image quality&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -340,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;heavySmokeOrDust</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA2/EA687.htm">Real</a></i><br /><strong>&nbsp;&nbsp;cloudCoverPercentage</strong>
 				</td>
 			</tr>
 			<tr>
@@ -366,7 +367,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5260_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5260_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -389,7 +390,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is partially obscured by heavy smoke or dust&lt;br/&gt;
+			area of the resource obscured by clouds, expressed as a percentage of the spatial extent&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -398,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;night</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA2/EA685.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;compressionGenerationQuantity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -424,7 +425,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5261_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5261_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -447,7 +448,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			image was taken at night&lt;br/&gt;
+			count of the number of lossy compression cycles performed on the image&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -456,7 +457,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;rain</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;triangulationIndicator</strong>
 				</td>
 			</tr>
 			<tr>
@@ -482,7 +483,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5262_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5262_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -505,7 +506,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			image was taken during rainfall&lt;br/&gt;
+			indication of whether or not triangulation has been performed upon the image&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -514,7 +515,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;semiDarkness</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;radiometricCalibrationDataAvailability</strong>
 				</td>
 			</tr>
 			<tr>
@@ -540,7 +541,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5263_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5263_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -563,7 +564,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			image was taken during semi-dark conditions-twilight conditions&lt;br/&gt;
+			indication of whether or not the radiometric calibration information for generating the radiometrically calibrated standard data product is available&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -572,7 +573,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;shadow</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;cameraCalibrationInformationAvailability</strong>
 				</td>
 			</tr>
 			<tr>
@@ -598,7 +599,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5264_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5264_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -621,7 +622,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is obscured by shadow&lt;br/&gt;
+			indication of whether or not constants are available which allow for camera calibration corrections&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -630,7 +631,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;snow</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;filmDistortionInformationAvailability</strong>
 				</td>
 			</tr>
 			<tr>
@@ -656,7 +657,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5265_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5265_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -679,7 +680,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			portion of the image is obscured by snow&lt;br/&gt;
+			indication of whether or not Calibration Reseau information is available&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -688,7 +689,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;terrainMasking</strong>
+					<i>Public <a href="../../../EA4/EA1/EA1/EA4/EA705.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;lensDistortionInformationAvailability</strong>
 				</td>
 			</tr>
 			<tr>
@@ -714,7 +715,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes5266_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes5266_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -737,7 +738,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest&lt;br/&gt;
+			indication of whether or not lens aberration correction information is available&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -754,21 +755,20 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">asDictionary</td>
-				<td width="50%" class="TableRow" valign="top">true</td>
+				<td width="50%" class="TableRow" valign="top">persistence</td>
+				<td width="50%" class="TableRow" valign="top">persistent</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
 					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5267" onclick="parent.toggleDiv('detailsDIVScenario5267','DetailsImageScenario5267')" />Details:
 						<div id="detailsDIVScenario5267" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true<br />Default: true<br />Description: Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule). Always true in INSPIRE.<br /></div>
-
+						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">persistence</td>
-				<td width="50%" class="TableRow" valign="top">persistent</td>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:ConstructorIs</td>
+				<td width="50%" class="TableRow" valign="top">public</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -779,21 +779,197 @@ function nameClassifier(name, separator)
 					</div>
 				</td>
 			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
-				<td width="50%" class="TableRow" valign="top">iso19139_2007</td>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:Final</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
 					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5269" onclick="parent.toggleDiv('detailsDIVScenario5269','DetailsImageScenario5269')" />Details:
 						<div id="detailsDIVScenario5269" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007<br />Description: XML Schema encoding rule to apply<br /></div>
-
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:GenerateDefaultConstructor</td>
+				<td width="50%" class="TableRow" valign="top">True</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5270" onclick="parent.toggleDiv('detailsDIVScenario5270','DetailsImageScenario5270')" />Details:
+						<div id="detailsDIVScenario5270" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:GenerateFinalizer</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5271" onclick="parent.toggleDiv('detailsDIVScenario5271','DetailsImageScenario5271')" />Details:
+						<div id="detailsDIVScenario5271" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:GenerateInstanceInitializer</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5272" onclick="parent.toggleDiv('detailsDIVScenario5272','DetailsImageScenario5272')" />Details:
+						<div id="detailsDIVScenario5272" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Java:GenerateStaticInitializer</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5273" onclick="parent.toggleDiv('detailsDIVScenario5273','DetailsImageScenario5273')" />Details:
+						<div id="detailsDIVScenario5273" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Oracle8:CollectionOfREFS</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5274" onclick="parent.toggleDiv('detailsDIVScenario5274','DetailsImageScenario5274')" />Details:
+						<div id="detailsDIVScenario5274" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:CollectionClass</td>
+				<td width="50%" class="TableRow" valign="top">Collection</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5275" onclick="parent.toggleDiv('detailsDIVScenario5275','DetailsImageScenario5275')" />Details:
+						<div id="detailsDIVScenario5275" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:Creatable</td>
+				<td width="50%" class="TableRow" valign="top">(221)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5276" onclick="parent.toggleDiv('detailsDIVScenario5276','DetailsImageScenario5276')" />Details:
+						<div id="detailsDIVScenario5276" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:GenerateInitialization</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5277" onclick="parent.toggleDiv('detailsDIVScenario5277','DetailsImageScenario5277')" />Details:
+						<div id="detailsDIVScenario5277" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:GenerateTermination</td>
+				<td width="50%" class="TableRow" valign="top">False</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5278" onclick="parent.toggleDiv('detailsDIVScenario5278','DetailsImageScenario5278')" />Details:
+						<div id="detailsDIVScenario5278" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:OptionBase</td>
+				<td width="50%" class="TableRow" valign="top">(none)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5279" onclick="parent.toggleDiv('detailsDIVScenario5279','DetailsImageScenario5279')" />Details:
+						<div id="detailsDIVScenario5279" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:OptionCompare</td>
+				<td width="50%" class="TableRow" valign="top">(none)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5280" onclick="parent.toggleDiv('detailsDIVScenario5280','DetailsImageScenario5280')" />Details:
+						<div id="detailsDIVScenario5280" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">RationalRose$Visual Basic:OptionExplicit</td>
+				<td width="50%" class="TableRow" valign="top">True</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario5281" onclick="parent.toggleDiv('detailsDIVScenario5281','DetailsImageScenario5281')" />Details:
+						<div id="detailsDIVScenario5281" class="DetailsDiv" >
+						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>	</div>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA1/EA3/EA4638.htm">MI_ImageDescription</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3977.htm">MD_CoverageDescription</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA4/EA4813.htm">MI_ImageDescription</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>
