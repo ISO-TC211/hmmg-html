@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate Operations::ConcatenatedOperation</title>
+<title>Coordinate Operations::PassThroughOperation</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ConcatenatedOperation", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PassThroughOperation", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.08.2018 12:10:29</td>
+			<td class="ObjectDetailsValue">09.08.2018 12:09:47</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">Easy</td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,22 +87,89 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{ED8D0F29-C436-4f8d-B6FE-169EA9DEF11F}</td>
+			<td class="ObjectDetailsValue">{17F32537-48A7-4213-8CB2-24F27E5A6E53}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3563.htm">Operations Part 1</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3564.htm">Operations Part 1</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">ordered sequence of two or more single coordinate operations&lt;br/&gt;Note: The sequence of coordinate operations is constrained by the requirement that the source coordinate reference system of step (n + 1) shall be the same as the target coordinate reference system of step (n). The source coordinate reference system of the first step and the target coordinate reference system of the last step are the source and target coordinate reference system associated with the concatenated coordinate operation. For a concatenated coordinate operation sequence of n coordinate operations: &lt;br/&gt;&#160;&#160;&#160;&#160;source CRS (concatenated coordinate operation) = source CRS (coordinate operation step 1) &lt;br/&gt;&#160;&#160;&#160;&#160;target CRS (coordinate operation step i) = source CRS (coordinate operation step i + 1); i = 1 ...(n - 1) &lt;br/&gt;&#160;&#160;&#160;&#160;target CRS (concatenated coordinate operation) = target CRS (coordinate operation step n) &lt;br/&gt;Instead of a forward coordinate operation, an inverse coordinate operation may be used for one or more of the coordinate operation steps mentioned above, if the inverse coordinate operation is uniquely defined by the forward coordinate operation method.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">specification of a subset of coordinate tuples that is subject to a coordinate operation&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsFromTable">
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA1/EA2/EA772.htm">Sequence</a></i><br /><strong>&nbsp;&nbsp;modifiedCoordinate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4320')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4320" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes4320_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes4320_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes4320_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			ordered sequence of positive integers defining the positions in a source coordinate tuple of the coordinates affected by this pass-through operation&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -111,17 +178,17 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3575.htm">«interface» CoordinateOperation</a><br />
+						<a href="EA3576.htm">«interface» CoordinateOperation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordOperation<br />
-						coordinate operation that is a step in the sequence forming this concatenated coordinate operation
-
+						<strong>Name:</strong> passThruOperation<br />
+						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> concatOperation<br />
-						&nbsp;	
+						<strong>Name:</strong> coordOperation<br />
+						subset of a coordinate tuple that the coordinate operation will operate upon
+	
 					</td>
 				</tr>
 				<tr>
@@ -218,7 +285,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3575.htm">«interface» CoordinateOperation</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3576.htm">«interface» CoordinateOperation</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

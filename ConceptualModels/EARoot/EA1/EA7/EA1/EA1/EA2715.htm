@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Temporal Objects::TM_Edge</title>
+<title>Temporal Objects::TM_Duration</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TM_Edge", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TM_Duration", " : "))</script>  : Public  &lt;&lt;datatype&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.12.2011 12:11:59</td>
+			<td class="ObjectDetailsValue">09.12.2011 11:53:30</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">Easy</td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,102 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A85CD36F-C979-4a4a-A88D-0FA7F2652365}</td>
+			<td class="ObjectDetailsValue">{AF11D93F-4AA0-4f21-9378-9A3E8CE0446A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2710.htm">Topology</a>, <a href="EA2704.htm">Fig 6: Topology of time</a>, <a href="EA2682.htm">Context Diagram: TM_Period</a>, <a href="EA2694.htm">Context Diagram: TM_TopologicalPrimitive</a>, <a href="EA2676.htm">Context Diagram: TM_Node</a>, <a href="EA2668.htm">Context Diagram: TM_Edge</a></td>
+			<td class="ObjectDetailsValue"><a href="EA2703.htm">Fig 5: TM_Duration</a>, <a href="EA2685.htm">Context Diagram: TM_PeriodDuration</a>, <a href="EA2675.htm">Context Diagram: TM_IntervalLength</a>, <a href="EA2667.htm">Context Diagram: TM_Duration</a>, <a href="../../../EA25/EA1/EA2/EA2/EA7944.htm">Context Diagram: NS_RouteRequest</a>, <a href="../../../EA25/EA1/EA3/EA6/EA8128.htm">Context Diagram: NT_RouteSummary</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2719.htm">TM_Node</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> previousEdge<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> end<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2732" onclick="parent.toggleDiv('detailsDIVLink2732','DetailsImageLink2732')" />Details:
-							<div id="detailsDIVLink2732" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Links a TM_Edge to the TM_Node at which it ends.&#160;&#160;&#160;In the case of non-linear topology, several edges may share an endnode.&#160;&#160;For linear topology, the multiplicity at the previousEdge end of the association should be restricted to 0..1.&#160;&#160;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2722.htm">TM_Period</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> topology<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> geometry<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2733" onclick="parent.toggleDiv('detailsDIVLink2733','DetailsImageLink2733')" />Details:
-							<div id="detailsDIVLink2733" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Links a TM_Edge to the TM_Period that is its geometric realization.&#160;&#160;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2719.htm">TM_Node</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> nextEdge<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> start<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2734" onclick="parent.toggleDiv('detailsDIVLink2734','DetailsImageLink2734')" />Details:
-							<div id="detailsDIVLink2734" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Links an edge to its start node.&#160;&#160;&#160;In the case of non-linear topology, several edges may share a start node.&#160;&#160;For linear topology, the multiplicity at the nextEdge end of the association should be restricted to 0..1.&#160;&#160;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -195,8 +112,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2735" onclick="parent.toggleDiv('detailsDIVScenario2735','DetailsImageScenario2735')" />Details:
-						<div id="detailsDIVScenario2735" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2733" onclick="parent.toggleDiv('detailsDIVScenario2733','DetailsImageScenario2733')" />Details:
+						<div id="detailsDIVScenario2733" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -213,10 +130,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2728.htm">TM_TopologicalPrimitive</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2719.htm">«datatype» TM_IntervalLength</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2724.htm">«datatype» TM_PeriodDuration</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

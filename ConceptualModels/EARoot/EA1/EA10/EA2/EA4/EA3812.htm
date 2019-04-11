@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Datums::CD_VerticalDatum</title>
+<title>Datums::CD_SecondDefiningParameter</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CD_VerticalDatum", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CD_SecondDefiningParameter", " : "))</script>  : Public  &lt;&lt;Union&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.12.2009 12:10:57</td>
+			<td class="ObjectDetailsValue">14.12.2009 12:18:18</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,55 +87,202 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A7B2E02C-8D91-49e7-B2FA-1B56B0918D4C}</td>
+			<td class="ObjectDetailsValue">{81102684-123A-4fb9-A83F-8E5C76AB8882}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA2/EA3706.htm">Context Diagram: SC_VerticalCRS</a>, <a href="EA3800.htm">Main</a>, <a href="EA3798.htm">CRSAssociations</a>, <a href="EA3796.htm">Context Diagram: CD_VerticalDatum</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3801.htm">Main</a>, <a href="EA3783.htm">Context Diagram: CD_Ellipsoid</a>, <a href="EA3795.htm">Context Diagram: CD_SecondDefiningParameter</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A textual description and/or a set of parameters identifying a particular reference level surface used as a zero-height or zero-depth surface, including its position with respect to the Earth.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Definition of the second parameter that defines the shape of an ellipsoid. An ellipsoid requires two defining parameters: semi-major axis and inverse flattening or semi-major axis and semi-minor axis. When the reference body is a sphere rather than an ellipsoid, only a single defining parameter is required, namely the radius of the sphere; in that case, the semi-major axis &quot;degenerates&quot; into the radius of the sphere.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA3726.htm">«type» SC_VerticalCRS</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> referenceSystem<br />
-						Not-navigable association from a vertical coordinate reference system that uses this vertical datum. 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> datum<br />
-						Association to the vertical datum used by this vertical coordinate reference system. 	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4850" onclick="parent.toggleDiv('detailsDIVLink4850','DetailsImageLink4850')" />Details:
-							<div id="detailsDIVLink4850" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Association to the vertical datum used by this vertical coordinate reference system.&lt;br/&gt;</div>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA1/EA1/EA1064.htm">Scale</a></i><br /><strong>&nbsp;&nbsp;inverseFlattening</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4851')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4851" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes4851_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes4851_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes4851_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Inverse flattening value of the ellipsoid. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
 
-							</div>
-						</div>
-					</td>
-				</tr>
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA1/EA1/EA1061.htm">Length</a></i><br /><strong>&nbsp;&nbsp;semiMinorAxis</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4852')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4852" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes4852_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes4852_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes4852_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Length of the semi-minor axis of the ellipsoid. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
 
-			</table>
-		</div>
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA6/EA1342.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;isSphere</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4853')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4853" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes4853_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td>"true"</td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes4853_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes4853_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The ellipsoid is degenerate and is actually a sphere. The sphere is completely defined by the semi-major axis, which is the radius of the sphere. This attribute this has the value &quot;true&quot; if the figure is a sphere.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -143,40 +290,14 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">byValuePropertyType</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4851" onclick="parent.toggleDiv('detailsDIVScenario4851','DetailsImageScenario4851')" />Details:
-						<div id="detailsDIVScenario4851" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">isCollection</td>
-				<td width="50%" class="TableRow" valign="top">false</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4852" onclick="parent.toggleDiv('detailsDIVScenario4852','DetailsImageScenario4852')" />Details:
-						<div id="detailsDIVScenario4852" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">noPropertyType</td>
 				<td width="50%" class="TableRow" valign="top">false</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4853" onclick="parent.toggleDiv('detailsDIVScenario4853','DetailsImageScenario4853')" />Details:
-						<div id="detailsDIVScenario4853" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4854" onclick="parent.toggleDiv('detailsDIVScenario4854','DetailsImageScenario4854')" />Details:
+						<div id="detailsDIVScenario4854" class="DetailsDiv" >
+						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
 					</div>
@@ -187,8 +308,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4854" onclick="parent.toggleDiv('detailsDIVScenario4854','DetailsImageScenario4854')" />Details:
-						<div id="detailsDIVScenario4854" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4855" onclick="parent.toggleDiv('detailsDIVScenario4855','DetailsImageScenario4855')" />Details:
+						<div id="detailsDIVScenario4855" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -199,8 +320,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4855" onclick="parent.toggleDiv('detailsDIVScenario4855','DetailsImageScenario4855')" />Details:
-						<div id="detailsDIVScenario4855" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4856" onclick="parent.toggleDiv('detailsDIVScenario4856','DetailsImageScenario4856')" />Details:
+						<div id="detailsDIVScenario4856" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -208,26 +329,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3804.htm">«type» CD_Datum</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Acquisition information - Imagery::MI_Platform</title>
+<title>Acquisition information - Imagery::MI_Plan</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_Platform", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_Plan", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:02</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:03</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13.04.2010 14:03:02</td>
+			<td class="ObjectDetailsValue">13.04.2010 14:02:54</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{65E69DB8-2976-4d6e-8BD3-8736443C48AA}</td>
+			<td class="ObjectDetailsValue">{4C09F692-E188-4405-9B87-44288C068763}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA4851.htm">Fig A.9 - Acquisition Details</a>, <a href="EA4849.htm">Fig A.8 - Acquisition Overview</a>, <a href="EA4825.htm">Context Diagram: MI_Instrument</a>, <a href="EA4831.htm">Context Diagram: MI_Operation</a>, <a href="EA4835.htm">Context Diagram: MI_Platform</a>, <a href="EA4817.htm">Context Diagram: MI_AcquisitionInformation</a>, <a href="../../EA5/EA1/EA4968.htm">Context Diagram: DS_Platform</a>, <a href="../../../EA22/EA1/EA1/EA6961.htm">SD_PositionAndOrientation (13)</a>, <a href="../../../EA22/EA2/EA1/EA7050.htm">SD_PositionAndOrientation (13)</a></td>
+			<td class="ObjectDetailsValue"><a href="EA4852.htm">Fig A.9 - Acquisition Details</a>, <a href="EA4850.htm">Fig A.8 - Acquisition Overview</a>, <a href="EA4832.htm">Context Diagram: MI_Operation</a>, <a href="EA4818.htm">Context Diagram: MI_AcquisitionInformation</a>, <a href="EA4844.htm">Context Diagram: MI_Requirement</a>, <a href="EA4834.htm">Context Diagram: MI_Plan</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Description: Designations for the platform used to acquire the dataset&lt;br/&gt;shortName: PltfrmId&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Description: Designations for the planning information related to meeting requirements&lt;br/&gt;shortName: PlanId&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA15/EA5413.htm">CI_Citation</a></i><br /><strong>&nbsp;&nbsp;citation</strong>
+					<i>Public <a href="EA4859.htm">MI_GeometryTypeCode</a></i><br /><strong>&nbsp;&nbsp;type</strong>
 				</td>
 			</tr>
 			<tr>
@@ -136,7 +136,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes7539_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes7539_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -159,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Description: complete citation of the platform&lt;br/&gt;FGDC: Platform_Full_Name&lt;br/&gt;Position: 3&lt;br/&gt;shortName: pltNam&lt;br/&gt;Conditional: if shortName not specified&lt;br/&gt;&lt;br/&gt;
+			Description: manner of sampling geometry the planner expects for collection of the objective data&lt;br/&gt;Postion: 2&lt;br/&gt;shortName: planType&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA8/EA5249.htm">MD_Identifier</a></i><br /><strong>&nbsp;&nbsp;identifier</strong>
+					<i>Public <a href="../../EA5/EA3/EA5053.htm">MD_ProgressCode</a></i><br /><strong>&nbsp;&nbsp;status</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Description: Unique identification of the platform&lt;br/&gt;shortName: pltId&lt;br/&gt;&lt;br/&gt;
+			Description: current status of the plan (pending, completed, etc.)&lt;br/&gt;shortName: planStatus&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1323.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
+					<i>Public <a href="../../EA5/EA15/EA5414.htm">CI_Citation</a></i><br /><strong>&nbsp;&nbsp;citation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,65 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Description: Narrative description of the platform supporting the instrument&lt;br/&gt;FGDC: Platform_Description&lt;br/&gt;Position: 2&lt;br/&gt;shortName: pltfrmDesc&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA5/EA15/EA5420.htm">CI_ResponsibleParty</a></i><br /><strong>&nbsp;&nbsp;sponsor</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes7542')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes7542" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes7542_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes7542_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes7542_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Description: organization responsible for building, launch, or operation of the platform&lt;br/&gt;FGDC: Platform_Sponsor&lt;br/&gt;Position: 6&lt;br/&gt;shortName: pltfrmSpnsr&lt;br/&gt;&lt;br/&gt;
+			Description: Identification of authority requesting target collection&lt;br/&gt;Postion: 1&lt;br/&gt;shortName: planReqId&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -352,91 +294,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4854.htm">MI_AcquisitionInformation</a><br />
+						<a href="EA4863.htm">MI_Operation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platform<br />
+						<strong>Name:</strong> plan<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> operation<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7543" onclick="parent.toggleDiv('detailsDIVLink7543','DetailsImageLink7543')" />Details:
-							<div id="detailsDIVLink7543" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA22/EA2/EA1/EA7101.htm">SD_PlatformParameters</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platformIdentification<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7544" onclick="parent.toggleDiv('detailsDIVLink7544','DetailsImageLink7544')" />Details:
-							<div id="detailsDIVLink7544" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA22/EA1/EA1/EA7012.htm">SD_PlatformParameters</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platformIdentification<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7545" onclick="parent.toggleDiv('detailsDIVLink7545','DetailsImageLink7545')" />Details:
-							<div id="detailsDIVLink7545" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4859.htm">MI_Instrument</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> mountedOn<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> instrument<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7546" onclick="parent.toggleDiv('detailsDIVLink7546','DetailsImageLink7546')" />Details:
-							<div id="detailsDIVLink7546" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7542" onclick="parent.toggleDiv('detailsDIVLink7542','DetailsImageLink7542')" />Details:
+							<div id="detailsDIVLink7542" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -454,7 +327,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA4798.htm">MI_Georeferenceable</a><br />
+						<a href="EA4855.htm">MI_AcquisitionInformation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -462,14 +335,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platformParameters<br />
+						<strong>Name:</strong> acquisitionPlan<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7547" onclick="parent.toggleDiv('detailsDIVLink7547','DetailsImageLink7547')" />Details:
-							<div id="detailsDIVLink7547" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7543" onclick="parent.toggleDiv('detailsDIVLink7543','DetailsImageLink7543')" />Details:
+							<div id="detailsDIVLink7543" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -477,22 +350,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4862.htm">MI_Operation</a><br />
+						<a href="EA4870.htm">MI_Requirement</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						Operation (or operations) in which the platform was used.
+						<strong>Name:</strong> satisfiedRequirement<br />
+						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platform<br />
-						Description: Platform (or platforms) used in the operation.	
+						<strong>Name:</strong> satisifiedPlan<br />
+						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7548" onclick="parent.toggleDiv('detailsDIVLink7548','DetailsImageLink7548')" />Details:
-							<div id="detailsDIVLink7548" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7544" onclick="parent.toggleDiv('detailsDIVLink7544','DetailsImageLink7544')" />Details:
+							<div id="detailsDIVLink7544" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -513,8 +386,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7549" onclick="parent.toggleDiv('detailsDIVScenario7549','DetailsImageScenario7549')" />Details:
-						<div id="detailsDIVScenario7549" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7545" onclick="parent.toggleDiv('detailsDIVScenario7545','DetailsImageScenario7545')" />Details:
+						<div id="detailsDIVScenario7545" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>

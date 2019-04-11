@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Name types::ScopedName</title>
+<title>Name types::NameSpace</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ScopedName", " : "))</script>  : Public abstract  Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("NameSpace", " : "))</script>  : Public abstract  Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,21 +87,127 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2BD20A58-77BD-41cd-BC11-D78308B087B7}</td>
+			<td class="ObjectDetailsValue">{C98B2DF6-18D9-423e-A2C1-3EB4EE637BE1}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA788.htm">Figure 20 - Scoped name type</a>, <a href="EA782.htm">Figure 17 - Name types</a>, <a href="EA786.htm">Figure 19 - Generic name type</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA736.htm">Context Diagram: Dictionary</a>, <a href="EA783.htm">Figure 17 - Name types</a>, <a href="EA785.htm">Figure 18 - Namespace type</a>, <a href="../../../EA18/EA1/EA1/EA6744.htm">Taxonomy for Features and Properties</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A Name Space is a domain in which &quot;names&quot; given by character strings (possibly under local constrains constraints enforced by the Name Space) can be mapped to objects via a getObejct operation. Examples include objects which form a Name Space for their attributes, operations and associations, or Schemas that form Name Spaces for their included data types or classes. &lt;br/&gt;Not all methods for NameSpaces need to be made publicly accessible.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA1/EA4/EA706.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;isGlobal</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes626')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes626" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes626_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes626_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes626_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes626_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes626_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes626_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes626_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes626_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA799.htm">TypeName</a></i><br /><strong>&nbsp;&nbsp;acceptableClassList</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes627')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes627" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes627_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes627_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td>{Any} [0..*]</td>
+						</tr>
+						<tr id="DetailsImageAttributes627_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes627_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes627_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes627_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes627_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes627_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
 <div class="ItemBody" id="OperationsTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -110,66 +216,32 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>head</strong>():<a href="EA794.htm">LocalName</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations634" onclick="parent.toggleDiv('detailsDIVOperations634','DetailsImageOperations634')" />Details:
-						<div id="detailsDIVOperations634" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			head returns a local name that is the proxy for the next scope down the resolution chain to the actual stored object.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>push</strong>(					<a href="#" onclick="parent.toggleData('param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}" border="0" />new: <a href="EA793.htm">GenericName</a></a>, 
+					<strong>generateID</strong>(					<a href="#" onclick="parent.toggleData('param{E2F6B129-FE86-4282-9C71-6123D3B5913E}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{E2F6B129-FE86-4282-9C71-6123D3B5913E}" border="0" />registeredObj: <a href="../EA5/EA805.htm">Any</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}00" style="display: none;">
+						<tr id="param{E2F6B129-FE86-4282-9C71-6123D3B5913E}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}01" style="display: none;">
+						<tr id="param{E2F6B129-FE86-4282-9C71-6123D3B5913E}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}02" style="display: none;">
+						<tr id="param{E2F6B129-FE86-4282-9C71-6123D3B5913E}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{FBA44854-A6A6-468b-B3CB-9B7F619C49FB}03" style="display: none;">
+						<tr id="param{E2F6B129-FE86-4282-9C71-6123D3B5913E}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):<a href="EA797.htm">ScopedName</a>
+):<a href="EA795.htm">LocalName</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations635" onclick="parent.toggleDiv('detailsDIVOperations635','DetailsImageOperations635')" />Details:
-						<div id="detailsDIVOperations635" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations628" onclick="parent.toggleDiv('detailsDIVOperations628','DetailsImageOperations628')" />Details:
+						<div id="detailsDIVOperations628" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -185,7 +257,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Push goes to the scope passed and finds its parent scope and creates a new ScopedName valid in the new scope where the head is the local name in the new scope for the current scope. &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;push().tail = self&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;push(S:Scope).head() = S&lt;br/&gt;
+			generate create a unique local name and assigns it to the passed &quot;registeredObj.&quot; &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -197,13 +269,32 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>scopedName</strong>():<a href="../EA1/EA3/EA696.htm">CharacterString</a>
+					<strong>locate</strong>(					<a href="#" onclick="parent.toggleData('param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}" border="0" />name: <a href="EA795.htm">LocalName</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DB1C26A5-CD5F-476f-9BC2-F42C2FE8A547}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../EA5/EA805.htm">Any</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations636" onclick="parent.toggleDiv('detailsDIVOperations636','DetailsImageOperations636')" />Details:
-						<div id="detailsDIVOperations636" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations629" onclick="parent.toggleDiv('detailsDIVOperations629','DetailsImageOperations629')" />Details:
+						<div id="detailsDIVOperations629" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -219,7 +310,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The scopedName() operations returns a character string that consist of a parsible string which can be stripped by navigation through a sequence of NameSpaces to find the final target of the name. &lt;br/&gt;
+			locate takes a local name and find the object that is registered within this scope for this local name.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -231,13 +322,75 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>tail</strong>():<a href="EA793.htm">GenericName</a>
+					<strong>name</strong>():<a href="EA794.htm">GenericName</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations637" onclick="parent.toggleDiv('detailsDIVOperations637','DetailsImageOperations637')" />Details:
-						<div id="detailsDIVOperations637" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations630" onclick="parent.toggleDiv('detailsDIVOperations630','DetailsImageOperations630')" />Details:
+						<div id="detailsDIVOperations630" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>registerID</strong>(					<a href="#" onclick="parent.toggleData('param{2D94B456-61F5-4450-89C9-387FDC9ABE28}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{2D94B456-61F5-4450-89C9-387FDC9ABE28}" border="0" />aName: <a href="EA795.htm">LocalName</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{2D94B456-61F5-4450-89C9-387FDC9ABE28}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2D94B456-61F5-4450-89C9-387FDC9ABE28}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{2D94B456-61F5-4450-89C9-387FDC9ABE28}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2D94B456-61F5-4450-89C9-387FDC9ABE28}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{482C0C6E-6EEC-4483-8546-98D218411E6B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{482C0C6E-6EEC-4483-8546-98D218411E6B}" border="0" />registeredObj: Reference&lt;Any&gt;</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{482C0C6E-6EEC-4483-8546-98D218411E6B}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{482C0C6E-6EEC-4483-8546-98D218411E6B}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{482C0C6E-6EEC-4483-8546-98D218411E6B}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{482C0C6E-6EEC-4483-8546-98D218411E6B}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):Boolean
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations631" onclick="parent.toggleDiv('detailsDIVOperations631','DetailsImageOperations631')" />Details:
+						<div id="detailsDIVOperations631" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -253,7 +406,122 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			tail will be the name of the next layer down the resolution chain. &lt;br/&gt;If depth = 2, the tail will be the local name in the target scope of the physical object. &lt;br/&gt;Otherwise, the tail is the scoped name within the scope for which &quot;head&quot; is the local name (essentially a proxy).&lt;br/&gt;
+			registerID allows the registeredObj to request a particular name. If the name is valid and currently unused, then the result is the same as generate (except the passed name is used) and the return is TRUE indicating successful registration. &lt;br/&gt;If the form of the name is invalid, or already in use, then &quot;FALSE&quot; is returned and the registration fails.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>select</strong>(					<a href="#" onclick="parent.toggleData('param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}" border="0" />name: <a href="EA794.htm">GenericName</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C984CDA8-1C32-4f7a-846D-1647ECDE219D}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../EA5/EA805.htm">Any</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations632" onclick="parent.toggleDiv('detailsDIVOperations632','DetailsImageOperations632')" />Details:
+						<div id="detailsDIVOperations632" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>unregisterID</strong>(					<a href="#" onclick="parent.toggleData('param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}" border="0" />aName: <a href="EA795.htm">LocalName</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{FB65362A-8C4F-4d96-8D14-5B545DF15E72}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{25C03B20-92A4-4533-8E4C-3C39DDC37101}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{25C03B20-92A4-4533-8E4C-3C39DDC37101}" border="0" />registeredObj: Reference&lt;Any&gt;</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{25C03B20-92A4-4533-8E4C-3C39DDC37101}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{25C03B20-92A4-4533-8E4C-3C39DDC37101}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{25C03B20-92A4-4533-8E4C-3C39DDC37101}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{25C03B20-92A4-4533-8E4C-3C39DDC37101}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):Boolean
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations633" onclick="parent.toggleDiv('detailsDIVOperations633','DetailsImageOperations633')" />Details:
+						<div id="detailsDIVOperations633" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			unregister undoes the registration of a particular object. &lt;br/&gt;&lt;br/&gt;If aName is not registered, or registered to an object other than the one passed, then the operation fails (returns FALSE).&lt;br/&gt;&lt;br/&gt;If all is well, then name is removed from the scope&#39;s internal registry and the operation returns TRUE.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -264,7 +532,40 @@ function nameClassifier(name, separator)
 			</tr>
 
 		</table>
-</div><div class="ItemBody" id="TaggedValTable">
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA794.htm">GenericName</a><br />
+						Interface &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> name<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> scope<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink634" onclick="parent.toggleDiv('detailsDIVLink634','DetailsImageLink634')" />Details:
+							<div id="detailsDIVLink634" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -276,8 +577,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario638" onclick="parent.toggleDiv('detailsDIVScenario638','DetailsImageScenario638')" />Details:
-						<div id="detailsDIVScenario638" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario635" onclick="parent.toggleDiv('detailsDIVScenario635','DetailsImageScenario635')" />Details:
+						<div id="detailsDIVScenario635" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -294,10 +595,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA793.htm">GenericName</a></td>
-					<td width="10%" class="TableRow" valign="top">Interface</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA1/EA6756.htm">Taxonomy</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA18/EA1/EA1/EA6756.htm">Taxonomy</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

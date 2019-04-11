@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Symbol::SY_PointIcon</title>
+<title>Symbol::SY_PointComponent</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_PointIcon", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_PointComponent", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24.07.2009 17:26:05</td>
+			<td width="85%" class="ObjectDetailsValue">16.07.2009 11:38:06</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13.06.2010 12:00:15</td>
+			<td class="ObjectDetailsValue">18.10.2009 21:56:50</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,63 +87,155 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E623AE6E-6746-447b-A379-3DEB79A265F1}</td>
+			<td class="ObjectDetailsValue">{1F23E7A5-6A0D-47ba-B40D-84D2A20F9198}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA5909.htm">Symbol</a>, <a href="EA5893.htm">SY_PointIcon</a>, <a href="EA5891.htm">SY_PointComponent</a>, <a href="../../EA3/EA3/EA5990.htm">Symbol - Compound</a>, <a href="../../EA3/EA4/EA6006.htm">Symbol - Complex</a>, <a href="../../EA3/EA5/EA6018.htm">Symbol - Reusable</a></td>
+			<td class="ObjectDetailsValue"><a href="EA5910.htm">Symbol</a>, <a href="EA5894.htm">SY_PointIcon</a>, <a href="EA5892.htm">SY_PointComponent</a>, <a href="EA5898.htm">SY_PointText</a>, <a href="EA5902.htm">SY_SymbolComponent</a>, <a href="../../EA3/EA3/EA5981.htm">SY_CompoundPointComponent</a>, <a href="../../EA3/EA3/EA5991.htm">Symbol - Compound</a>, <a href="../../EA3/EA3/EA5989.htm">SY_TransformedPointComponent</a>, <a href="../../EA3/EA4/EA6005.htm">SY_RepeatedPointSymbolLineStyle</a>, <a href="../../EA3/EA4/EA6007.htm">Symbol - Complex</a>, <a href="../../EA3/EA4/EA6003.htm">SY_PatternFill</a>, <a href="../../EA3/EA5/EA6019.htm">Symbol - Reusable</a>, <a href="../../EA3/EA5/EA6017.htm">SY_ExternalPointComponent</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="ConstraintsTable">
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>pointCRS</strong>():<a href="../../../../EA10/EA2/EA2/EA3718.htm">SC_CRS</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12875" onclick="parent.toggleDiv('detailsDIVOperations12875','DetailsImageOperations12875')" />Details:
+						<div id="detailsDIVOperations12875" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;pointSymbolCRS&quot; returns the coordinate reference system of the point symbol presentation.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content->forAll(isKindOf(SY_GraphicObject))</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5994.htm">«type» SY_CompoundPointComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> element<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compound<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12873" onclick="parent.toggleDiv('detailsDIVConstraints12873','DetailsImageConstraints12873')" />Details:
-							<div id="detailsDIVConstraints12873" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12876" onclick="parent.toggleDiv('detailsDIVLink12876','DetailsImageLink12876')" />Details:
+							<div id="detailsDIVLink12876" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content.size() >= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA4/EA6012.htm">«type» SY_PatternFill</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> patternIcon<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> fill<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12874" onclick="parent.toggleDiv('detailsDIVConstraints12874','DetailsImageConstraints12874')" />Details:
-							<div id="detailsDIVConstraints12874" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12877" onclick="parent.toggleDiv('detailsDIVLink12877','DetailsImageLink12877')" />Details:
+							<div id="detailsDIVLink12877" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content.ordered</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5995.htm">«type» SY_TransformedPointComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformedElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformation<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12875" onclick="parent.toggleDiv('detailsDIVConstraints12875','DetailsImageConstraints12875')" />Details:
-							<div id="detailsDIVConstraints12875" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12878" onclick="parent.toggleDiv('detailsDIVLink12878','DetailsImageLink12878')" />Details:
+							<div id="detailsDIVLink12878" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA4/EA6010.htm">«type» SY_RepeatedPointSymbolLineStyle</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> patternIcon<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> lineStyle<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12879" onclick="parent.toggleDiv('detailsDIVLink12879','DetailsImageLink12879')" />Details:
+							<div id="detailsDIVLink12879" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -162,9 +254,72 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA5923.htm">«type» SY_PointComponent</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA5/EA6022.htm">«type» SY_ExternalPointComponent</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5994.htm">«type» SY_CompoundPointComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5920.htm">«type» SY_SymbolComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6012.htm">«type» SY_PatternFill</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5995.htm">«type» SY_TransformedPointComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5995.htm">«type» SY_TransformedPointComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5925.htm">«type» SY_PointIcon</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5926.htm">«type» SY_PointText</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5994.htm">«type» SY_CompoundPointComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6010.htm">«type» SY_RepeatedPointSymbolLineStyle</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

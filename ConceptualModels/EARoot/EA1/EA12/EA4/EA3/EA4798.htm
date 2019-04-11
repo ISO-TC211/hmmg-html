@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Spatial representation information - Imagery::MI_Georeferenceable</title>
+<title>Spatial representation information - Imagery::MI_Georectified</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_Georeferenceable", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_Georectified", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">27.08.2009 09:30:31</td>
+			<td class="ObjectDetailsValue">27.08.2009 09:30:27</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{11DBEF75-4357-46a4-967B-DB85BC808C9A}</td>
+			<td class="ObjectDetailsValue">{FFCB29E2-9876-47f8-9C2F-4F8B9E173A2F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA4789.htm">Fig A.5 - Spatial representation extensions</a>, <a href="EA4787.htm">Context Diagram: MI_Georeferencable</a>, <a href="../../EA5/EA7/EA5209.htm">Context Diagram: MD_Georeferenceable</a></td>
+			<td class="ObjectDetailsValue"><a href="EA4790.htm">Fig A.5 - Spatial representation extensions</a>, <a href="EA4786.htm">Context Diagram: MI_Georectified</a>, <a href="../../EA5/EA7/EA5208.htm">Context Diagram: MD_Georectified</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Description: Description of information provided in metadata that allows the geographic or map location raster points to be located&lt;br/&gt;FGDC: Georeferencing_Description&lt;br/&gt;shortName: IGeoref&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Description: extends georectified grid description to include associated checkpoints&lt;br/&gt;shortName: IGeorect&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA5/EA4865.htm">MI_Platform</a><br />
+						<a href="EA4795.htm">MI_GCP</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -119,38 +119,15 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> platformParameters<br />
+						<strong>Name:</strong> checkPoint<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7408" onclick="parent.toggleDiv('detailsDIVLink7408','DetailsImageLink7408')" />Details:
-							<div id="detailsDIVLink7408" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4796.htm">MI_GeolocationInformation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> geolocationInformation<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7409" onclick="parent.toggleDiv('detailsDIVLink7409','DetailsImageLink7409')" />Details:
-							<div id="detailsDIVLink7409" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Method for georeferencing a gridded dataset.&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7413" onclick="parent.toggleDiv('detailsDIVLink7413','DetailsImageLink7413')" />Details:
+							<div id="detailsDIVLink7413" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Geographic position points used to test the accuracy of the georeferenced grid data.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -171,8 +148,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7410" onclick="parent.toggleDiv('detailsDIVScenario7410','DetailsImageScenario7410')" />Details:
-						<div id="detailsDIVScenario7410" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7414" onclick="parent.toggleDiv('detailsDIVScenario7414','DetailsImageScenario7414')" />Details:
+						<div id="detailsDIVScenario7414" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -189,21 +166,21 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA7/EA5231.htm">MD_Georeferenceable</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA3/EA4018.htm">MD_Georectified</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA19/EA4534.htm">MD_Georeferenceable</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA7/EA5231.htm">MD_Georectified</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA3/EA4018.htm">MD_Georeferenceable</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA2/EA19/EA4534.htm">MD_Georectified</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

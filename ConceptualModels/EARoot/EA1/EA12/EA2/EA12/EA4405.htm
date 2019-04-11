@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Identification information::MD_DataIdentification</title>
+<title>Identification information::MD_AssociatedResource</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MD_DataIdentification", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MD_AssociatedResource", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:16</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:17</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">25.03.2013 22:10:42</td>
+			<td class="ObjectDetailsValue">21.02.2014 16:26:13</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EBB77C49-0232-4276-83FB-CCA82BB39F26}</td>
+			<td class="ObjectDetailsValue">{426B6131-A90A-4ad7-B2A1-ACA07F9CD8AC}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA4/EA4167.htm">Fig. 18: Service metadata class diagram</a>, <a href="../EA4/EA4163.htm">Context Diagram: SV_ServiceIdentification</a>, <a href="EA4393.htm">Fig 6 : Identification information</a>, <a href="EA4375.htm">Context Diagram: MD_Identification</a>, <a href="EA4373.htm">Context Diagram: MD_DataIdentification</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../EA47/EA1/EA15310.htm">Connection to OAIS</a>, <a href="../../../EA47/EA1/EA1/EA2/EA15351.htm">Fig 7. Association to other resources</a>, <a href="EA4394.htm">Fig 6 : Identification information</a>, <a href="EA4376.htm">Context Diagram: MD_Identification</a>, <a href="EA4368.htm">Context Diagram: MD_AggregateInformation</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">information required to identify a resource&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">associated resource information&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA3/EA4149.htm">PT_Locale</a></i><br /><strong>&nbsp;&nbsp;defaultLocale</strong>
+					<i>Public <a href="../EA6/EA4219.htm">CI_Citation</a></i><br /><strong>&nbsp;&nbsp;name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			language and character set used within the resource&lt;br/&gt;
+			citation information about the associated resource&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA30/EA1/EA2/EA9710.htm">PT_Locale</a></i><br /><strong>&nbsp;&nbsp;otherLocale</strong>
+					<i>Public <a href="EA4403.htm">DS_AssociationTypeCode</a></i><br /><strong>&nbsp;&nbsp;associationType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -195,7 +195,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes6432_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to *</td>
+							<td></td>
 						</tr>
 						<tr id="DetailsImageAttributes6432_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -218,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			alternate localised language(s) and character set (s) used within the resource&lt;br/&gt;
+			type of relation between the resources&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;environmentDescription</strong>
+					<i>Public <a href="EA4404.htm">DS_InitiativeTypeCode</a></i><br /><strong>&nbsp;&nbsp;initiativeType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -276,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			description of the resource in the producer&#39;s processing environment, including items such as the software, the computer operating system, file name, and the dataset size&lt;br/&gt;
+			type of initiative under which the associated resource was produced &lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA1/EA1/EA3/EA696.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;supplementalInformation</strong>
+					<i>Public <a href="../EA6/EA4219.htm">CI_Citation</a></i><br /><strong>&nbsp;&nbsp;metadataReference</strong>
 				</td>
 			</tr>
 			<tr>
@@ -334,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			any other descriptive information about the resource&lt;br/&gt;
+			reference to the metadata of the associated resource&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -353,49 +353,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA4/EA4171.htm">SV_CoupledResource</a><br />
-						Class &nbsp;
+						<a href="EA4407.htm">«abstract» MD_Identification</a><br />
+						Abstract &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> resource<br />
-						the tightly coupled resource. This attribute should be implemented by reference
-Note: for one resource either resource or resourceReference shall be used (not both for the same resource)
-	
+						<strong>Name:</strong> associatedResource<br />
+						associated resource information	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6435" onclick="parent.toggleDiv('detailsDIVLink6435','DetailsImageLink6435')" />Details:
 							<div id="detailsDIVLink6435" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA4/EA4177.htm">SV_ServiceIdentification</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> operatesOn<br />
-						provides information on the resources that the service operates on
-Note: either operatedDataset or operatesOn may be used (not both for the same resource)
-	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6436" onclick="parent.toggleDiv('detailsDIVLink6436','DetailsImageLink6436')" />Details:
-							<div id="detailsDIVLink6436" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -416,8 +389,8 @@ Note: either operatedDataset or operatesOn may be used (not both for the same re
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario6437" onclick="parent.toggleDiv('detailsDIVScenario6437','DetailsImageScenario6437')" />Details:
-						<div id="detailsDIVScenario6437" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario6436" onclick="parent.toggleDiv('detailsDIVScenario6436','DetailsImageScenario6436')" />Details:
+						<div id="detailsDIVScenario6436" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -432,29 +405,14 @@ Note: either operatedDataset or operatesOn may be used (not both for the same re
 					<td width="10%" class="TableHeading">Status</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">defaultLocale documented if resource includes textual information
-</td>
+					<td width="80%" class="TableRow">count of (name + metadataReference) > 0</td>
 					<td width="10%" class="TableRow">Invariant</td>
 					<td width="10%" class="TableRow">Approved</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints6438" onclick="parent.toggleDiv('detailsDIVConstraints6438','DetailsImageConstraints6438')" />Details:
-							<div id="detailsDIVConstraints6438" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">defaultLocale.PT_Locale.characterEncoding default value is UTF-8</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints6439" onclick="parent.toggleDiv('detailsDIVConstraints6439','DetailsImageConstraints6439')" />Details:
-							<div id="detailsDIVConstraints6439" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints6437" onclick="parent.toggleDiv('detailsDIVConstraints6437','DetailsImageConstraints6437')" />Details:
+							<div id="detailsDIVConstraints6437" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -473,10 +431,10 @@ Note: either operatedDataset or operatesOn may be used (not both for the same re
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA4406.htm">«abstract» MD_Identification</a></td>
-					<td width="10%" class="TableRow" valign="top">Abstract</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA47/EA1/EA1/EA2/EA15355.htm">GP_AssociatedResource</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

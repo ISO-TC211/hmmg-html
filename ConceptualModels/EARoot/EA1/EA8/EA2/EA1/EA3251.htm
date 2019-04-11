@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>General Feature Model::GF_Constraint</title>
+<title>General Feature Model::GF_AttributeType</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GF_Constraint", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GF_AttributeType", " : "))</script>  : Public  &lt;&lt;metaclass&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:21</td>
+			<td class="ObjectDetailsValue">09.10.2015 18:37:15</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,17 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{50A2AA18-6A2C-4de3-88BA-C9E8FB54203F}</td>
+			<td class="ObjectDetailsValue">{91842A69-BBF7-4608-91DC-EB1D21929CFB}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3193.htm">All</a>, <a href="EA3237.htm">Fig 5: Extract </a>, <a href="EA3203.htm">Context Diagram: GF_Constraint</a>, <a href="EA3211.htm">Context Diagram: GF_FeatureType</a>, <a href="EA3221.htm">Context Diagram: GF_PropertyType</a>, <a href="../../../EA9/EA2/EA1/EA3422.htm">Fig B5 - Constraint Derivation from GFM</a>, <a href="../../../EA9/EA2/EA1/EA3386.htm">Context Diagram: FC_Constraint</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../EA51/EA4/EA1/EA15829.htm">CD </a>, <a href="../../../EA12/EA6/EA1/EA5454.htm">Fig 3 : Metadata application</a>, <a href="../../../EA12/EA6/EA2/EA5472.htm">MD_Metadata External Context Diagram</a>, <a href="../EA3184.htm">All </a>, <a href="EA3194.htm">All</a>, <a href="EA3238.htm">Fig 5: Extract </a>, <a href="EA3244.htm">Fig 8: Behavior of feature types</a>, <a href="EA3240.htm">Fig 6: Attributes of feature types</a>, <a href="EA3202.htm">Context Diagram: GF_AttributeType</a>, <a href="EA3220.htm">Context Diagram: GF_Operation</a>, <a href="EA3216.htm">Context Diagram: GF_LocationalAttributeType</a>, <a href="EA3228.htm">Context Diagram: GF_SpatialAttributeType</a>, <a href="EA3236.htm">Context Diagram: GF_ThematicAttributeType</a>, <a href="EA3234.htm">Context Diagram: GF_TemporalAttributeType</a>, <a href="EA3218.htm">Context Diagram: GF_MetaDataAttributeType</a>, <a href="EA3222.htm">Context Diagram: GF_PropertyType</a>, <a href="../../../EA9/EA2/EA1/EA3421.htm">Fig B4 - Operation Derivation from GFM</a>, <a href="../../../EA9/EA2/EA1/EA3417.htm">Fig B2 - Realization from GFM</a>, <a href="../../../EA9/EA2/EA1/EA3419.htm">Fig B3 - Some GFM Derivations</a>, <a href="../../../EA9/EA2/EA1/EA3395.htm">Context Diagram: FC_FeatureAttribute</a>, <a href="../../../EA32/EA1/EA9883.htm">Fig 08 Relationship of legend class to feature type</a>, <a href="../../../EA12/EA5/EA1/EA4979.htm">Fig 3 : Metadata application</a>, <a href="../../../EA12/EA5/EA2/EA4995.htm">Context Diagram: MD_Metadata</a>, <a href="../../../EA12/EA5/EA6/EA5188.htm">Context Diagram: MD_ScopeDescription</a>, <a href="../../../EA12/EA5/EA9/EA5269.htm">FeatureCatalogContext</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">feature attribute&lt;br/&gt; characteristic of a feature&lt;br/&gt;&lt;br/&gt;NOTE: A feature attribute has a name, a data type, and a value domain associated to it.&#160;&#160;A feature attribute for a feature instance also has an attribute value taken from the value domain.&#160;&#160;&lt;br/&gt;EXAMPLE: A feature attribute named &#39;color&#39; may have an attribute value &#39;green&#39; which belongs to the data type &#39;text&#39;.&#160;&#160;A feature attribute named &#39;length&#39; may have an attribute value &#39;82.4&#39; which belongs to the data type &#39;real&#39;.&lt;br/&gt;[Victoria Terminology Harmonization Meeting]&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -109,43 +111,139 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1323.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;description</strong>
+					<i>Public <a href="../../../EA4/EA2/EA1/EA2/EA2/EA1178.htm">TypeName</a></i><br /><strong>&nbsp;&nbsp;valueType</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3439')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3439" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3429')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3429" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes3439_00" style="display: none;">
+						<tr id="DetailsImageAttributes3429_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_01" style="display: none;">
+						<tr id="DetailsImageAttributes3429_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_02" style="display: none;">
+						<tr id="DetailsImageAttributes3429_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_03" style="display: none;">
+						<tr id="DetailsImageAttributes3429_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_04" style="display: none;">
+						<tr id="DetailsImageAttributes3429_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_05" style="display: none;">
+						<tr id="DetailsImageAttributes3429_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes3439_06" style="display: none;">
+						<tr id="DetailsImageAttributes3429_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes3439_07" style="display: none;">
+							<tr id="DetailsImageAttributes3429_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1324.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;valueDomain</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3430')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3430" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3430_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3430_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3430_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA3/EA1285.htm">Multiplicity</a></i><br /><strong>&nbsp;&nbsp;cardinality</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3431')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3431" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3431_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3431_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3431_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -158,6 +256,108 @@ function nameClassifier(name, separator)
 			</tr>
 	</table>
 </div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA12/EA2/EA15/EA4470.htm">MD_Metadata</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttribute<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttributeMetadata<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3432" onclick="parent.toggleDiv('detailsDIVLink3432','DetailsImageLink3432')" />Details:
+							<div id="detailsDIVLink3432" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA12/EA5/EA2/EA5003.htm">MD_Metadata</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttribute<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttributeMetadata<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3433" onclick="parent.toggleDiv('detailsDIVLink3433','DetailsImageLink3433')" />Details:
+							<div id="detailsDIVLink3433" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3251.htm">«metaclass» GF_AttributeType</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterize<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizeBy<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3434" onclick="parent.toggleDiv('detailsDIVLink3434','DetailsImageLink3434')" />Details:
+							<div id="detailsDIVLink3434" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA12/EA6/EA2/EA5476.htm">MD_Metadata</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttribute<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> featureAttributeMetadata<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3435" onclick="parent.toggleDiv('detailsDIVLink3435','DetailsImageLink3435')" />Details:
+							<div id="detailsDIVLink3435" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -167,7 +367,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3255.htm">«metaclass» GF_FeatureType</a><br />
+						<a href="EA3260.htm">«metaclass» GF_Operation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -175,14 +375,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> constrainedBy<br />
+						<strong>Name:</strong> affectsValuesOf<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3440" onclick="parent.toggleDiv('detailsDIVLink3440','DetailsImageLink3440')" />Details:
-							<div id="detailsDIVLink3440" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3436" onclick="parent.toggleDiv('detailsDIVLink3436','DetailsImageLink3436')" />Details:
+							<div id="detailsDIVLink3436" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -190,7 +390,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3260.htm">«metaclass» GF_PropertyType</a><br />
+						<a href="EA3260.htm">«metaclass» GF_Operation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -198,14 +398,60 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> constrainedBy<br />
+						<strong>Name:</strong> observesValuesOf<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3441" onclick="parent.toggleDiv('detailsDIVLink3441','DetailsImageLink3441')" />Details:
-							<div id="detailsDIVLink3441" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3437" onclick="parent.toggleDiv('detailsDIVLink3437','DetailsImageLink3437')" />Details:
+							<div id="detailsDIVLink3437" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3251.htm">«metaclass» GF_AttributeType</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterize<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizeBy<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3438" onclick="parent.toggleDiv('detailsDIVLink3438','DetailsImageLink3438')" />Details:
+							<div id="detailsDIVLink3438" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA3260.htm">«metaclass» GF_Operation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeredByValuesOf<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3439" onclick="parent.toggleDiv('detailsDIVLink3439','DetailsImageLink3439')" />Details:
+							<div id="detailsDIVLink3439" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -226,8 +472,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3442" onclick="parent.toggleDiv('detailsDIVScenario3442','DetailsImageScenario3442')" />Details:
-						<div id="detailsDIVScenario3442" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3440" onclick="parent.toggleDiv('detailsDIVScenario3440','DetailsImageScenario3440')" />Details:
+						<div id="detailsDIVScenario3440" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -244,7 +490,70 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA9/EA2/EA1/EA3444.htm">FC_Constraint</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3264.htm">«metaclass» GF_SpatialAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3259.htm">«metaclass» GF_MetaDataAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA32/EA1/EA9905.htm">CL_LegendClass</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA21/EA1/EA1/EA6927.htm">«metaclass» IF_ClassificationAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3261.htm">«metaclass» GF_PropertyType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA9/EA2/EA1/EA3449.htm">«type» FC_FeatureAttribute</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3268.htm">«metaclass» GF_ThematicAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA12/EA6/EA2/EA5476.htm">MD_Metadata</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3267.htm">«metaclass» GF_TemporalAttributeType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3258.htm">«metaclass» GF_LocationalAttributeType</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

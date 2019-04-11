@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Datums::CD_GeodeticDatum</title>
+<title>Datums::CD_EngineeringDatum</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CD_GeodeticDatum", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CD_EngineeringDatum", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.12.2009 12:07:39</td>
+			<td class="ObjectDetailsValue">14.12.2009 12:18:38</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{60C8CF32-27C2-4bf2-8E5A-CB6F7FF11E96}</td>
+			<td class="ObjectDetailsValue">{5D3A4EC2-F62E-4653-9416-761597930ED4}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA2/EA3698.htm">Context Diagram: SC_GeodeticCRS</a>, <a href="EA3800.htm">Main</a>, <a href="EA3798.htm">CRSAssociations</a>, <a href="EA3786.htm">Context Diagram: CD_GeodeticDatum</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3695.htm">Context Diagram: SC_EngineeringCRS</a>, <a href="EA3801.htm">Main</a>, <a href="EA3799.htm">CRSAssociations</a>, <a href="EA3785.htm">Context Diagram: CD_EngineeringDatum</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A geodetic datum defines the location and precise orientation in 3-dimensional space of a defined ellipsoid (or sphere) that approximates the shape of the earth, or of a Cartesian coordinate system centered in this ellipsoid (or sphere).&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">An engineering datum defines the origin of an engineering coordinate reference system, and is used in a region around that origin. This origin can be fixed with respect to the earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite).&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -111,69 +111,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3805.htm">«type» CD_Ellipsoid</a><br />
+						<a href="../EA2/EA3721.htm">«type» SC_EngineeringCRS</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> ellipsoid<br />
-						Association to the ellipsoid used by this geodetic datum. 
+						<strong>Name:</strong> referenceSystem<br />
+						Not-navigable association from an engineering coordinate reference system that uses this engineering datum. 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> datum<br />
-						Not-navigable association from a Geodetic Datum that uses this Ellipsoid. 	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4817" onclick="parent.toggleDiv('detailsDIVLink4817','DetailsImageLink4817')" />Details:
-							<div id="detailsDIVLink4817" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3810.htm">«type» CD_PrimeMeridian</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> primeMeridian<br />
-						Association to the prime meridian used by this geodetic datum. 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> datum<br />
-						Not-navigable association from a Geodetic Datum that uses this Prime Meridian.	
+						Association to the engineering datum used by this engineering coordinate reference system. 	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4818" onclick="parent.toggleDiv('detailsDIVLink4818','DetailsImageLink4818')" />Details:
 							<div id="detailsDIVLink4818" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA3722.htm">«type» SC_GeodeticCRS</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> referenceSystem<br />
-						Not-navigable association from a geodetic coordinate reference system that uses this geodetic datum. 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> datum<br />
-						Association to the geodetic datum used by this geodetic coordinate reference system. 	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4819" onclick="parent.toggleDiv('detailsDIVLink4819','DetailsImageLink4819')" />Details:
-							<div id="detailsDIVLink4819" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Association to the geodetic datum used by this geodetic coordinate reference system.&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">Association to the engineering datum used by this engineering coordinate reference system.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -194,8 +148,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4820" onclick="parent.toggleDiv('detailsDIVScenario4820','DetailsImageScenario4820')" />Details:
-						<div id="detailsDIVScenario4820" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4819" onclick="parent.toggleDiv('detailsDIVScenario4819','DetailsImageScenario4819')" />Details:
+						<div id="detailsDIVScenario4819" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -207,8 +161,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4821" onclick="parent.toggleDiv('detailsDIVScenario4821','DetailsImageScenario4821')" />Details:
-						<div id="detailsDIVScenario4821" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4820" onclick="parent.toggleDiv('detailsDIVScenario4820','DetailsImageScenario4820')" />Details:
+						<div id="detailsDIVScenario4820" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -220,8 +174,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4822" onclick="parent.toggleDiv('detailsDIVScenario4822','DetailsImageScenario4822')" />Details:
-						<div id="detailsDIVScenario4822" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4821" onclick="parent.toggleDiv('detailsDIVScenario4821','DetailsImageScenario4821')" />Details:
+						<div id="detailsDIVScenario4821" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -233,8 +187,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4823" onclick="parent.toggleDiv('detailsDIVScenario4823','DetailsImageScenario4823')" />Details:
-						<div id="detailsDIVScenario4823" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4822" onclick="parent.toggleDiv('detailsDIVScenario4822','DetailsImageScenario4822')" />Details:
+						<div id="detailsDIVScenario4822" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -245,8 +199,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4824" onclick="parent.toggleDiv('detailsDIVScenario4824','DetailsImageScenario4824')" />Details:
-						<div id="detailsDIVScenario4824" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4823" onclick="parent.toggleDiv('detailsDIVScenario4823','DetailsImageScenario4823')" />Details:
+						<div id="detailsDIVScenario4823" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -264,7 +218,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3804.htm">«type» CD_Datum</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3805.htm">«type» CD_Datum</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

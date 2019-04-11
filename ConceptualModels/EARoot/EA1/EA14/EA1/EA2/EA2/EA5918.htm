@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Symbol::SY_AreaSymbolDefinition</title>
+<title>Symbol::SY_LineSymbolDefinition</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_AreaSymbolDefinition", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_LineSymbolDefinition", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">21.05.2009 07:48:26</td>
+			<td width="85%" class="ObjectDetailsValue">21.05.2009 07:49:32</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">15.08.2010 16:08:47</td>
+			<td class="ObjectDetailsValue">15.08.2010 16:03:54</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{5C0CD78B-BF32-41b2-986B-8F0FECA966E2}</td>
+			<td class="ObjectDetailsValue">{E0CD2F24-292F-468b-AB69-E576C46EBF10}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA5903.htm">SY_SymbolDefinition</a>, <a href="EA5909.htm">Symbol</a>, <a href="EA5875.htm">SY_AreaSymbolDefinition</a></td>
+			<td class="ObjectDetailsValue"><a href="EA5904.htm">SY_SymbolDefinition</a>, <a href="EA5910.htm">Symbol</a>, <a href="EA5888.htm">SY_LineSymbolDefinition</a></td>
 		</tr>
 	</table>
 	
@@ -108,70 +108,28 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableHeading">Status</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">component.isKindOf(SY_PointComponent) or component.isKindOf(SY_LineComponent) or component.isKindOf(SY_AreaComponent)</td>
+					<td width="80%" class="TableRow">component.isKindOf(SY_PointComponent) or component.isKindOf(SY_LineComponent)</td>
 					<td width="10%" class="TableRow">Invariant</td>
 					<td width="10%" class="TableRow">Approved</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12854" onclick="parent.toggleDiv('detailsDIVConstraints12854','DetailsImageConstraints12854')" />Details:
-							<div id="detailsDIVConstraints12854" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12859" onclick="parent.toggleDiv('detailsDIVConstraints12859','DetailsImageConstraints12859')" />Details:
+							<div id="detailsDIVConstraints12859" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">component->select(isKindOf(SY_PointComponent))->size() <= 1</td>
+					<td width="80%" class="TableRow">component->select(isKindOf(SY_LineComponent))->size() = 1</td>
 					<td width="10%" class="TableRow">Invariant</td>
 					<td width="10%" class="TableRow">Approved</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12855" onclick="parent.toggleDiv('detailsDIVConstraints12855','DetailsImageConstraints12855')" />Details:
-							<div id="detailsDIVConstraints12855" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">component->select(isKindOf(SY_LineComponent))->size() <= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12856" onclick="parent.toggleDiv('detailsDIVConstraints12856','DetailsImageConstraints12856')" />Details:
-							<div id="detailsDIVConstraints12856" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">component->select(isKindOf(SY_AreaComponent))->size() <= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12857" onclick="parent.toggleDiv('detailsDIVConstraints12857','DetailsImageConstraints12857')" />Details:
-							<div id="detailsDIVConstraints12857" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="80%" class="TableRow">component->size() >= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12858" onclick="parent.toggleDiv('detailsDIVConstraints12858','DetailsImageConstraints12858')" />Details:
-							<div id="detailsDIVConstraints12858" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12860" onclick="parent.toggleDiv('detailsDIVConstraints12860','DetailsImageConstraints12860')" />Details:
+							<div id="detailsDIVConstraints12860" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -190,7 +148,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA5915.htm">«type» SY_SymbolDefinition</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5916.htm">«type» SY_SymbolDefinition</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

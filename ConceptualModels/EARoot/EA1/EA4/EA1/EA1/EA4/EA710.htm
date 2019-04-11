@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Truth::Truth</title>
+<title>Truth::Probability</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Truth", " : "))</script>  : Public abstract  Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Probability", " : "))</script>  : Public abstract  Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">16.07.2015 10:59:45</td>
+			<td class="ObjectDetailsValue">16.07.2015 10:59:40</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,53 +87,78 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2CF2B38D-6FAA-4158-BA97-0AA60D62751B}</td>
+			<td class="ObjectDetailsValue">{EDDA20B1-5034-4872-8751-645D6B73EF28}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA700.htm">Truth</a></td>
+			<td class="ObjectDetailsValue"><a href="EA701.htm">Truth</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The root or truth classification trees. The only constant between the subclasses here is that 1.0 is TRUE, and 0.0 is FALSE. This makes Probability work nicely. Other algebraic tricks may be more appropriate to other version of &quot;truth calculus&quot;, but for consistency sake, this value mapping should always be available. For example, the following semantic mappings to simple Booleans always work:&lt;br/&gt;&lt;br/&gt;{truthValue() #gt; 0} = possibly true&lt;br/&gt;{truthValue() = 0} = never true&lt;br/&gt;&lt;br/&gt;{truthValue() #lt; 1} = possibly false&lt;br/&gt;{truthValue() = 1} = never false&lt;br/&gt;&lt;br/&gt;{truthValue() #lt; 1}AND{truthValue() #gt; 0} = uncertain&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Continuous truth as a probability. The value (between 0.0 and 1.0) is a measure of belief (in the single occurrence case), or a measure of the distribution of occurrences (in the set case). The fine details of the semantics is the scope of probability and statistics, and the reader is directed towards his text of choice. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="OperationsTable">
+<div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
-			<td width="100%" class="TableHeading">Operation</td>
+			<td width="100%" class="TableHeading">Attribute</td>
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>truthValue</strong>():<a href="../EA2/EA687.htm">Real</a>
+					<i>Public <a href="../EA2/EA688.htm">Real</a></i><br /><strong>&nbsp;&nbsp;value</strong>
 				</td>
 			</tr>
 			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations513" onclick="parent.toggleDiv('detailsDIVOperations513','DetailsImageOperations513')" />Details:
-						<div id="detailsDIVOperations513" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes513')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes513" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes513_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
 							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes513_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes513_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes513_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes513_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes513_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes513_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes513_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
 						</tr>
 					</table>
 					
 					
-					
-						</div>
-					</div>
+						&nbsp;
+						
 				</td>
 			</tr>
-
-		</table>
-</div><div class="ItemBody" id="TaggedValTable">
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -163,17 +188,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA706.htm">ContinuousTruth</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA707.htm">ContinuousTruth</a></td>
 					<td width="10%" class="TableRow" valign="top">Interface</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA707.htm">DiscreteTruth</a></td>
-					<td width="10%" class="TableRow" valign="top">Interface</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>GeoLicense::SpatialGeometry</title>
+<title>GeoLicense::Principal</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SpatialGeometry", " : "))</script>  : Public abstract  Interface</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Principal", " : "))</script>  : Public abstract  Interface</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">11.01.2006 13:40:19</td>
+			<td width="85%" class="ObjectDetailsValue">13.12.2005 12:39:47</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">11.01.2006 16:56:36</td>
+			<td class="ObjectDetailsValue">11.01.2006 10:59:26</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,324 +87,77 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AD6695B2-C259-4ec4-BF13-C922579BAAED}</td>
+			<td class="ObjectDetailsValue">{8B6DBD10-15B5-471f-9A48-1439CD4A4D01}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA13548.htm">Condition Binding</a></td>
+			<td class="ObjectDetailsValue"><a href="EA13577.htm">Licence</a>, <a href="EA13575.htm">GrantComponent</a>, <a href="EA13579.htm">Principal</a>, <a href="EA13573.htm">Grant</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This parameter class consist of objects or entity that represent geographic geometry values in the condition. They are of one of the types defined in ISO 19107 (the OGC feature geometry abstract topic volume), some subtype of either GM_Object or TP_Object in that standards&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Principal is the root class of all participants in the systems. Subclasses of Principal can add further information needed to support the role that principal will play in the processes of the GeoDRM system.&#160;&#160;A group of principals is also a principal, and the group may take actions (such as obtaining a license) which would normally be considered the act of a single entity. In other words, a set of entities is an entity and therefore a set of principals, acting as a unit, is a principal. The basic metadata for any principal is identity, allowing that principal to be uniquely and without significant doubt identified. A principal can have multiple identities, but each identity can only apply to one principal or one principal group. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="OperationsTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Operation</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>anyInteraction</strong>(					<a href="#" onclick="parent.toggleData('param{988CE8FD-820B-4f06-A34D-65344905EBDC}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{988CE8FD-820B-4f06-A34D-65344905EBDC}" border="0" />other: SpatialGeometry</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{988CE8FD-820B-4f06-A34D-65344905EBDC}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{988CE8FD-820B-4f06-A34D-65344905EBDC}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{988CE8FD-820B-4f06-A34D-65344905EBDC}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{988CE8FD-820B-4f06-A34D-65344905EBDC}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24272" onclick="parent.toggleDiv('detailsDIVOperations24272','DetailsImageOperations24272')" />Details:
-						<div id="detailsDIVOperations24272" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA13622.htm">«interface» PrincipalGroup</a><br />
+						Interface &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> member<br />
+						The members of a group are also principals, and may be groups in their own right. 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> group<br />
+						A principal group is a set of principals acting together in a single role in the system.	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24323" onclick="parent.toggleDiv('detailsDIVLink24323','DetailsImageLink24323')" />Details:
+							<div id="detailsDIVLink24323" class="DetailsDiv" >
+							&nbsp;
+							</div>
 						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>contains</strong>(					<a href="#" onclick="parent.toggleData('param{F013832E-4B22-423d-8F77-E9D8CB510D50}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{F013832E-4B22-423d-8F77-E9D8CB510D50}" border="0" />other: SpatialGeometry</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{F013832E-4B22-423d-8F77-E9D8CB510D50}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{F013832E-4B22-423d-8F77-E9D8CB510D50}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{F013832E-4B22-423d-8F77-E9D8CB510D50}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{F013832E-4B22-423d-8F77-E9D8CB510D50}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24273" onclick="parent.toggleDiv('detailsDIVOperations24273','DetailsImageOperations24273')" />Details:
-						<div id="detailsDIVOperations24273" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA13592.htm">«interface» Agent</a><br />
+						Interface &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> principal<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> agent<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24324" onclick="parent.toggleDiv('detailsDIVLink24324','DetailsImageLink24324')" />Details:
+							<div id="detailsDIVLink24324" class="DetailsDiv" >
+							&nbsp;
+							</div>
 						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>intersects</strong>(					<a href="#" onclick="parent.toggleData('param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}" border="0" />other: SpatialGeometry</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{8B2E1F22-8000-47df-B58D-9CF3FB68DDE0}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24274" onclick="parent.toggleDiv('detailsDIVOperations24274','DetailsImageOperations24274')" />Details:
-						<div id="detailsDIVOperations24274" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>isContainedBy</strong>(					<a href="#" onclick="parent.toggleData('param{740F931B-8725-41bd-82AA-94A2C0763B1A}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{740F931B-8725-41bd-82AA-94A2C0763B1A}" border="0" />other: SpatialGeometry</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{740F931B-8725-41bd-82AA-94A2C0763B1A}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{740F931B-8725-41bd-82AA-94A2C0763B1A}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{740F931B-8725-41bd-82AA-94A2C0763B1A}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{740F931B-8725-41bd-82AA-94A2C0763B1A}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24275" onclick="parent.toggleDiv('detailsDIVOperations24275','DetailsImageOperations24275')" />Details:
-						<div id="detailsDIVOperations24275" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>topologicMatrix</strong>(					<a href="#" onclick="parent.toggleData('param{90266BEF-3054-4b1c-92B7-3E77214A6B46}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{90266BEF-3054-4b1c-92B7-3E77214A6B46}" border="0" />other: <a href="EA13620.htm">SpatialGeometry</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{90266BEF-3054-4b1c-92B7-3E77214A6B46}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{90266BEF-3054-4b1c-92B7-3E77214A6B46}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{90266BEF-3054-4b1c-92B7-3E77214A6B46}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{90266BEF-3054-4b1c-92B7-3E77214A6B46}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-					<a href="#" onclick="parent.toggleData('param{058134DE-A1B8-47e8-A5B0-39A69369F517}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{058134DE-A1B8-47e8-A5B0-39A69369F517}" border="0" />mask: <a href="../../EA2/EA4/EA13477.htm">string</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{058134DE-A1B8-47e8-A5B0-39A69369F517}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{058134DE-A1B8-47e8-A5B0-39A69369F517}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{058134DE-A1B8-47e8-A5B0-39A69369F517}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{058134DE-A1B8-47e8-A5B0-39A69369F517}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24276" onclick="parent.toggleDiv('detailsDIVOperations24276','DetailsImageOperations24276')" />Details:
-						<div id="detailsDIVOperations24276" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>withinDistance</strong>(					<a href="#" onclick="parent.toggleData('param{21C46670-B640-44f4-868D-8E24E6084DBE}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{21C46670-B640-44f4-868D-8E24E6084DBE}" border="0" />other: SpatialGeometry</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{21C46670-B640-44f4-868D-8E24E6084DBE}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{21C46670-B640-44f4-868D-8E24E6084DBE}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{21C46670-B640-44f4-868D-8E24E6084DBE}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{21C46670-B640-44f4-868D-8E24E6084DBE}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-					<a href="#" onclick="parent.toggleData('param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}" border="0" />distance: Measure</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>in</td>
-						</tr>
-						<tr id="param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{9290EA65-B7FB-452e-B0B0-063724DD8ACC}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../EA2/EA4/EA13351.htm">boolean</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations24277" onclick="parent.toggleDiv('detailsDIVOperations24277','DetailsImageOperations24277')" />Details:
-						<div id="detailsDIVOperations24277" class="DetailsDiv" >
-					<i>Sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
+					</td>
+				</tr>
 
-		</table>
-</div>		<div class="ItemBody" id="LinksTable">
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -414,10 +167,73 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA13572.htm">«interface» CoditionParameter</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13623.htm">principalPattern</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13622.htm">«interface» PrincipalGroup</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13621.htm">principal</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13638.htm">«interface» ServiceProvider</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Tree</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13592.htm">«interface» Agent</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13592.htm">«interface» Agent</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Tree</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13622.htm">«interface» PrincipalGroup</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Tree</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13619.htm">«interface» Owner</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Tree</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13612.htm">«interface» GrantComponent</a></td>
 					<td width="10%" class="TableRow" valign="top">Interface</td>
 					<td width="10%" class="TableRow" valign="top">Tree</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA13613.htm">«interface» Licensee</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Tree</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

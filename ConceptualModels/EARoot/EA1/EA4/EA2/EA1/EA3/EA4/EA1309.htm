@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Numerics::Vector</title>
+<title>Numerics::UnlimitedInteger</title>
 <link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Vector", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("UnlimitedInteger", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue">Easy</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,21 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B74B9EC2-4473-4c4a-86FC-6C5317668D57}</td>
+			<td class="ObjectDetailsValue">{DF237493-D61E-444b-870D-8FB7DE01BA7E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1298.htm">Numerics</a>, <a href="EA1300.htm">Types related to Numerics</a>, <a href="EA1296.htm">Context Diagram: Vector</a>, <a href="../../../../../EA17/EA3/EA4/EA6659.htm">Context Diagram: CV_RectifiedGrid</a>, <a href="../../../../../EA28/EA2/EA6/EA9350.htm">Context Diagram: Direction</a>, <a href="../../../../../EA31/EA1/EA1/EA9794.htm">Context Diagram: MF_SecondaryOffset</a>, <a href="../../../../../EA31/EA1/EA2/EA9822.htm">Context Diagram: MF_RotationMatrix</a>, <a href="../../../../../EA31/EA1/EA2/EA9816.htm">Context Diagram: MF_LocalGeometry</a>, <a href="../../../../../EA6/EA4/EA14/EA1921.htm">Context Diagram: AffinePlacement</a>, <a href="../../../../../EA6/EA4/EA14/EA1957.htm">Context diagram: Bearing</a>, <a href="../../../../../EA6/EA4/EA14/EA2015.htm">Context Diagram: PolynomialSpline</a>, <a href="../../../../../EA6/EA5/EA1/EA1/EA2194.htm">Context Diagram: GM_ArcStringByBulge</a>, <a href="../../../../../EA6/EA5/EA1/EA1/EA2256.htm">Context Diagram: GM_PolynomialSpline</a>, <a href="../../../../../EA6/EA5/EA1/EA1/EA2198.htm">Context Diagram: GM_BicubicGrid</a>, <a href="../../../../../EA6/EA5/EA1/EA1/EA2240.htm">Context Diagram: GM_OffsetCurve</a>, <a href="../../../../../EA6/EA5/EA1/EA1/EA2186.htm">Context Diagram: GM_AffinePlacement</a>, <a href="../../../../../EA6/EA5/EA1/EA4/EA2432.htm">Context Diagram: Bearing</a>, <a href="../../../../../EA28/EA1/EA6/EA8916.htm">Context Diagram: Direction</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA3/EA1280.htm">Context Diagram: MultiplicityRange</a>, <a href="EA1295.htm">Context Diagram: UnlimitedInteger</a>, <a href="EA1299.htm">Numerics</a>, <a href="EA1301.htm">Types related to Numerics</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A vector is a sequence of a fixed length of Numbers. Normally, the numbers represent some measures, and thus vectors are often used where records of Numbers would be more appropriate. In geometry for example, direct positions are given by undistinguished coordinate vectors, which can be interpreted through the use of coordinate reference systems. &lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">-- Infinite if and only if value is not specified&lt;br/&gt;{[ isInfinte = True ] = [ value = Null ]}&lt;br/&gt;-- value is either infinite or non-negative&lt;br/&gt;{value #lt;#gt; Null implies value #gt;= 0}&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -110,7 +108,55 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="EA1305.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;dimension</strong>
+					<i>Public <a href="../EA6/EA1342.htm">Boolean</a></i><br /><strong>&nbsp;&nbsp;isInfinite</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1130')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1130" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1130_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1130_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1130_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="EA1306.htm">Integer</a></i><br /><strong>&nbsp;&nbsp;value</strong>
 				</td>
 			</tr>
 			<tr>
@@ -136,7 +182,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes1131_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes1131_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -156,151 +202,10 @@ function nameClassifier(name, separator)
 						&nbsp;
 						
 				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA1306.htm">Number</a></i><br /><strong>&nbsp;&nbsp;ordinates</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1132')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1132" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes1132_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:dimension to dimension</td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes1132_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes1132_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
 			</tr>
 	</table>
 </div>
-<div class="ItemBody" id="OperationsTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Operation</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>scalarMultiply</strong>(					<a href="#" onclick="parent.toggleData('param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}" border="0" />n: <a href="EA1306.htm">Number</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{0B47D1D7-4D99-41b0-8233-2CDEDBC8C684}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="EA1309.htm">Vector</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1133" onclick="parent.toggleDiv('detailsDIVOperations1133','DetailsImageOperations1133')" />Details:
-						<div id="detailsDIVOperations1133" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>vectorAdd</strong>(					<a href="#" onclick="parent.toggleData('param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}" border="0" />v: <a href="EA1309.htm">Vector</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{78ECC935-4D8D-42a8-8F18-8EC3F3E9BE02}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="EA1309.htm">Vector</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations1134" onclick="parent.toggleDiv('detailsDIVOperations1134','DetailsImageOperations1134')" />Details:
-						<div id="detailsDIVOperations1134" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-
-		</table>
-</div><div class="ItemBody" id="TaggedValTable">
+<div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -312,34 +217,15 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1135" onclick="parent.toggleDiv('detailsDIVScenario1135','DetailsImageScenario1135')" />Details:
-						<div id="detailsDIVScenario1135" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1132" onclick="parent.toggleDiv('detailsDIVScenario1132','DetailsImageScenario1132')" />Details:
+						<div id="detailsDIVScenario1132" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA6/EA4/EA1/EA3/EA1479.htm">«datatype» Vector</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

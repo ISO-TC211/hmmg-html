@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate Reference Systems::SC_VerticalCRS</title>
+<title>Coordinate Reference Systems::SC_SingleCRS</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SC_VerticalCRS", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SC_SingleCRS", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.12.2009 12:10:51</td>
+			<td class="ObjectDetailsValue">10.04.2008 12:16:36</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue">Easy</td>
+			<td class="ObjectDetailsValue"></td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{87585B96-C7AB-4160-9A47-DF1306436BA4}</td>
+			<td class="ObjectDetailsValue">{47F7DB02-F6F0-44c3-B54C-1CDDD0E1C46F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3708.htm">Main</a>, <a href="EA3706.htm">Context Diagram: SC_VerticalCRS</a>, <a href="../EA3/EA3759.htm">CRS Associations</a>, <a href="../EA4/EA3798.htm">CRSAssociations</a>, <a href="../../../EA12/EA6/EA14/EA5645.htm">Fig A.15 : Extent information</a>, <a href="../../../EA12/EA2/EA11/EA4346.htm">Fig.19: Extent information</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3709.htm">Main</a>, <a href="EA3705.htm">Context Diagram: SC_SingleCRS</a>, <a href="EA3687.htm">Context Diagram: SC_CompoundCRS</a>, <a href="EA3699.htm">Context Diagram: SC_GeodeticCRS</a>, <a href="EA3695.htm">Context Diagram: SC_EngineeringCRS</a>, <a href="EA3701.htm">Context Diagram: SC_ImageCRS</a>, <a href="EA3707.htm">Context Diagram: SC_VerticalCRS</a>, <a href="EA3697.htm">Context Diagram: SC_GeneralDerivedCRS</a>, <a href="EA3691.htm">Context Diagram: SC_DerivedCRS</a>, <a href="../EA3/EA3760.htm">CRS Associations</a>, <a href="../EA3/EA3762.htm">Main</a>, <a href="../EA4/EA3801.htm">Main</a>, <a href="../EA4/EA3799.htm">CRSAssociations</a>, <a href="../EA7/EA3828.htm">Context Diagram: TM_TemporalCRS</a>, <a href="../../EA3/EA3832.htm">Fig 1</a>, <a href="../../EA3/EA3834.htm">Fig 2</a>, <a href="../../EA3/EA3836.htm">Fig 3</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8259.htm">Context Diagram: MC_CoordinateReferenceSystem</a>, <a href="../../../EA28/EA2/EA2/EA9336.htm">Figure D.50 ? Defining elements of TemporalCRS class</a>, <a href="../../../EA28/EA2/EA2/EA9334.htm">Context Diagram: TemporalCRS</a>, <a href="../../../EA28/EA2/EA3/EA9346.htm">Figure D.52 ? Association between TemporalCRS and TimeCS</a>, <a href="../../../EA28/EA2/EA4/EA9355.htm">Figure D.54 ? Association between TemporalCRS and TemporalDatum</a>, <a href="../../../EA6/EA4/EA14/EA1808.htm">Context Diagram: GeometricReferenceSystem</a>, <a href="../../../EA6/EA4/EA14/EA1874.htm">Spatial Reference Systems</a>, <a href="../../../EA28/EA1/EA2/EA8902.htm">Figure D.50 ? Defining elements of TemporalCRS class</a>, <a href="../../../EA28/EA1/EA2/EA8900.htm">Context Diagram: TemporalCRS</a>, <a href="../../../EA28/EA1/EA3/EA8912.htm">Figure D.52 ? Association between TemporalCRS and TimeCS</a>, <a href="../../../EA28/EA1/EA4/EA8921.htm">Figure D.54 ? Association between TemporalCRS and TemporalDatum</a>, <a href="../../../EA50/EA1/EA2/EA15598.htm">fyi:GeodeticCRS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A 1D coordinate reference system used for recording heights or depths. Vertical CRSs make use of the direction of gravity to define the concept of height or depth, but the relationship with gravity may not be straightforward. &lt;br/&gt;&lt;br/&gt;By implication, ellipsoidal heights (h) cannot be captured in a vertical coordinate reference system. Ellipsoidal heights cannot exist independently, but only as inseparable part of a 3D coordinate tuple defined in a geodetic 3D coordinate reference system.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Coordinate reference system consisting of one Coordinate System and one Datum (as opposed to a Compound CRS). &lt;br/&gt;&lt;br/&gt;Note: In ISO 19111:2003, this class was called SC_CoordinateReferenceSystem.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -112,23 +112,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA4/EA3812.htm">«type» CD_VerticalDatum</a><br />
+						<a href="EA3717.htm">«type» SC_CompoundCRS</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> referenceSystem<br />
-						Not-navigable association from a vertical coordinate reference system that uses this vertical datum. 
+						<strong>Name:</strong> componentReferenceSystem<br />
+						Ordered sequence of associations to the component coordinate reference systems included in this compound coordinate reference system. 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> datum<br />
-						Association to the vertical datum used by this vertical coordinate reference system. 	
+						<strong>Name:</strong> compoundCRS<br />
+						Non-navigable association from a CompoundCRS that uses this coordinate reference system. 	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4654" onclick="parent.toggleDiv('detailsDIVLink4654','DetailsImageLink4654')" />Details:
-							<div id="detailsDIVLink4654" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Association to the vertical datum used by this vertical coordinate reference system.&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4652" onclick="parent.toggleDiv('detailsDIVLink4652','DetailsImageLink4652')" />Details:
+							<div id="detailsDIVLink4652" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Ordered sequence of associations to the component coordinate reference systems included in this compound coordinate reference system.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -136,23 +136,24 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA12/EA2/EA11/EA4360.htm">EX_VerticalExtent</a><br />
+						<a href="EA3719.htm">«type» SC_DerivedCRS</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> verticalCRS<br />
-						provides information about the vertical coordinate reference system to which the maximum and minimum elevation values are measured. The CRS identification includes unit of measure.
+						<strong>Name:</strong> baseCRS<br />
+						Association to the base coordinate reference system used by this derived CRS. 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
+						<strong>Name:</strong> derivedCRS<br />
+						Non-navigable association from a general derived coordinate reference system that uses this single coordinate reference systems as its base.	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4655" onclick="parent.toggleDiv('detailsDIVLink4655','DetailsImageLink4655')" />Details:
-							<div id="detailsDIVLink4655" class="DetailsDiv" >
-							&nbsp;
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4653" onclick="parent.toggleDiv('detailsDIVLink4653','DetailsImageLink4653')" />Details:
+							<div id="detailsDIVLink4653" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Association from a general derived coordinate reference system that uses this single coordinate reference system as its source. This association is used when one CRS can only exist when a base CRS and a defining conversion that relates the derived CRS to its base CRS both exist.&#160;&#160;For instance, a projected CRS cannot exist without a base geodetic CRS and a map projection (coordinate conversion). &lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -169,23 +170,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA3779.htm">«type» CS_VerticalCS</a><br />
+						<a href="../EA4/EA3805.htm">«type» CD_Datum</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordinateSystem<br />
-						Association to the vertical coordinate system used by this vertical CRS. 
+						<strong>Name:</strong> datum<br />
+						Derived association to the datum used by this coordinate reference system.
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> referenceSystem<br />
-						Not-navigable association from a Vertical CRS that uses this Vertical CS. 	
+						Not-navigable derived association from a coordinate reference system that uses this datum. 	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4656" onclick="parent.toggleDiv('detailsDIVLink4656','DetailsImageLink4656')" />Details:
-							<div id="detailsDIVLink4656" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Association from a Vertical CRS that uses this Vertical Coordinate System. &lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4654" onclick="parent.toggleDiv('detailsDIVLink4654','DetailsImageLink4654')" />Details:
+							<div id="detailsDIVLink4654" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Derived association to the datum used by this coordinate reference system.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -193,22 +194,22 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA12/EA6/EA14/EA5658.htm">EX_VerticalExtent</a><br />
+						<a href="../EA3/EA3768.htm">«type» CS_CoordinateSystem</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> coordinateSystem<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> verticalCRS<br />
+						<strong>Name:</strong> referenceSystem<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4657" onclick="parent.toggleDiv('detailsDIVLink4657','DetailsImageLink4657')" />Details:
-							<div id="detailsDIVLink4657" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4655" onclick="parent.toggleDiv('detailsDIVLink4655','DetailsImageLink4655')" />Details:
+							<div id="detailsDIVLink4655" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -229,8 +230,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4658" onclick="parent.toggleDiv('detailsDIVScenario4658','DetailsImageScenario4658')" />Details:
-						<div id="detailsDIVScenario4658" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4656" onclick="parent.toggleDiv('detailsDIVScenario4656','DetailsImageScenario4656')" />Details:
+						<div id="detailsDIVScenario4656" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -242,8 +243,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4659" onclick="parent.toggleDiv('detailsDIVScenario4659','DetailsImageScenario4659')" />Details:
-						<div id="detailsDIVScenario4659" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4657" onclick="parent.toggleDiv('detailsDIVScenario4657','DetailsImageScenario4657')" />Details:
+						<div id="detailsDIVScenario4657" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -255,8 +256,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4660" onclick="parent.toggleDiv('detailsDIVScenario4660','DetailsImageScenario4660')" />Details:
-						<div id="detailsDIVScenario4660" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4658" onclick="parent.toggleDiv('detailsDIVScenario4658','DetailsImageScenario4658')" />Details:
+						<div id="detailsDIVScenario4658" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -268,8 +269,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4661" onclick="parent.toggleDiv('detailsDIVScenario4661','DetailsImageScenario4661')" />Details:
-						<div id="detailsDIVScenario4661" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4659" onclick="parent.toggleDiv('detailsDIVScenario4659','DetailsImageScenario4659')" />Details:
+						<div id="detailsDIVScenario4659" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -280,8 +281,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4662" onclick="parent.toggleDiv('detailsDIVScenario4662','DetailsImageScenario4662')" />Details:
-						<div id="detailsDIVScenario4662" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4660" onclick="parent.toggleDiv('detailsDIVScenario4660','DetailsImageScenario4660')" />Details:
+						<div id="detailsDIVScenario4660" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -299,17 +300,80 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA12/EA2/EA11/EA4360.htm">EX_VerticalExtent</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3723.htm">«type» SC_GeodeticCRS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3841.htm">«type» SC_ParametricCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3722.htm">«type» SC_GeneralDerivedCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3724.htm">«type» SC_ImageCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3718.htm">«type» SC_CRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3725.htm">«type» SC_SingleCRS</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA1/EA2/EA8905.htm">«type» TemporalCRS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3727.htm">«type» SC_VerticalCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA5/EA4/EA8270.htm">MC_CoordinateReferenceSystem</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3721.htm">«type» SC_EngineeringCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA3831.htm">«type» TM_TemporalCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA2/EA2/EA9339.htm">«type» TemporalCRS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

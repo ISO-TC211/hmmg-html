@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Geometric primitive::GM_CurveBoundary</title>
+<title>Geometric primitive::GM_Curve</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_CurveBoundary", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Curve", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:12</td>
+			<td class="ObjectDetailsValue">14.07.2015 11:37:27</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,22 +87,73 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{8623ED09-8C89-484d-85DF-B29713FF61E0}</td>
+			<td class="ObjectDetailsValue">{FD776E60-9DAC-47bb-BD74-0E616A29326C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2470.htm">Fig 07: Geometry Boundary Data Types</a>, <a href="EA2436.htm">Context Diagram: GM_CurveBoundary</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA51/EA7/EA1/EA16170.htm">Fig 02: Curves</a>, <a href="../../../../EA51/EA7/EA1/EA16176.htm">Fig 05: Simple Elements</a>, <a href="../../../../EA51/EA7/EA1/EA16146.htm">Context Diagram: NL_Curve</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA2999.htm">Fig 27: Spatial composite</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA3007.htm">Fig 31: Partially shared geometry</a>, <a href="../../../../EA8/EA1/EA1/EA10/EA3011.htm">Fig 33: Independent spatial complex</a>, <a href="../../../../EA17/EA3/EA2/EA6580.htm">Context Diagram: CV_CurveValuePair</a>, <a href="../../../../EA17/EA3/EA7/EA6725.htm">Context Diagram: CV_ValueCurve</a>, <a href="../../../../EA28/EA2/EA9/EA9402.htm">Figure D.46 ? GM_Curve with a single GM_LineString segment</a>, <a href="../../../../EA28/EA2/EA9/EA9400.htm">Context Diagram: LineString</a>, <a href="../../../../EA31/EA1/EA9792.htm">Class Hierarchy</a>, <a href="../../../../EA31/EA1/EA1/EA9825.htm">Main</a>, <a href="../../../../EA31/EA1/EA1/EA9821.htm">Context Diagram: MF_Trajectory</a>, <a href="../../../../EA31/EA1/EA1/EA9809.htm">Context Diagram: MF_MeasureFunction</a>, <a href="../../../../EA36/EA2/EA4/EA10879.htm">Fig 14: Linear Referencing System classes</a>, <a href="../../../../EA36/EA2/EA4/EA10889.htm">Fig 19: Context Diagram: LR_Curve</a>, <a href="../../../../EA51/EA6/EA1/EA1/EA1/EA15974.htm">Main</a>, <a href="../../../../EA51/EA6/EA1/EA1/EA1/EA15964.htm">Context Diagram: OneCell</a>, <a href="../../../../EA51/EA6/EA1/EA1/EA4/EA16059.htm">Curve Feature Componenty</a>, <a href="../../../../EA51/EA6/EA1/EA1/EA4/EA16067.htm">Fig D2: Topo and Geo</a>, <a href="../../../../EA51/EA6/EA1/EA1/EA4/EA16039.htm">Context Diagram: TS_Edge</a>, <a href="../../../../EA51/EA6/EA1/EA2/EA16092.htm">Edge CD </a>, <a href="../EA2177.htm">Fig 05: Geometry basic classes </a>, <a href="../EA1/EA2277.htm">Fig 15: Curve Segments </a>, <a href="EA2473.htm">Fig 08: GM_Primitive</a>, <a href="EA2479.htm">Fig 11: GM_Curve </a>, <a href="EA2477.htm">Fig 10: GM_OrientedPrimitive</a>, <a href="EA2435.htm">Context Diagram: GM_Curve</a>, <a href="EA2443.htm">Context Diagram: GM_OrientableCurve</a>, <a href="../EA5/EA2511.htm">Geometry Root</a>, <a href="../../../../EA28/EA1/EA9/EA8968.htm">Figure D.46 ? GM_Curve with a single GM_LineString segment</a>, <a href="../../../../EA28/EA1/EA9/EA8966.htm">Context Diagram: LineString</a>, <a href="../../../../EA36/EA1/EA4/EA10689.htm">Fig 14: Linear Referencing System classes</a>, <a href="../../../../EA36/EA1/EA4/EA10699.htm">Fig 19: Context Diagram: LR_Curve</a>, <a href="../../../../EA42/EA1/EA2/EA13847.htm">Figure 11: Sampling Manifold</a>, <a href="../../../../EA42/EA1/EA2/EA4/EA13886.htm">Context diagram: SF_SamplingCurve</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The boundary of GM_Curves shall be represented as GM_CurveBoundary.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">GM_Curve (Figure 11) is a descendent subtype of GM_Primitive through GM_OrientablePrimitive. It is the basis for 1-dimensional geometry. A curve is a continuous image of an open interval and so could be written as a parameterized function such as c(t):(a, b)®En where &quot;t&quot; is a real parameter and En is Euclidean space of dimension n (usually 2 or 3, as determined by the coordinate reference system). Any other parameterization that results in the same image curve, traced in the same direction, such as any linear shifts and positive scales such as e(t) = c(a + t(b-a)):(0,1) ®En, is an equivalent representation of the same curve. For the sake of simplicity, GM_Curves should be parameterized by arc length, so that the parameterization operation inherited from GM_GenericCurve (see 6.4.7) will be valid for parameters between 0 and the length of the curve. &lt;br/&gt;Curves are continuous, connected, and have a measurable length in terms of the coordinate system. The orientation of the curve is determined by this parameterization, and is consistent with the tangent function, which approximates the derivative function of the parameterization and shall always point in the &quot;forward&quot; direction. The parameterization of the reversal of the curve defined by c(t):(a, b)®En would be defined by a function of the form s(t) = c(a + b - t):(a, b)®En.&lt;br/&gt;A curve is composed of one or more curve segments. Each curve segment within a curve may be defined using a different interpolation method. The curve segments are connected to one another, with the end point of each segment except the last being the start point of the next segment in the segment list.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>GM_Curve</strong>(					<a href="#" onclick="parent.toggleData('param{55AC3857-EB83-4563-BAE2-4311B230B01B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{55AC3857-EB83-4563-BAE2-4311B230B01B}" border="0" />segment[1..*]: <a href="EA2490.htm">GM_CurveSegment</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{55AC3857-EB83-4563-BAE2-4311B230B01B}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{55AC3857-EB83-4563-BAE2-4311B230B01B}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{55AC3857-EB83-4563-BAE2-4311B230B01B}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{55AC3857-EB83-4563-BAE2-4311B230B01B}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA2487.htm">GM_Curve</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2434" onclick="parent.toggleDiv('detailsDIVOperations2434','DetailsImageOperations2434')" />Details:
+						<div id="detailsDIVOperations2434" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -111,7 +162,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2493.htm">«type» GM_Point</a><br />
+						<a href="../../../../EA42/EA1/EA2/EA4/EA13891.htm">«FeatureType» SF_SamplingCurve</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -119,14 +170,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> startPoint<br />
+						<strong>Name:</strong> shape<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2439" onclick="parent.toggleDiv('detailsDIVLink2439','DetailsImageLink2439')" />Details:
-							<div id="detailsDIVLink2439" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2435" onclick="parent.toggleDiv('detailsDIVLink2435','DetailsImageLink2435')" />Details:
+							<div id="detailsDIVLink2435" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -134,7 +185,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2493.htm">«type» GM_Point</a><br />
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3040.htm">«FeatureType» RoadElement</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -142,14 +193,83 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> endPoint<br />
+						<strong>Name:</strong> spatialConfiguration<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2440" onclick="parent.toggleDiv('detailsDIVLink2440','DetailsImageLink2440')" />Details:
-							<div id="detailsDIVLink2440" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2436" onclick="parent.toggleDiv('detailsDIVLink2436','DetailsImageLink2436')" />Details:
+							<div id="detailsDIVLink2436" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3022.htm">«FeatureType» Bridge</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> feature<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> geometry<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2437" onclick="parent.toggleDiv('detailsDIVLink2437','DetailsImageLink2437')" />Details:
+							<div id="detailsDIVLink2437" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../../EA8/EA1/EA1/EA10/EA3037.htm">«FeatureType» Road</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> feature<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> geometry<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2438" onclick="parent.toggleDiv('detailsDIVLink2438','DetailsImageLink2438')" />Details:
+							<div id="detailsDIVLink2438" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2490.htm">«Abstract» GM_CurveSegment</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> segment<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> curve<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2439" onclick="parent.toggleDiv('detailsDIVLink2439','DetailsImageLink2439')" />Details:
+							<div id="detailsDIVLink2439" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -170,8 +290,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2441" onclick="parent.toggleDiv('detailsDIVScenario2441','DetailsImageScenario2441')" />Details:
-						<div id="detailsDIVScenario2441" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2440" onclick="parent.toggleDiv('detailsDIVScenario2440','DetailsImageScenario2440')" />Details:
+						<div id="detailsDIVScenario2440" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -188,9 +308,72 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2495.htm">«Abstract» GM_PrimitiveBoundary</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA28/EA2/EA9/EA9406.htm">«type» LineString</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA31/EA1/EA1/EA9834.htm">«type» MF_Trajectory</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA36/EA2/EA4/EA10917.htm">«type» LR_Curve</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA51/EA7/EA1/EA16189.htm">NL_Curve</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA51/EA6/EA1/EA1/EA4/EA16083.htm">TS_Edge</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA36/EA1/EA4/EA10727.htm">«type» LR_Curve</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2491.htm">«type» GM_OrientableCurve</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA51/EA6/EA1/EA1/EA1/EA15979.htm">OneCell</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA28/EA1/EA9/EA8972.htm">«type» LineString</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA2342.htm">«interface» GM_GenericCurve</a></td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate geometry::GM_LineSegment</title>
+<title>Coordinate geometry::GM_KnotType</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_LineSegment", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_KnotType", " : "))</script>  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,72 +87,173 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{3FDA4C69-7DE4-45e6-AC72-8CA43C1B150E}</td>
+			<td class="ObjectDetailsValue">{FA92A240-5832-4007-BCF0-E1DE3F2CD58F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2278.htm">Fig 16: Linear and Geodetic Interpolation</a>, <a href="EA2276.htm">Fig 15: Curve Segments </a>, <a href="EA2236.htm">Context Diagram: GM_LineSegment</a></td>
+			<td class="ObjectDetailsValue"><a href="EA2285.htm">Fig 19: Splines and Speciality Curves</a>, <a href="EA2203.htm">Context Diagram: GM_BSplineCurve</a>, <a href="EA2235.htm">Context Diagram: GM_KnotType</a>, <a href="EA2205.htm">Context Diagram: GM_BSplineSurface</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A GM_LineSegment consists of two distinct DirectPositions (the startPoint and endPoint) joined by a straight line. Thus its interpolation attribute shall be &quot;linear&quot;. The default GM_GenericCurve::parameterization = c(s) is:&lt;br/&gt;(L : Distance) = endParam - startParam&lt;br/&gt;c(s) = ControlPoint[1]+((s-startParam)/L)*(ControlPoint[2]-ControlPoint[1])&lt;br/&gt;&lt;br/&gt;Any other point in the controlPoint array must fall on this line. The control points of a GM_LineSegment shall all lie on the straight line between its start point and end point. Between these two points, other positions may be interpolated linearly. &lt;br/&gt;NOTE The linear interpolation, given using a constructive parameter t, 0 £ t £ 1.0, where c(o) = c.startPoint() and c(1)=c.endPoint(), is:&lt;br/&gt; &lt;br/&gt;c(t) = t c(1)&#160;&#160;+ (1-t) c(0)&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A B-spline is uniform if and only if all knots are of multiplicity 1 and they differ by a positive constant from the preceding knot. A B-spline is quasi-uniform if and only if the knots are of multiplicity (degree+1) at the ends, of multiplicity 1 elsewhere, and they differ by a positive constant from the preceding knot. This code list is used to describe the distribution of knots in the parameter space of various splines. The possible values are:&lt;br/&gt;¾ uniform: the form of knots is appropriate for a uniform B-spline.&lt;br/&gt;¾ quasiUniform: the form of knots is appropriate for a quasi-uniform B-spline.&lt;br/&gt;¾ piecewiseBezier : the form of knots is appropriate for a piecewise Bezier curve.&lt;br/&gt;GM_KnotType::&lt;br/&gt;uniform : CharacterString&lt;br/&gt;quasiUniform : CharacterString&lt;br/&gt;piecewiseBezier : CharacterString&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="OperationsTable">
+<div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
-			<td width="100%" class="TableHeading">Operation</td>
+			<td width="100%" class="TableHeading">Attribute</td>
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>GM_LineSegment</strong>(					<a href="#" onclick="parent.toggleData('param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}" border="0" />point [2]: <a href="EA2359.htm">GM_Position</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{D61E8D44-0828-4666-B9DD-00DF6B156C1B}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="EA2348.htm">GM_LineSegment</a>
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;uniform</strong>
 				</td>
 			</tr>
 			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2307" onclick="parent.toggleDiv('detailsDIVOperations2307','DetailsImageOperations2307')" />Details:
-						<div id="detailsDIVOperations2307" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2305')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2305" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2305_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
 							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2305_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2305_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
 						</tr>
 					</table>
 					
 					
-					
-						</div>
-					</div>
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;quasiUniform</strong>
 				</td>
 			</tr>
-
-		</table>
-</div><div class="ItemBody" id="TaggedValTable">
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2306')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2306" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2306_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2306_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2306_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public &lt;undefined&gt;</i><br /><strong>&nbsp;&nbsp;piecewiseBezier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2307')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2307" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2307_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2307_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2307_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -172,26 +273,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2349.htm">«type» GM_LineString</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+</div>	</div>
 <div class="pageFooter"></div>
  
 </body>

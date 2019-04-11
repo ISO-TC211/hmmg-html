@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Discrete Coverages::CV_DiscreteSolidCoverage</title>
+<title>Discrete Coverages::CV_DiscretePointCoverage</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_DiscreteSolidCoverage", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_DiscretePointCoverage", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">26.03.2010 12:54:10</td>
+			<td class="ObjectDetailsValue">28.10.2015 11:35:04</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,17 +87,18 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{44CC111B-F3C1-4950-B318-924F2F6AA203}</td>
+			<td class="ObjectDetailsValue">{93001CC7-B2D9-46c3-A44D-ACFAB0B3FB73}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../../EA8/EA1/EA1/EA3/EA2864.htm">Fig 34: Mine and ore-grade</a>, <a href="../EA1/EA6567.htm">Used in 19131 D3</a>, <a href="EA6599.htm">Fig 05 - Discrete coverage types</a>, <a href="EA6609.htm">Fig 10 - CV_DiscreteSolidCoverage</a>, <a href="EA6581.htm">Context Diagram: CV_DiscreteCoverage</a>, <a href="EA6589.htm">Context Diagram: CV_DiscreteSolidCoverage</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../EA8/EA1/EA1/EA3/EA2867.htm">Fig 35: Water gauging</a>, <a href="EA6600.htm">Fig 05 - Discrete coverage types</a>, <a href="EA6602.htm">Fig 06 - CV_DiscretePointCoverage</a>, <a href="EA6582.htm">Context Diagram: CV_DiscreteCoverage</a>, <a href="EA6588.htm">Context Diagram: CV_DiscretePointCoverage</a>, <a href="../../../EA21/EA1/EA1/EA6914.htm">Fig 14 Template App Schema for Point Set Coverage</a>, <a href="../../../EA42/EA1/EA1/EA13772.htm">Figure 7: Coverage Observation</a>, <a href="../../../EA42/EA1/EA1/EA10/EA13831.htm">Context diagram: OM_PointCoverageObservation</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -110,26 +111,45 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>find</strong>(					<a href="#" onclick="parent.toggleData('param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2322.htm">DirectPosition</a></a>, 
+					<strong>find</strong>(					<a href="#" onclick="parent.toggleData('param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2323.htm">DirectPosition</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}00" style="display: none;">
+						<tr id="param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}01" style="display: none;">
+						<tr id="param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}02" style="display: none;">
+						<tr id="param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{7F7A01B6-33C1-4f33-B9A4-5C5E521954E1}03" style="display: none;">
+						<tr id="param{9B3C4C90-DD66-4e9e-9257-C1B86947FA70}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):<a href="EA6624.htm">CV_SolidValuePair</a>
+					<a href="#" onclick="parent.toggleData('param{82E6AD58-3531-467a-8B7C-894072D5D9DD}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{82E6AD58-3531-467a-8B7C-894072D5D9DD}" border="0" />limit: <a href="../../../EA4/EA2/EA1/EA3/EA4/EA1306.htm">Integer</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{82E6AD58-3531-467a-8B7C-894072D5D9DD}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td>1</td>
+						</tr>
+						<tr id="param{82E6AD58-3531-467a-8B7C-894072D5D9DD}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{82E6AD58-3531-467a-8B7C-894072D5D9DD}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{82E6AD58-3531-467a-8B7C-894072D5D9DD}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):Sequence&lt;CV_PointValuePair&gt;
 				</td>
 			</tr>
 			<tr>
@@ -153,7 +173,7 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>list</strong>():Set&lt;CV_SolidValuePair&gt;
+					<strong>list</strong>():Set&lt;CV_PointValuePair&gt;
 				</td>
 			</tr>
 			<tr>
@@ -177,26 +197,26 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>locate</strong>(					<a href="#" onclick="parent.toggleData('param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2322.htm">DirectPosition</a></a>, 
+					<strong>locate</strong>(					<a href="#" onclick="parent.toggleData('param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2323.htm">DirectPosition</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}00" style="display: none;">
+						<tr id="param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}01" style="display: none;">
+						<tr id="param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}02" style="display: none;">
+						<tr id="param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{B38AF6C2-FD3D-4f70-AA0C-86E017ED9B5D}03" style="display: none;">
+						<tr id="param{F1807912-9B3D-4eee-8A1E-9D4EFC2C210E}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):<a href="EA6624.htm">CV_SolidValuePair</a>
+):Set&lt;CV_PointValuePair&gt;
 				</td>
 			</tr>
 			<tr>
@@ -219,7 +239,7 @@ function nameClassifier(name, separator)
 			</tr>
 
 		</table>
-</div>		<div class="ItemBody" id="AssociationsFromTable">
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -228,15 +248,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA6624.htm">CV_SolidValuePair</a><br />
+						<a href="../../../EA42/EA1/EA1/EA10/EA13834.htm">«FeatureType» OM_PointCoverageObservation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> element<br />
+						<strong>Name:</strong> result<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> collection<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -251,15 +271,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA8/EA1/EA1/EA3/EA1/EA2879.htm">«FeatureType» Mine</a><br />
+						<a href="EA6624.htm">CV_PointValuePair</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> collection<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> oreGrade<br />
+						<strong>Name:</strong> element<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -267,6 +287,39 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13520" onclick="parent.toggleDiv('detailsDIVLink13520','DetailsImageLink13520')" />Details:
 							<div id="detailsDIVLink13520" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA21/EA1/EA1/EA6935.htm">IF_Feature</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> theCV_DiscretePointCoverage<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13521" onclick="parent.toggleDiv('detailsDIVLink13521','DetailsImageLink13521')" />Details:
+							<div id="detailsDIVLink13521" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -287,8 +340,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13521" onclick="parent.toggleDiv('detailsDIVScenario13521','DetailsImageScenario13521')" />Details:
-						<div id="detailsDIVScenario13521" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13522" onclick="parent.toggleDiv('detailsDIVScenario13522','DetailsImageScenario13522')" />Details:
+						<div id="detailsDIVScenario13522" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -305,10 +358,31 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA6617.htm">«type» CV_DiscreteCoverage</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA6618.htm">«type» CV_DiscreteCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA42/EA1/EA1/EA10/EA13834.htm">«FeatureType» OM_PointCoverageObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA21/EA1/EA1/EA6933.htm">IF_DiscretePointCoverage</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA1/EA3/EA2/EA2883.htm">TimeSeries</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

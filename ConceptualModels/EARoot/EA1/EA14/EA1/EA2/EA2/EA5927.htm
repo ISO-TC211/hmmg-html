@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Symbol::SY_LineStyle</title>
+<title>Symbol::SY_LineComponent</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_LineStyle", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("SY_LineComponent", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">16.10.2008 08:00:32</td>
+			<td width="85%" class="ObjectDetailsValue">17.07.2008 09:02:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">13.06.2010 12:00:53</td>
+			<td class="ObjectDetailsValue">30.09.2009 19:18:38</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,50 +87,186 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EEB0DE8A-510A-4117-AC1E-20325E6FAA5A}</td>
+			<td class="ObjectDetailsValue">{5F04FF30-F849-401d-8F49-5FFF83F9C7AB}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA5885.htm">SY_LineStyle</a>, <a href="EA5883.htm">SY_LineComponent</a>, <a href="EA5909.htm">Symbol</a>, <a href="../../EA3/EA3/EA5990.htm">Symbol - Compound</a>, <a href="../../EA3/EA4/EA6006.htm">Symbol - Complex</a>, <a href="../../EA3/EA5/EA6018.htm">Symbol - Reusable</a></td>
+			<td class="ObjectDetailsValue"><a href="EA5886.htm">SY_LineStyle</a>, <a href="EA5884.htm">SY_LineComponent</a>, <a href="EA5910.htm">Symbol</a>, <a href="EA5890.htm">SY_LineText</a>, <a href="EA5902.htm">SY_SymbolComponent</a>, <a href="../../EA3/EA3/EA5987.htm">SY_TransformedLineComponent</a>, <a href="../../EA3/EA3/EA5977.htm">«type» SY_CompoundLineComponent</a>, <a href="../../EA3/EA3/EA5991.htm">Symbol - Compound</a>, <a href="../../EA3/EA4/EA6005.htm">SY_RepeatedPointSymbolLineStyle</a>, <a href="../../EA3/EA4/EA6001.htm">SY_HatchFill</a>, <a href="../../EA3/EA4/EA6007.htm">Symbol - Complex</a>, <a href="../../EA3/EA5/EA6019.htm">Symbol - Reusable</a>, <a href="../../EA3/EA5/EA6015.htm">SY_ExternalLineComponent</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">SY_GraphicsStyle specializes SY_LineStyle as an abstract graphic element of a line style. This type is realized by a pen style in a defined graphics language.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">SY_LineStyle specializes SY_Presentation as an abstract line style.&#160;&#160;The line style has a coordinate reference system defined at every point along its path, which has an x-axis that is tangential to the path at that point. The line style also has a one dimensional coordinate reference system that is define along the path of the line style.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="ConstraintsTable">
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>lineCRS</strong>():<a href="../../../../EA10/EA2/EA2/EA3718.htm">SC_CRS</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12886" onclick="parent.toggleDiv('detailsDIVOperations12886','DetailsImageOperations12886')" />Details:
+						<div id="detailsDIVOperations12886" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;lineCRS&quot; returns a one dimensional coordinate reference system that is define along the path of the line pattern.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>localCRS</strong>(					<a href="#" onclick="parent.toggleData('param{169CADFA-F97D-4320-BF2C-21A2588E019D}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{169CADFA-F97D-4320-BF2C-21A2588E019D}" border="0" />measure: <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1308.htm">Real</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{169CADFA-F97D-4320-BF2C-21A2588E019D}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{169CADFA-F97D-4320-BF2C-21A2588E019D}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{169CADFA-F97D-4320-BF2C-21A2588E019D}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{169CADFA-F97D-4320-BF2C-21A2588E019D}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../../EA10/EA2/EA2/EA3718.htm">SC_CRS</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12887" onclick="parent.toggleDiv('detailsDIVOperations12887','DetailsImageOperations12887')" />Details:
+						<div id="detailsDIVOperations12887" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The operation &quot;localCRS&quot; shall accept a real value as input and return a coordinate reference system. The parameter &quot;measure&quot; specifies the measure along the path of the line pattern specifying the origin of the coordinate reference system. The x-axis is tangential to the path at that point.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content->forAll(isKindOf(SY_GraphicProperty))</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5998.htm">«type» SY_TransformedLineComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformedElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformation<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12884" onclick="parent.toggleDiv('detailsDIVConstraints12884','DetailsImageConstraints12884')" />Details:
-							<div id="detailsDIVConstraints12884" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12888" onclick="parent.toggleDiv('detailsDIVLink12888','DetailsImageLink12888')" />Details:
+							<div id="detailsDIVLink12888" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">content.size() >= 1</td>
-					<td width="10%" class="TableRow">Invariant</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA3/EA5997.htm">«type» SY_CompoundLineComponent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> element<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compound<br />
+						&nbsp;	
+					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints12885" onclick="parent.toggleDiv('detailsDIVConstraints12885','DetailsImageConstraints12885')" />Details:
-							<div id="detailsDIVConstraints12885" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12889" onclick="parent.toggleDiv('detailsDIVLink12889','DetailsImageLink12889')" />Details:
+							<div id="detailsDIVLink12889" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA4/EA6011.htm">«type» SY_HatchFill</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hatchElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> fill<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12890" onclick="parent.toggleDiv('detailsDIVLink12890','DetailsImageLink12890')" />Details:
+							<div id="detailsDIVLink12890" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -149,11 +285,74 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA5926.htm">«type» SY_LineComponent</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5928.htm">«type» SY_LineStyle</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_GraphicsLinePattern specializes the type "SY_LinePattern" as a graphic representation of the line pattern. As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA5/EA6023.htm">«type» SY_ExternalLineComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5997.htm">«type» SY_CompoundLineComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_CompoundLinePattern specializes the type "SY_LinePattern" as a compound of multiple subpatterns.  As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5929.htm">«type» SY_LineText</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5998.htm">«type» SY_TransformedLineComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5997.htm">«type» SY_CompoundLineComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6010.htm">«type» SY_RepeatedPointSymbolLineStyle</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">SY_PointSymbolLinePattern specializes the type "SY_LinePattern" as a pattern of repeated point symbols along the path of the line pattern.  As such it shall implement all inherited attributes, operations and associations.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3/EA5998.htm">«type» SY_TransformedLineComponent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA4/EA6011.htm">«type» SY_HatchFill</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA5920.htm">«type» SY_SymbolComponent</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">SY_GraphicsLinePattern specializes the type "SY_LinePattern" as a graphic representation of the line pattern. As such it shall implement all inherited attributes, operations and associations.</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
 			</table>

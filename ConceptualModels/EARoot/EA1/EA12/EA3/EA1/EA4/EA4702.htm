@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Acquisition information::MI_SensorTypeCode</title>
+<title>Acquisition information::MI_Sensor</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_SensorTypeCode", " : "))</script>  : Public  &lt;&lt;CodeList&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MI_Sensor", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">23.02.2015 09:54:56</td>
+			<td width="85%" class="ObjectDetailsValue">07.12.2015 18:41:18</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">29.05.2009 08:50:15</td>
+			<td class="ObjectDetailsValue">23.08.2016 11:47:22</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,19 +87,54 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{FCC0A6B0-DE26-4a40-9283-E40711951F94}</td>
+			<td class="ObjectDetailsValue">{21014BFA-8B8C-4f72-843B-BF57B21C77CF}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA4651.htm">Context Diagram: MI_Instrument</a></td>
+			<td class="ObjectDetailsValue"><a href="EA4678.htm">Fig 3 - Acquisition Details</a>, <a href="EA4676.htm">Fig 2 - Acquisition Overview</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">#lt;UsedBy#gt;&lt;br/&gt;#lt;NameSpace#gt;ISO 19115-2 Metadata - Imagery#lt;/NameSpace#gt;&lt;br/&gt;#lt;Class#gt;MI_Instrument#lt;/Class#gt;&lt;br/&gt;#lt;Package#gt;Acquisition information - Imagery#lt;/Package#gt;&lt;br/&gt;#lt;Attribute#gt;type#lt;/Attribute#gt;&lt;br/&gt;#lt;Type#gt;MI_SensorTypeCode#lt;/Type#gt;&lt;br/&gt;#lt;UsedBy#gt;&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">specific type of instrument &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA4687.htm">MI_Instrument</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sensor<br />
+						instrument is a sensor
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hosted<br />
+						instument on which sensors are hosted	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink7317" onclick="parent.toggleDiv('detailsDIVLink7317','DetailsImageLink7317')" />Details:
+							<div id="detailsDIVLink7317" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -107,46 +142,39 @@ function nameClassifier(name, separator)
 			<td width="50%" class="TableHeading">Value</td>
 		</tr>
 					<tr>
-				<td width="50%" class="TableRow" valign="top">asDictionary</td>
-				<td width="50%" class="TableRow" valign="top">true</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7312" onclick="parent.toggleDiv('detailsDIVScenario7312','DetailsImageScenario7312')" />Details:
-						<div id="detailsDIVScenario7312" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: true<br />Default: true<br />Description: Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule). Always true in INSPIRE.<br /></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">persistence</td>
 				<td width="50%" class="TableRow" valign="top">transient</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7313" onclick="parent.toggleDiv('detailsDIVScenario7313','DetailsImageScenario7313')" />Details:
-						<div id="detailsDIVScenario7313" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7318" onclick="parent.toggleDiv('detailsDIVScenario7318','DetailsImageScenario7318')" />Details:
+						<div id="detailsDIVScenario7318" class="DetailsDiv" >
 						&nbsp;
-						</div>
-					</div>
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow" valign="top">xsdEncodingRule</td>
-				<td width="50%" class="TableRow" valign="top">iso19136_2007_INSPIRE_Extensions</td>
-			</tr>	
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario7314" onclick="parent.toggleDiv('detailsDIVScenario7314','DetailsImageScenario7314')" />Details:
-						<div id="detailsDIVScenario7314" class="DetailsDiv" >
-						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007<br />Description: XML Schema encoding rule to apply<br /></div>
-
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>	</div>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA4687.htm">MI_Instrument</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

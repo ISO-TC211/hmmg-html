@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate Systems::CS_CoordinateSystemAxis</title>
+<title>Coordinate Systems::CS_CoordinateSystem</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CS_CoordinateSystemAxis", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CS_CoordinateSystem", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14.12.2009 12:15:22</td>
+			<td class="ObjectDetailsValue">22.03.2010 15:47:23</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,379 +87,22 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{C9F73C59-2AC1-4223-B236-5E6C4B77AACD}</td>
+			<td class="ObjectDetailsValue">{F0A9132B-5204-4893-825B-FA76FCED1A97}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3761.htm">Main</a>, <a href="EA3733.htm">Context Diagram: CS_CoordinateSystem</a>, <a href="EA3735.htm">Context Diagram: CS_CoordinateSystemAxis</a>, <a href="../EA5/EA3817.htm">Main</a>, <a href="../../../EA13/EA2/EA1/EA5756.htm">Fig 13: Rotation Reference System</a>, <a href="../../../EA13/EA2/EA1/EA5754.htm">Fig 12: Motion Reference System</a>, <a href="../../../EA13/EA2/EA1/EA5752.htm">Fig 11: Orientation Reference System</a>, <a href="../../../EA13/EA2/EA1/EA5750.htm">Fig 10:: Reference System</a>, <a href="../../../EA13/EA2/EA1/EA5776.htm">Links to Reference Systems</a>, <a href="../../EA3/EA3833.htm">Fig 2</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8244.htm">Measured Coordinate Systems</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8240.htm">Context Diagram: MC_CoordinateSystem</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8238.htm">Context Diagram: MC_CoordinateReferenceSystem</a>, <a href="../../../EA30/EA1/EA1/EA2/EA9673.htm">Fig12 - CRS Catalogue</a>, <a href="../../../EA30/EA1/EA1/EA2/EA9655.htm">Context Diagram: CT_CoordinateSystemAxis</a>, <a href="../../../EA6/EA4/EA1/EA3/EA1/EA1494.htm">Figure 7 — Axis</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA2/EA3709.htm">Main</a>, <a href="../EA2/EA3705.htm">Context Diagram: SC_SingleCRS</a>, <a href="EA3760.htm">CRS Associations</a>, <a href="EA3762.htm">Main</a>, <a href="EA3734.htm">Context Diagram: CS_CoordinateSystem</a>, <a href="EA3732.htm">Context Diagram: CS_CartesianCS</a>, <a href="EA3750.htm">Context Diagram: CS_PolarCS</a>, <a href="EA3754.htm">Context Diagram: CS_SphericalCS</a>, <a href="EA3738.htm">Context Diagram: CS_CylindricalCS</a>, <a href="EA3756.htm">Context Diagram: CS_UserDefinedCS</a>, <a href="EA3728.htm">Context Diagram: CS_AffineCS</a>, <a href="EA3758.htm">Context Diagram: CS_VerticalCS</a>, <a href="EA3740.htm">Context Diagram: CS_EllipsoidalCS</a>, <a href="EA3748.htm">Context Diagram: CS_LinearCS</a>, <a href="EA3746.htm">Context Diagram: CS_ImageCS</a>, <a href="EA3744.htm">Context Diagram: CS_GeodeticCS</a>, <a href="EA3742.htm">Context Diagram: CS_EngineeringCS</a>, <a href="../EA5/EA3818.htm">Main</a>, <a href="../../EA3/EA3834.htm">Fig 2</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8265.htm">Measured Coordinate Systems</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8261.htm">Context Diagram: MC_CoordinateSystem</a>, <a href="../../../EA25/EA1/EA5/EA4/EA8259.htm">Context Diagram: MC_CoordinateReferenceSystem</a>, <a href="../../../EA28/EA2/EA3/EA9346.htm">Figure D.52 ? Association between TemporalCRS and TimeCS</a>, <a href="../../../EA28/EA2/EA3/EA9342.htm">Context Diagram: TimeCS</a>, <a href="../../../EA28/EA2/EA3/EA9344.htm">Figure D.51 ? TimeCS</a>, <a href="../../../EA30/EA1/EA1/EA2/EA9694.htm">Fig12 - CRS Catalogue</a>, <a href="../../../EA30/EA1/EA1/EA2/EA9674.htm">Context Diagram: CT_CoordinateSystem</a>, <a href="../../../EA28/EA1/EA3/EA8912.htm">Figure D.52 ? Association between TemporalCRS and TimeCS</a>, <a href="../../../EA28/EA1/EA3/EA8908.htm">Context Diagram: TimeCS</a>, <a href="../../../EA28/EA1/EA3/EA8910.htm">Figure D.51 ? TimeCS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Definition of a coordinate system axis.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A coordinate system (CS) is the non-repeating sequence of coordinate system axes that spans a given coordinate space. A CS is derived from a set of mathematical rules for specifying how coordinates in a given space are to be assigned to points. The coordinate values in a coordinate tuple shall be recorded in the order in which the coordinate system axes associations are recorded.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="AttributesTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1323.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;axisAbbrev</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4713')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4713" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4713_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4713_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4713_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The abbreviation used for this coordinate system axis; this abbreviation is also used to identify the coordinates in the coordinate tuple. Examples are X and Y.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA3765.htm">CS_AxisDirection</a></i><br /><strong>&nbsp;&nbsp;axisDirection</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4714')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4714" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4714_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4714_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4714_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Direction of this coordinate system axis (or in the case of Cartesian projected coordinates, the direction of this coordinate system axis locally). Examples: north or south, east or west, up or down. Within any set of coordinate system axes, only one of each pair of terms can be used. For earth-fixed CRSs, this direction is often approximate and intended to provide a human interpretable meaning to the axis. When a geodetic datum is used, the precise directions of the axes may therefore vary slightly from this approximate direction. Note that an EngineeringCRS often requires specific descriptions of the directions of its coordinate system axes.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA1/EA1/EA1067.htm">UnitOfMeasure</a></i><br /><strong>&nbsp;&nbsp;axisUnitID</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4715')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4715" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4715_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4715_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4715_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Identifier of the unit used for this coordinate system axis. The value of a coordinate in a coordinate tuple shall be recorded using this unit.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA4/EA1306.htm">Number</a></i><br /><strong>&nbsp;&nbsp;minimumValue</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4716')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4716" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4716_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4716_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4716_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The minimum value normally allowed for this axis, in the unit of measure for the axis.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA3/EA4/EA1306.htm">Number</a></i><br /><strong>&nbsp;&nbsp;maximumValue</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4717')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4717" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4717_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4717_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4717_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The maximum value normally allowed for this axis, in the unit of measure for the axis.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA3776.htm">CS_RangeMeaning</a></i><br /><strong>&nbsp;&nbsp;rangeMeaning</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes4718')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes4718" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes4718_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td>Range:0 to 1</td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes4718_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes4718_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Meaning of axis value range specified by minimumValue and maximumValue. This element shall be omitted when both minimumValue and maximumValue are omitted. It may be included when minimumValue and/or maximumValue are included. If this element is omitted when minimumValue or maximumValue are included, the meaning is unspecified.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>
-	</table>
-</div>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -469,47 +112,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA3839.htm">«type» CS_ParametricCS</a><br />
+						<a href="../EA2/EA3726.htm">«type» SC_SingleCRS</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> axis<br />
+						<strong>Name:</strong> coordinateSystem<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordinateSystem<br />
+						<strong>Name:</strong> referenceSystem<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4719" onclick="parent.toggleDiv('detailsDIVLink4719','DetailsImageLink4719')" />Details:
-							<div id="detailsDIVLink4719" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4713" onclick="parent.toggleDiv('detailsDIVLink4713','DetailsImageLink4713')" />Details:
+							<div id="detailsDIVLink4713" class="DetailsDiv" >
 							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3767.htm">«type» CS_CoordinateSystem</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> axis<br />
-						Ordered sequence of associations to the coordinate system axes included in a coordinate system.  
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> coordinateSystem<br />
-						Not-navigable association from a Coordinate System that uses this Coordinate System Axis. 	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4720" onclick="parent.toggleDiv('detailsDIVLink4720','DetailsImageLink4720')" />Details:
-							<div id="detailsDIVLink4720" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Axes describing horizontal location must have the same unit.&lt;br/&gt;All axes of a Cartesian CS must have the same unit when applied to a Geocentric CRS.&lt;br/&gt;</div>
-
 							</div>
 						</div>
 					</td>
@@ -526,23 +145,24 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA25/EA1/EA5/EA4/EA8250.htm">MC_CoordinateSystem</a><br />
+						<a href="EA3769.htm">«type» CS_CoordinateSystemAxis</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
+						<strong>Name:</strong> axis<br />
+						Ordered sequence of associations to the coordinate system axes included in a coordinate system.  
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> axis<br />
-						&nbsp;	
+						<strong>Name:</strong> coordinateSystem<br />
+						Not-navigable association from a Coordinate System that uses this Coordinate System Axis. 	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4721" onclick="parent.toggleDiv('detailsDIVLink4721','DetailsImageLink4721')" />Details:
-							<div id="detailsDIVLink4721" class="DetailsDiv" >
-							&nbsp;
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink4714" onclick="parent.toggleDiv('detailsDIVLink4714','DetailsImageLink4714')" />Details:
+							<div id="detailsDIVLink4714" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Axes describing horizontal location must have the same unit.&lt;br/&gt;All axes of a Cartesian CS must have the same unit when applied to a Geocentric CRS.&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -562,8 +182,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4722" onclick="parent.toggleDiv('detailsDIVScenario4722','DetailsImageScenario4722')" />Details:
-						<div id="detailsDIVScenario4722" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4715" onclick="parent.toggleDiv('detailsDIVScenario4715','DetailsImageScenario4715')" />Details:
+						<div id="detailsDIVScenario4715" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -575,8 +195,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4723" onclick="parent.toggleDiv('detailsDIVScenario4723','DetailsImageScenario4723')" />Details:
-						<div id="detailsDIVScenario4723" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4716" onclick="parent.toggleDiv('detailsDIVScenario4716','DetailsImageScenario4716')" />Details:
+						<div id="detailsDIVScenario4716" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -588,8 +208,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4724" onclick="parent.toggleDiv('detailsDIVScenario4724','DetailsImageScenario4724')" />Details:
-						<div id="detailsDIVScenario4724" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4717" onclick="parent.toggleDiv('detailsDIVScenario4717','DetailsImageScenario4717')" />Details:
+						<div id="detailsDIVScenario4717" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -601,8 +221,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4725" onclick="parent.toggleDiv('detailsDIVScenario4725','DetailsImageScenario4725')" />Details:
-						<div id="detailsDIVScenario4725" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4718" onclick="parent.toggleDiv('detailsDIVScenario4718','DetailsImageScenario4718')" />Details:
+						<div id="detailsDIVScenario4718" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -613,8 +233,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4726" onclick="parent.toggleDiv('detailsDIVScenario4726','DetailsImageScenario4726')" />Details:
-						<div id="detailsDIVScenario4726" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario4719" onclick="parent.toggleDiv('detailsDIVScenario4719','DetailsImageScenario4719')" />Details:
+						<div id="detailsDIVScenario4719" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -632,51 +252,128 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA13/EA2/EA1/EA5802.htm">PS_OrientationAxis</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3775.htm">«type» CS_LinearCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA2/EA3/EA9350.htm">«type» TimeCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3778.htm">«type» CS_SphericalCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA28/EA1/EA3/EA8916.htm">«type» TimeCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3772.htm">«Union» CS_EngineeringCS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA6/EA4/EA1/EA3/EA1/EA1506.htm">«datatype» AxisDescription</a></td>
-					<td width="10%" class="TableRow" valign="top">DataType</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3840.htm">«type» CS_ParametricCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA3/EA3839.htm">«type» CS_ParametricCS</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3776.htm">«type» CS_PolarCS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Weak</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA1/EA1/EA2/EA9677.htm">CT_CoordinateSystemAxis</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA3821.htm">«type» IO_IdentifiedObject</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3771.htm">«type» CS_EllipsoidalCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA3822.htm">«type» IO_IdentifiedObject</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA13/EA2/EA1/EA5793.htm">PS_MotionAxis</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3773.htm">«Union» CS_GeodeticCS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA13/EA2/EA1/EA5814.htm">PS_RotationAxis</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3767.htm">«type» CS_CartesianCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3765.htm">«type» CS_AffineCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3774.htm">«Union» CS_ImageCS</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3770.htm">«type» CS_CylindricalCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA25/EA1/EA5/EA4/EA8271.htm">MC_CoordinateSystem</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3780.htm">«type» CS_VerticalCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA30/EA1/EA1/EA2/EA9697.htm">CT_CoordinateSystem</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3779.htm">«type» CS_UserDefinedCS</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

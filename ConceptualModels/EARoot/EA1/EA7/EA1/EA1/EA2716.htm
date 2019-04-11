@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Temporal Objects::TM_GeometricPrimitive</title>
+<title>Temporal Objects::TM_Edge</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TM_GeometricPrimitive", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TM_Edge", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09.12.2011 12:11:58</td>
+			<td class="ObjectDetailsValue">09.12.2011 12:11:59</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{10DF5EA4-6535-4ef7-AC0A-A55B7E323C94}</td>
+			<td class="ObjectDetailsValue">{A85CD36F-C979-4a4a-A88D-0FA7F2652365}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2708.htm">Main</a>, <a href="EA2706.htm">Geometry</a>, <a href="EA2696.htm">Fig 2: Temporal Objects</a>, <a href="EA2698.htm">Fig 3: Temporal geometric primitives</a>, <a href="EA2686.htm">Context Diagram: TM_Primitive</a>, <a href="EA2672.htm">Context Diagram: TM_Instant</a>, <a href="EA2682.htm">Context Diagram: TM_Period</a>, <a href="EA2670.htm">Context Diagram: TM_GeometricPrimitive</a>, <a href="EA2690.htm">Context Diagram: TM_Separation</a>, <a href="../../../EA17/EA3/EA1/EA6565.htm">Main</a>, <a href="../../../EA17/EA3/EA1/EA6559.htm">Fig 02 -  CV_Coverage</a>, <a href="../../../EA17/EA3/EA1/EA6549.htm">Context Diagram: CV_DomainObject</a>, <a href="../../../EA32/EA1/EA9854.htm">Fig 04 Elements of a Coverage</a></td>
+			<td class="ObjectDetailsValue"><a href="EA2711.htm">Topology</a>, <a href="EA2705.htm">Fig 6: Topology of time</a>, <a href="EA2683.htm">Context Diagram: TM_Period</a>, <a href="EA2695.htm">Context Diagram: TM_TopologicalPrimitive</a>, <a href="EA2677.htm">Context Diagram: TM_Node</a>, <a href="EA2669.htm">Context Diagram: TM_Edge</a></td>
 		</tr>
 	</table>
 	
@@ -110,15 +110,63 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA17/EA3/EA1/EA6575.htm">«type» CV_DomainObject</a><br />
+						<a href="EA2720.htm">TM_Node</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> temporalElement<br />
+						<strong>Name:</strong> previousEdge<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> end<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2734" onclick="parent.toggleDiv('detailsDIVLink2734','DetailsImageLink2734')" />Details:
+							<div id="detailsDIVLink2734" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Links a TM_Edge to the TM_Node at which it ends.&#160;&#160;&#160;In the case of non-linear topology, several edges may share an endnode.&#160;&#160;For linear topology, the multiplicity at the previousEdge end of the association should be restricted to 0..1.&#160;&#160;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2723.htm">TM_Period</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> topology<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> geometry<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2735" onclick="parent.toggleDiv('detailsDIVLink2735','DetailsImageLink2735')" />Details:
+							<div id="detailsDIVLink2735" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Links a TM_Edge to the TM_Period that is its geometric realization.&#160;&#160;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA2720.htm">TM_Node</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> nextEdge<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> start<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -126,7 +174,8 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2736" onclick="parent.toggleDiv('detailsDIVLink2736','DetailsImageLink2736')" />Details:
 							<div id="detailsDIVLink2736" class="DetailsDiv" >
-							&nbsp;
+							<div class="ObjectDetailsNotes">Links an edge to its start node.&#160;&#160;&#160;In the case of non-linear topology, several edges may share a start node.&#160;&#160;For linear topology, the multiplicity at the nextEdge end of the association should be restricted to 0..1.&#160;&#160;&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -164,38 +213,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2726.htm">«interface» TM_Separation</a></td>
-					<td width="10%" class="TableRow" valign="top">Interface</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2724.htm">TM_Primitive</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2729.htm">TM_TopologicalPrimitive</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2726.htm">«interface» TM_Separation</a></td>
-					<td width="10%" class="TableRow" valign="top">Interface</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2717.htm">TM_Instant</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2722.htm">TM_Period</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

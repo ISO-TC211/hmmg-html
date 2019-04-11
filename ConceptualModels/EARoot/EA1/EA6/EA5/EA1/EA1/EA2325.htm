@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate geometry::GM_ArcByBulge</title>
+<title>Coordinate geometry::GM_Arc</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_ArcByBulge", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Arc", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:14</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:13</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:14</td>
+			<td class="ObjectDetailsValue">10.04.2008 12:16:13</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{0780E59C-5111-4033-BB25-2E7703E69D14}</td>
+			<td class="ObjectDetailsValue">{89D89B02-D793-4f58-BBA1-5E314B493C46}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2280.htm">Fig 17: Arcs</a>, <a href="EA2190.htm">Context Diagram: GM_ArcByBulge</a></td>
+			<td class="ObjectDetailsValue"><a href="EA2277.htm">Fig 15: Curve Segments </a>, <a href="EA2281.htm">Fig 17: Arcs</a>, <a href="EA2189.htm">Context Diagram: GM_Arc</a>, <a href="EA2209.htm">Context Diagram: GM_Circle</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">A GM_Arc is defined by 3 points, and consists of the arc of the circle determined by the 3 points, starting at the first, passing through the second and terminating at the third. If the 3 points are co-linear, then the arc shall be a 3-point line string, and will not be able to return values for center, radius, start angle and end angle. &lt;br/&gt;NOTE In the model, a GM_Arc is a subclass of GM_ArcString, being a trivial arc string consisting of only one arc. This may be counter-intuitive in the sense that subclasses are often thought of as more complex than their superclass (with additional methods and attributes). A GM_Arc is simpler than a GM_ArcString in that it has less data, but it is more complex in that it can return geometric information such as &quot;center&quot;, &quot;start angle&quot;, and &quot;end angle&quot;. This additional computational complexity forces the subclassing to be the way it is. In addition the &quot;is type of&quot; semantics works this way and not the other. &lt;br/&gt;In its simplest representation, the three points in the controlPoint sequence for an GM_Arc shall consist of, in order, the initial point on the arc, some point on the arc neither at the start or end, and the end point of the GM_Arc. &lt;br/&gt;GM_Arc::controlPoint : GM_PointArray = #lt; startPoint : GM_Position, &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;midPoint : GM_Position, &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;endPoint : GM_Position#gt;&lt;br/&gt;&lt;br/&gt;If additional points are given, then all points must lie on the circle defined by any 3 non-colinear points in the control point array. All points shall lie on the same circle, and shall be given in the controlPoint array in the order in which they occur on the arc. &lt;br/&gt;&lt;br/&gt;NOTE The use of the term &quot;midPoint&quot; for the center GM_Position of the controlPoint sequence is not meant to require that the GM_Position be the geometric midpoint of the arc. This is the best choice for this GM_Position from a computational stability perspective, but it is not absolutely necessary for the mathematics to work.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
@@ -109,64 +110,203 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>GM_ArcByBulge</strong>(					<a href="#" onclick="parent.toggleData('param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}" border="0" />point[2]: <a href="EA2359.htm">GM_Position</a></a>, 
+					<strong>center</strong>():<a href="EA2323.htm">DirectPosition</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2179" onclick="parent.toggleDiv('detailsDIVOperations2179','DetailsImageOperations2179')" />Details:
+						<div id="detailsDIVOperations2179" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>endOfArc</strong>():<a href="../EA4/EA2486.htm">Bearing</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2180" onclick="parent.toggleDiv('detailsDIVOperations2180','DetailsImageOperations2180')" />Details:
+						<div id="detailsDIVOperations2180" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>GM_Arc</strong>(					<a href="#" onclick="parent.toggleData('param{0E9764C9-61DB-4982-80EE-05CDBE189605}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{0E9764C9-61DB-4982-80EE-05CDBE189605}" border="0" />point[3]: <a href="EA2360.htm">GM_Position</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}00" style="display: none;">
+						<tr id="param{0E9764C9-61DB-4982-80EE-05CDBE189605}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}01" style="display: none;">
+						<tr id="param{0E9764C9-61DB-4982-80EE-05CDBE189605}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}02" style="display: none;">
+						<tr id="param{0E9764C9-61DB-4982-80EE-05CDBE189605}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{D106C52D-F751-4027-AD69-55EFE5E9E5BB}03" style="display: none;">
+						<tr id="param{0E9764C9-61DB-4982-80EE-05CDBE189605}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-					<a href="#" onclick="parent.toggleData('param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}" border="0" />bulge: <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1307.htm">Real</a></a>, 
+):<a href="EA2325.htm">GM_Arc</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2181" onclick="parent.toggleDiv('detailsDIVOperations2181','DetailsImageOperations2181')" />Details:
+						<div id="detailsDIVOperations2181" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>GM_Arc</strong>(					<a href="#" onclick="parent.toggleData('param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}" border="0" />point[2]: <a href="EA2360.htm">GM_Position</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}00" style="display: none;">
+						<tr id="param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}01" style="display: none;">
+						<tr id="param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}02" style="display: none;">
+						<tr id="param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{3F694D04-CF4B-467c-BEC8-0E5EDE314E02}03" style="display: none;">
+						<tr id="param{9608ED2D-F0DC-4d61-95C6-F841A533CE55}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-					<a href="#" onclick="parent.toggleData('param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}" border="0" />normal: <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1309.htm">Vector</a></a>, 
+					<a href="#" onclick="parent.toggleData('param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}" border="0" />bulge: <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1308.htm">Real</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}00" style="display: none;">
+						<tr id="param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}01" style="display: none;">
+						<tr id="param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}02" style="display: none;">
+						<tr id="param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{DBBE3B86-D6BA-4e95-B2C2-DD973B8C0162}03" style="display: none;">
+						<tr id="param{F5AF383F-BA43-445c-BB7B-9E1BE587B81C}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):<a href="EA2325.htm">GM_ArcByBulge</a>
+					<a href="#" onclick="parent.toggleData('param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}" border="0" />normal: <a href="../../../../EA4/EA2/EA1/EA3/EA4/EA1310.htm">Vector</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DCF3BA99-AD2E-497f-9898-441FCFB68D92}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA2325.htm">GM_Arc</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2182" onclick="parent.toggleDiv('detailsDIVOperations2182','DetailsImageOperations2182')" />Details:
+						<div id="detailsDIVOperations2182" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>radius</strong>():<a href="../../../../EA4/EA2/EA1/EA1/EA1/EA1060.htm">Distance</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2183" onclick="parent.toggleDiv('detailsDIVOperations2183','DetailsImageOperations2183')" />Details:
+						<div id="detailsDIVOperations2183" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>startOfArc</strong>():<a href="../EA4/EA2486.htm">Bearing</a>
 				</td>
 			</tr>
 			<tr>
@@ -219,7 +359,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2327.htm">«type» GM_ArcStringByBulge</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2335.htm">«type» GM_Circle</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2327.htm">«type» GM_ArcString</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

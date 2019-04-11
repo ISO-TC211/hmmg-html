@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>LC_Abiotic::LC_SoilSandDepositsSurfaceElement</title>
+<title>LC_Abiotic::LC_LinearSurface</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LC_SoilSandDepositsSurfaceElement", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LC_LinearSurface", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">22.07.2009 15:09:09</td>
+			<td width="85%" class="ObjectDetailsValue">22.07.2009 15:33:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">17.05.2016 15:19:30</td>
+			<td class="ObjectDetailsValue">28.09.2011 17:37:03</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A152CA33-7F87-47af-ADDA-E83A91AB61F3}</td>
+			<td class="ObjectDetailsValue">{AEEEC593-3F78-4047-A08C-327F0779D159}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA9888.htm">LCML Overview</a>, <a href="EA9977.htm">Fig 12 LCML_NaturalSurfaceElements</a>, <a href="EA9987.htm">Fig 17 LCML_UnconsolidatedSedimentsSurfaceElement</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA9909.htm">LCML Overview</a>, <a href="EA10002.htm">Fig 14 LCML_BuiltUpSurface</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The LC_SoilSandDepositsSurfaceElement metalanguage object is a subtype of LC_NaturalSurfaceElement. This metalanguage object, when instantiated, allows the generation of a general land cover feature class in a land cover classification system for all specific types of natural surfaces. &lt;br/&gt;&lt;br/&gt;It has four subtypes, LC_CoarseMineralFragments, LC_BareSoil LC_LooseAndShiftingSand, and LC_Deposits.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The LC_LinearSurface metalanguage object is a subtype of LC_BuiltUpSurface. It has three subtypes LC_Road, LC_Railway and LC_CommunicationsAndOther. &lt;br/&gt;&lt;br/&gt;This metalanguage object, when instantiated, allows the generation of a land cover feature class in an LCCS for all built up linear artificial surfaces. &lt;br/&gt;&lt;br/&gt;NOTE	These linear surface objects do not describe land use. In these cases a land use related name is used to identify a particular physiognomic appearance of an artificial land cover. The &quot;use aspect&quot; of a road, a railway and a communication and other linear feature may be described as a characteristic associated with these classes. The enumerations associated with the subclasses are restricted to purely physiognomic aspects.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,35 +110,28 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10019.htm">«interface» LC_NaturalSurfaceElement</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA10017.htm">«interface» LC_BuiltUpSurface</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9994.htm">«interface» LC_BareSoil</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA10054.htm">«interface» LC_Road</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10002.htm">«interface» LC_Deposits</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA10020.htm">«interface» LC_CommunicationsAndOther</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10017.htm">«interface» LC_LooseAndShiftingSand</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA9997.htm">«interface» LC_CoarseMineralFragments</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA10052.htm">«interface» LC_Railway</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

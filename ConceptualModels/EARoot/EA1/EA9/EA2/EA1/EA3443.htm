@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Methodology for feature cataloguing::FC_CarrierOfCharacteristics</title>
+<title>Methodology for feature cataloguing::FC_BoundFeatureAttribute</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FC_CarrierOfCharacteristics", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("FC_BoundFeatureAttribute", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:30</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 12:16:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:30</td>
+			<td class="ObjectDetailsValue">10.04.2008 12:16:29</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,148 +87,87 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EC3AFD2C-545F-4759-AD9B-0DF0BA08712D}</td>
+			<td class="ObjectDetailsValue">{3F66FFF9-C7C2-4505-935E-95B4C7F2C791}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3420.htm">Fig B4 - Operation Derivation from GFM</a>, <a href="EA3416.htm">Fig B2 - Realization from GFM</a>, <a href="EA3422.htm">Fig B5 - Constraint Derivation from GFM</a>, <a href="EA3418.htm">Fig B3 - Some GFM Derivations</a>, <a href="EA3410.htm">Fig B1a - Base Conceptual Model</a>, <a href="EA3412.htm">Fig B1b - Definition source and reference</a>, <a href="EA3414.htm">Fig B1c - Global Properties</a></td>
+			<td class="ObjectDetailsValue"><a href="EA3421.htm">Fig B4 - Operation Derivation from GFM</a>, <a href="EA3399.htm">Context Diagram: FC_FeatureOperation</a>, <a href="EA3385.htm">Context Diagram: FC_BoundFeatureAttribute</a>, <a href="EA3415.htm">Fig B1c - Global Properties</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Abstract class for local feature properties and bound global properties of a feature type&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Class that is used to describe the specifics of how a global feature attribute is bound to a particular feature type. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3450.htm">«type» FC_FeatureOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> observesValuesOf<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3789" onclick="parent.toggleDiv('detailsDIVLink3789','DetailsImageLink3789')" />Details:
-							<div id="detailsDIVLink3789" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3444.htm">FC_Constraint</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> constrainedBy<br />
-						Role that links this property type to the constraints placed upon it.
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3790" onclick="parent.toggleDiv('detailsDIVLink3790','DetailsImageLink3790')" />Details:
-							<div id="detailsDIVLink3790" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">This association lists all constraints to which these feature class members are bound. &lt;br/&gt;</div>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../../../EA4/EA2/EA1/EA2/EA2/EA1178.htm">TypeName</a></i><br /><strong>&nbsp;&nbsp;valueType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3785')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3785" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3785_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3785_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3785_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			type of the value of this feature attribute; a name from some namespace&lt;br/&gt;&lt;br/&gt;#lt;c#gt;&lt;br/&gt;Mandatory if the value type of the feature attribute is not defined globally&lt;br/&gt;#lt;/c#gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
 
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3450.htm">«type» FC_FeatureOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> affectsValuesOf<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3791" onclick="parent.toggleDiv('detailsDIVLink3791','DetailsImageLink3791')" />Details:
-							<div id="detailsDIVLink3791" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3451.htm">«type» FC_FeatureType</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> featureType<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> carrierOfCharacteristics<br />
-						Role that links this feature type to the property types that it contains.	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3792" onclick="parent.toggleDiv('detailsDIVLink3792','DetailsImageLink3792')" />Details:
-							<div id="detailsDIVLink3792" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Operations, attributes and association roles which belong to this feature type. Each member must specify at least the member name, the definition of the member, the value type and cardinality.&#160;&#160;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA3450.htm">«type» FC_FeatureOperation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> triggeredByValuesOf<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3793" onclick="parent.toggleDiv('detailsDIVLink3793','DetailsImageLink3793')" />Details:
-							<div id="detailsDIVLink3793" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
+						
+				</td>
+			</tr>
+	</table>
+</div>
 <div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -241,8 +180,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3794" onclick="parent.toggleDiv('detailsDIVScenario3794','DetailsImageScenario3794')" />Details:
-						<div id="detailsDIVScenario3794" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3786" onclick="parent.toggleDiv('detailsDIVScenario3786','DetailsImageScenario3786')" />Details:
+						<div id="detailsDIVScenario3786" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -254,8 +193,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3795" onclick="parent.toggleDiv('detailsDIVScenario3795','DetailsImageScenario3795')" />Details:
-						<div id="detailsDIVScenario3795" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3787" onclick="parent.toggleDiv('detailsDIVScenario3787','DetailsImageScenario3787')" />Details:
+						<div id="detailsDIVScenario3787" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: true | false<br />Default: false<br />Description: Identifies the type as an object collection.<br /></div>
 
 						</div>
@@ -267,8 +206,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3796" onclick="parent.toggleDiv('detailsDIVScenario3796','DetailsImageScenario3796')" />Details:
-						<div id="detailsDIVScenario3796" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3788" onclick="parent.toggleDiv('detailsDIVScenario3788','DetailsImageScenario3788')" />Details:
+						<div id="detailsDIVScenario3788" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: false<br />Default: false<br />Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.<br /></div>
 
 						</div>
@@ -276,12 +215,12 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">persistence</td>
-				<td width="50%" class="TableRow" valign="top">transient</td>
+				<td width="50%" class="TableRow" valign="top">persistent</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3797" onclick="parent.toggleDiv('detailsDIVScenario3797','DetailsImageScenario3797')" />Details:
-						<div id="detailsDIVScenario3797" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3789" onclick="parent.toggleDiv('detailsDIVScenario3789','DetailsImageScenario3789')" />Details:
+						<div id="detailsDIVScenario3789" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -292,8 +231,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3798" onclick="parent.toggleDiv('detailsDIVScenario3798','DetailsImageScenario3798')" />Details:
-						<div id="detailsDIVScenario3798" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3790" onclick="parent.toggleDiv('detailsDIVScenario3790','DetailsImageScenario3790')" />Details:
+						<div id="detailsDIVScenario3790" class="DetailsDiv" >
 						<div class="ObjectDetailsNotes">Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br />Default: iso19136_2007_INSPIRE_Extensions<br />Description: XML Schema encoding rule to apply<br /></div>
 
 						</div>
@@ -311,17 +250,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3454.htm">«type» FC_PropertyType</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA3441.htm">«type» FC_Binding</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA3440.htm">«type» FC_Binding</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>QuantisationOperations::DataAssignmentProcess</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("DataAssignmentProcess", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2019 10:04:11</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10.04.2019 10:04:11</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">gibbr</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{3486D0A2-A601-4f8f-8394-D767B3E49156}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA15617.htm">Fig 9. QuantisationOperations</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;6.3.1 Quantisation Operations&lt;/b&gt;: Multiple observation contexts are recognized for quantization, each corresponding to a distinct role for DGGS Cells to play. In any particular DGGS specification, one or more (and potentially all) roles may be described for either internal or external use to support interoperability, as follows.&lt;br/&gt;&lt;ol&gt;<br />&lt;li&gt;cells &lt;b&gt;asDataTiles&lt;/b&gt;:&lt;br/&gt;In Data Tile quantization, spatial feature/observations (e.g. point clouds, images, vectors, etc.) are aggregated and clipped to cell boundaries and stored in tiles without any changes made to the feature type parameters. The cells of the DGGS provide a multi-, or single-, resolution tiling schema with the cell index used as the identifier in the tile naming convention. In the context of &#8220;Big Data Analytics&#8221; &#8216;asDataTile&#8217; support will likely be the most efficient type of granularity for job submission on HPC/HPD or Cloud ICT infrastructure; particularly for embarrassingly parallel analyses. It is also likely to be the most efficient granularity for many data transfer requests.&lt;/li&gt;&lt;li&gt;cells &lt;b&gt;asDataCells&lt;/b&gt;:&lt;br/&gt;In Data Cell quantization, the spatial features/observations (e.g. point clouds, images, vectors, etc.) are sampled to each DGGS Cell by assignment of data value(s) using the cell&#8217;s geometry to govern the quantization operation.&lt;/li&gt;&lt;li&gt;cells &lt;b&gt;asCoordinates&lt;/b&gt;:&lt;br/&gt;In coordinate quantization, each coordinate tuple from the spatial feature/observation is converted to a cell index of an appropriate level of precision. The cell data package will include appropriate vector topology to preserve the structure of the spatial feature in the context of the DGGS.&lt;/li&gt;&lt;li&gt;cells &lt;b&gt;asTags&lt;/b&gt;: &lt;br/&gt;In Tag quantization, cell index values are &#8220;tagged&#8221; to data objects in a similar fashion to social media records. The refinement level of the cell index is indicative of the precision with which the location of a spatial feature/observation and/or its spatial extent are known. This can be thought of as a convex hull with the same geometry of the DGGS Cell surrounding the objects to be assigned to that cell.&lt;/li&gt;&lt;li&gt;cells &lt;b&gt;asGraphicCells:&lt;/b&gt;&lt;br/&gt;In Graphic Cell quantization, data is rendered to cells, and refinement levels are leveraged to support corresponding levels of detail or zoom levels.&lt;/li&gt;&lt;li&gt;cells &lt;b&gt;asGraphicTiles&lt;/b&gt;:&lt;br/&gt;In Graphic Tile quantization, graphic cells are tiled, and often cached for delivery to a display system. As with data Tiles, the cell index is used as the identifier in the tile naming convention.&lt;/li&gt;&lt;/ol&gt;&lt;p/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA15620.htm">«Operation» QuantizationProcesses</a><br />
+						Operation &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink28194" onclick="parent.toggleDiv('detailsDIVLink28194','DetailsImageLink28194')" />Details:
+							<div id="detailsDIVLink28194" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA42/EA1/EA1/EA1/EA13798.htm">«FeatureType» OM_Process</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

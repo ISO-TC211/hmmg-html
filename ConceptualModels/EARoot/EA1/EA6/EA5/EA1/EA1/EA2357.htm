@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coordinate geometry::GM_PolyhedralSurface</title>
+<title>Coordinate geometry::GM_Polygon</title>
 <link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_PolyhedralSurface", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GM_Polygon", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,22 +87,127 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{85447034-CEED-48e6-AAA5-0F9FCF38C577}</td>
+			<td class="ObjectDetailsValue">{864C9059-B4BF-4426-8BD0-1F5D6DEB4CD2}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA2286.htm">Fig 20: Surface Patches</a>, <a href="EA2288.htm">Fig 21: Polygonal Surface</a>, <a href="EA2252.htm">Context Diagram: GM_Polygon</a>, <a href="EA2270.htm">Context Diagram: GM_TriangulatedSurface</a>, <a href="EA2254.htm">Context Diagram: GM_PolyhedralSurface</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../EA17/EA3/EA3/EA6629.htm">Context Diagram: CV_ThiessenValuePolygon</a>, <a href="../../../../EA17/EA3/EA5/EA6700.htm">Context Diagram: CV_ValueHexagon</a>, <a href="../../../../EA21/EA1/EA1/EA6916.htm">Fig 15 Template App Schema for Discrete Surface Grid Coverage</a>, <a href="EA2287.htm">Fig 20: Surface Patches</a>, <a href="EA2289.htm">Fig 21: Polygonal Surface</a>, <a href="EA2253.htm">Context Diagram: GM_Polygon</a>, <a href="EA2269.htm">Context Diagram: GM_Triangle</a>, <a href="EA2255.htm">Context Diagram: GM_PolyhedralSurface</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A GM_PolyhedralSurface (Figure 21) is a GM_Surface composed of polygon surfaces (GM_Polygon) connected along their common boundary curves.&#160;&#160;This differs from GM_Surface only in the restriction on the types of surface patches acceptable. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar and the polygon uses planar interpolation in its interior. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
-			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA4/EA2502.htm">GM_SurfaceBoundary</a></i><br /><strong>&nbsp;&nbsp;boundary</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2345')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2345" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2345_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2345_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2345_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA4/EA2501.htm">GM_Surface</a></i><br /><strong>&nbsp;&nbsp;spanningSurface</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2346')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2346" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2346_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2346_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2346_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
 <div class="ItemBody" id="OperationsTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
@@ -111,32 +216,94 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>GM_PolyhedralSurface</strong>(					<a href="#" onclick="parent.toggleData('param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}" border="0" />tiles[1..*]: <a href="EA2356.htm">GM_Polygon</a></a>, 
+					<strong>GM_Polygon</strong>(					<a href="#" onclick="parent.toggleData('param{BE423FFA-6509-4ac8-832F-CFC37295C152}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{BE423FFA-6509-4ac8-832F-CFC37295C152}" border="0" />boundary: <a href="../EA4/EA2502.htm">GM_SurfaceBoundary</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}00" style="display: none;">
+						<tr id="param{BE423FFA-6509-4ac8-832F-CFC37295C152}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}01" style="display: none;">
+						<tr id="param{BE423FFA-6509-4ac8-832F-CFC37295C152}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}02" style="display: none;">
+						<tr id="param{BE423FFA-6509-4ac8-832F-CFC37295C152}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{AABC1A0E-EA46-44fa-AA93-5926D1056CB1}03" style="display: none;">
+						<tr id="param{BE423FFA-6509-4ac8-832F-CFC37295C152}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):<a href="EA2357.htm">GM_PolyhedralSurface</a>
+					<a href="#" onclick="parent.toggleData('param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}" border="0" />spanSurf: <a href="../EA4/EA2501.htm">GM_Surface</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{E7D4BC4C-A463-4efd-9D1B-55D36DDD100B}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA2357.htm">GM_Polygon</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2349" onclick="parent.toggleDiv('detailsDIVOperations2349','DetailsImageOperations2349')" />Details:
-						<div id="detailsDIVOperations2349" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2347" onclick="parent.toggleDiv('detailsDIVOperations2347','DetailsImageOperations2347')" />Details:
+						<div id="detailsDIVOperations2347" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>GM_Polygon</strong>(					<a href="#" onclick="parent.toggleData('param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}')" style="text-decoration: none; color: #000000;"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}" border="0" />boundary: <a href="../EA4/EA2502.htm">GM_SurfaceBoundary</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{3DAB2389-6E52-4ba3-AB58-29A4CD7CB036}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA2357.htm">GM_Polygon</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations2348" onclick="parent.toggleDiv('detailsDIVOperations2348','DetailsImageOperations2348')" />Details:
+						<div id="detailsDIVOperations2348" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -153,7 +320,7 @@ function nameClassifier(name, separator)
 			</tr>
 
 		</table>
-</div>		<div class="ItemBody" id="AssociationsFromTable">
+</div>		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -162,7 +329,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA2356.htm">«type» GM_Polygon</a><br />
+						<a href="EA2358.htm">«type» GM_PolyhedralSurface</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -176,8 +343,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2350" onclick="parent.toggleDiv('detailsDIVLink2350','DetailsImageLink2350')" />Details:
-							<div id="detailsDIVLink2350" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2349" onclick="parent.toggleDiv('detailsDIVLink2349','DetailsImageLink2349')" />Details:
+							<div id="detailsDIVLink2349" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -198,8 +365,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2351" onclick="parent.toggleDiv('detailsDIVScenario2351','DetailsImageScenario2351')" />Details:
-						<div id="detailsDIVScenario2351" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2350" onclick="parent.toggleDiv('detailsDIVScenario2350','DetailsImageScenario2350')" />Details:
+						<div id="detailsDIVScenario2350" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -216,17 +383,24 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2500.htm">«type» GM_Surface</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA2365.htm">«type» GM_TriangulatedSurface</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA2365.htm">«type» GM_Triangle</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA21/EA1/EA1/EA6941.htm">«datatype» IF_Surface</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA2504.htm">«Abstract» GM_SurfacePatch</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

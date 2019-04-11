@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Thiessen Polygon::CV_ThiessenValuePolygon</title>
+<title>Thiessen Polygon::CV_ThiessenPolygonCoverage</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_ThiessenValuePolygon", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_ThiessenPolygonCoverage", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">10.04.2008 12:16:31</td>
+			<td class="ObjectDetailsValue">25.05.2015 15:51:41</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">Easy</td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,19 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{3D6DD2D3-E6F5-4ea0-B04E-34F862C620FB}</td>
+			<td class="ObjectDetailsValue">{19AE05DF-7263-44b0-8A46-25D548A53EE2}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA6555.htm">Context Diagram: CV_ValueObject</a>, <a href="EA6630.htm">Fig 12 - CV_ThiessenPolygonCoverage</a>, <a href="EA6626.htm">Context Diagram: CV_ThiessenPolygonCoverage</a>, <a href="EA6628.htm">Context Diagram: CV_ThiessenValuePolygon</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1/EA6564.htm">Fig 04  - Continuous Coverages</a>, <a href="../EA1/EA6568.htm">Used in 19131 D3</a>, <a href="../EA1/EA6546.htm">Context Diagram: CV_ContinuousCoverage</a>, <a href="../EA2/EA6608.htm">Fig 09 - CV_DiscreteSurfaceCoverage</a>, <a href="../EA2/EA6592.htm">Context Diagram: CV_DiscreteSurfaceCoverage</a>, <a href="EA6631.htm">Fig 12 - CV_ThiessenPolygonCoverage</a>, <a href="EA6627.htm">Context Diagram: CV_ThiessenPolygonCoverage</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A polygon whose boundaries define the area consisting of points that are closer to the center point than any other point in the defining set.&#160;&#160;The boundaries are the perpendicular bisectors of the lines between the points in the dual TIN.&#160;&#160;&#160;Also referred to as Voronoi Diagrams.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A telleslation of spatial domain using Thiessen Polygons.&lt;br/&gt;&lt;br/&gt;The C_Function associated to the network is an interpolation method defined from the PointValuePairs that are the center of the&#160;&#160;polygons.&#160;&#160;The most common interpolation methods are &quot;nearest neighbor&quot;, and &quot;lost area&quot;.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
@@ -110,43 +111,91 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA6/EA5/EA1/EA1/EA2356.htm">GM_Polygon</a></i><br /><strong>&nbsp;&nbsp;geometry</strong>
+					<i>Public <a href="../../../EA6/EA5/EA1/EA4/EA2501.htm">GM_Surface</a></i><br /><strong>&nbsp;&nbsp;clipArea</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes13552')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes13552" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes13553')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes13553" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes13552_00" style="display: none;">
+						<tr id="DetailsImageAttributes13553_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_01" style="display: none;">
+						<tr id="DetailsImageAttributes13553_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_02" style="display: none;">
+						<tr id="DetailsImageAttributes13553_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_03" style="display: none;">
+						<tr id="DetailsImageAttributes13553_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_04" style="display: none;">
+						<tr id="DetailsImageAttributes13553_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_05" style="display: none;">
+						<tr id="DetailsImageAttributes13553_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes13552_06" style="display: none;">
+						<tr id="DetailsImageAttributes13553_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes13552_07" style="display: none;">
+							<tr id="DetailsImageAttributes13553_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA1/EA6578.htm">CV_InterpolationMethod</a></i><br /><strong>&nbsp;&nbsp;interpolationType</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes13554')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes13554" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes13554_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td>"lost area"</td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes13554_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes13554_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
@@ -159,7 +208,57 @@ function nameClassifier(name, separator)
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsToTable">
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>locate</strong>(					<a href="#" onclick="parent.toggleData('param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2323.htm">DirectPosition</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>inout</td>
+						</tr>
+						<tr id="param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{95E7FB08-57BE-4f20-A3C6-0AE3D6208C26}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA6635.htm">CV_ThiessenValuePolygon</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations13555" onclick="parent.toggleDiv('detailsDIVOperations13555','DetailsImageOperations13555')" />Details:
+						<div id="detailsDIVOperations13555" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -168,7 +267,30 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA6633.htm">«type» CV_ThiessenPolygonCoverage</a><br />
+						<a href="../EA2/EA6623.htm">«type» CV_DiscreteSurfaceCoverage</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> discreteThiessen<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> polygonSource<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13556" onclick="parent.toggleDiv('detailsDIVLink13556','DetailsImageLink13556')" />Details:
+							<div id="detailsDIVLink13556" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA6635.htm">CV_ThiessenValuePolygon</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -182,31 +304,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13553" onclick="parent.toggleDiv('detailsDIVLink13553','DetailsImageLink13553')" />Details:
-							<div id="detailsDIVLink13553" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA6623.htm">CV_PointValuePair</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> extension<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> controlValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13554" onclick="parent.toggleDiv('detailsDIVLink13554','DetailsImageLink13554')" />Details:
-							<div id="detailsDIVLink13554" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13557" onclick="parent.toggleDiv('detailsDIVLink13557','DetailsImageLink13557')" />Details:
+							<div id="detailsDIVLink13557" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -227,8 +326,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13555" onclick="parent.toggleDiv('detailsDIVScenario13555','DetailsImageScenario13555')" />Details:
-						<div id="detailsDIVScenario13555" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13558" onclick="parent.toggleDiv('detailsDIVScenario13558','DetailsImageScenario13558')" />Details:
+						<div id="detailsDIVScenario13558" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -245,7 +344,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA6578.htm">«type» CV_ValueObject</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA6574.htm">«type» CV_ContinuousCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Names::MemberName</title>
+<title>Names::LocalName</title>
 <link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MemberName", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LocalName", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -67,7 +67,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">Easy</td>
 		</tr>
 		<tr id="proj05" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
@@ -87,136 +87,54 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B283DCB3-62AF-445c-A2BA-AF37F2D04914}</td>
+			<td class="ObjectDetailsValue">{C9F2AE8D-EC75-464f-9A16-F2D41DC5ACE4}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1157.htm">Context Diagram: LocalName</a>, <a href="EA1159.htm">Context Diagram: MemberName</a>, <a href="EA1167.htm">Name Spaces</a>, <a href="../../../../../EA25/EA1/EA3/EA5/EA8092.htm">Context Diagram: NT_LinkPosition</a>, <a href="../../../../../EA12/EA5/EA9/EA5266.htm">Context Diagram: MD_RangeDimension</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../../EA51/EA4/EA1/EA15833.htm">Context Diagram: FE_Feature</a>, <a href="../../../../../EA51/EA4/EA1/EA15835.htm">Context Diagram: FE_FeatureAttribute</a>, <a href="EA1166.htm">Context Diagram: TypeName</a>, <a href="EA1158.htm">Context Diagram: LocalName</a>, <a href="EA1160.htm">Context Diagram: MemberName</a>, <a href="EA1168.htm">Name Spaces</a>, <a href="EA1156.htm">Context Diagram: GenericName</a>, <a href="../EA3/EA1196.htm">Context Diagram: Schema</a>, <a href="../../../../../EA8/EA1/EA3/EA3120.htm">Context Diagram: FeatureType</a>, <a href="../../../../../EA8/EA1/EA3/EA3130.htm">Context Diagram: PropertyType</a>, <a href="../../../../../EA8/EA2/EA1/EA3212.htm">Context Diagram: GF_FeatureType</a>, <a href="../../../../../EA8/EA2/EA1/EA3222.htm">Context Diagram: GF_PropertyType</a>, <a href="../../../../../EA28/EA2/EA1/EA9285.htm">Context Diagram: NCNameList</a>, <a href="../../../../../EA51/EA6/EA1/EA1/EA2/EA15989.htm">Context Diagram: FT_Node</a>, <a href="../../../../../EA51/EA6/EA1/EA1/EA2/EA15991.htm">Context Diagram: FT_Primitive</a>, <a href="../../../../../EA51/EA6/EA1/EA1/EA4/EA16043.htm">Context Diagram: TS_Feature</a>, <a href="../../../../../EA51/EA6/EA1/EA1/EA4/EA16045.htm">Context Diagram: TS_FeatureComponent</a>, <a href="../../../../../EA28/EA1/EA1/EA8851.htm">Context Diagram: NCNameList</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A MemberName is a LocalName that references either an attribute slot in a record or&#160;&#160;recordType or an attribute, operation, or association role in an object instance or&#160;&#160;type description in some form of schema. The stored value &quot;aName&quot; is the returned value for the &quot;aName()&quot; operation.&#160;&#160;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">A LocalName references a local object directly accessible the NameSpace.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="AttributesTable">
+<div class="ItemBody" id="OperationsTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
+			<td width="100%" class="TableHeading">Operation</td>
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../EA3/EA5/EA1323.htm">CharacterString</a></i><br /><strong>&nbsp;&nbsp;aName</strong>
+					<i>Public</i><br />
+					<strong>aName</strong>():<a href="../../EA3/EA5/EA1324.htm">CharacterString</a>
 				</td>
 			</tr>
 			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes981')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes981" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes981_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations979" onclick="parent.toggleDiv('detailsDIVOperations979','DetailsImageOperations979')" />Details:
+						<div id="detailsDIVOperations979" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
 							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes981_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes981_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes981_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes981_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes981_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes981_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes981_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="EA1177.htm">TypeName</a></i><br /><strong>&nbsp;&nbsp;attributeType</strong>
+					
+						</div>
+					</div>
 				</td>
 			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes982')" style="text-decoration: none; color: #000000;"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes982" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes982_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes982_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes982_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes982_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes982_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes982_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes982_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes982_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The allowable type for this member.&#160;&#160;So is A is an instance of a class which has a member of name x, of type X, the navigation of the name space from A through the x, &quot;A.x&quot; is a name for an object instance of type X.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
 
-						
-				</td>
-			</tr>
-	</table>
-</div>
-<div class="ItemBody" id="TaggedValTable">
+		</table>
+</div><div class="ItemBody" id="TaggedValTable">
 	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 		<tr>
 			<td width="50%" class="TableHeading">Tag</td>
@@ -228,15 +146,53 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario983" onclick="parent.toggleDiv('detailsDIVScenario983','DetailsImageScenario983')" />Details:
-						<div id="detailsDIVScenario983" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario980" onclick="parent.toggleDiv('detailsDIVScenario980','DetailsImageScenario980')" />Details:
+						<div id="detailsDIVScenario980" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
 				</td>
 			</tr>
 	</table>
-</div>		<div class="ItemBody" id="LinksTable">
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">depth = 1</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Superseeded</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints981" onclick="parent.toggleDiv('detailsDIVConstraints981','DetailsImageConstraints981')" />Details:
+							<div id="detailsDIVConstraints981" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">self = parsedName()</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Superseeded</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints982" onclick="parent.toggleDiv('detailsDIVConstraints982','DetailsImageConstraints982')" />Details:
+							<div id="detailsDIVConstraints982" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
@@ -246,7 +202,21 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1171.htm">«type» LocalName</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1173.htm">«type» MemberName</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1178.htm">«type» TypeName</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1171.htm">«type» GenericName</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

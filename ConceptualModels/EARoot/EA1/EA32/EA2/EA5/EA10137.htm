@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>LC_ElementCharacteristics::LC_WaterAndAssociatedSurfaceCharacteristic</title>
+<title>LC_ElementCharacteristics::LC_OverlapGrowingToReferenceCrop</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LC_WaterAndAssociatedSurfaceCharacteristic", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LC_OverlapGrowingToReferenceCrop", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">23.07.2009 11:45:54</td>
+			<td width="85%" class="ObjectDetailsValue">22.07.2009 12:07:57</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">28.09.2011 18:10:09</td>
+			<td class="ObjectDetailsValue">28.09.2011 18:30:51</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,77 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{3C211002-11F9-4563-B5F4-56307AFC0E17}</td>
+			<td class="ObjectDetailsValue">{BA3AF8C8-3A88-4e98-A2E9-FF03ECE04246}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA9888.htm">LCML Overview</a>, <a href="../EA3/EA9979.htm">Fig 13 LCML_WaterBodyAndAssociatedSurface</a>, <a href="EA10061.htm">Fig 19 LCML_ElementCharacteristics</a>, <a href="EA10071.htm">Fig 24 LCML_WaterBodyAndAssociatedSurfaceCharacteristics</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA9909.htm">LCML Overview</a>, <a href="EA10088.htm">Fig 22 LCML_CultivatedAndManagedVegetation</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">The LC_WaterAndAssociatedSurfaceCharacteristic component is a subtype of LC_LandCoverElementCharacteristic. The LC_WaterAndAssociatedSurfacesCharacteristic metalanguage object is a component related to the LC_WaterBodyAndAssociatedSurfaceElement metalanguage object by the relation &lt;i&gt;waterBodyAndAssociatedSurfaceCharacteristic&lt;/i&gt;. It has six subtypes; &lt;i&gt;LC_Aquaculture, LC_Artificiality, LC_WaterSalinity, LC_SnowCategory, LC_IceCategory&lt;/i&gt; and LC_WaterChemistry. The component LC_WaterAndAssociatedSurfaceCharacteristic may be used to refine the metalanguage object LC_WaterBodyAndAssociatedSurfaceElement to permit the generation of a more specific land cover feature class in a land cover classification system. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">The component LC_OverlapGrowingToReferenceCrop is related to LC_CropGrowingParameter class by the relation &lt;i&gt;overlapGrowing&lt;/i&gt;. It has one optional attributes &lt;i&gt;growingPeriodPercentage&lt;/i&gt;. The permitted values of the attribute &lt;i&gt;growingPeriodPercentag&lt;/i&gt; are described by the value object LC_PermittedPercentageValue. The component LC_OverlapGrowingToReferenceCrop may be used to refine the metalanguage object LC_CropGrowingParameter to permit the generation of a more specific land cover feature class in an LCCS.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public <a href="../EA6/EA10173.htm">LC_PermittedPercentageValue</a></i><br /><strong>&nbsp;&nbsp;growingPeriodPercentage</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes17057')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes17057" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes17057_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes17057_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes17057_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>
+	</table>
+</div>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -110,7 +167,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA10040.htm">«interface» LC_WaterBodyAndAssociatedSurfaceElement</a><br />
+						<a href="EA10109.htm">«interface» LC_CropGrowingParameter</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -124,8 +181,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink17029" onclick="parent.toggleDiv('detailsDIVLink17029','DetailsImageLink17029')" />Details:
-							<div id="detailsDIVLink17029" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink17058" onclick="parent.toggleDiv('detailsDIVLink17058','DetailsImageLink17058')" />Details:
+							<div id="detailsDIVLink17058" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -144,59 +201,10 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10076.htm">«interface» LC_Aquaculture</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA10109.htm">«interface» LC_CropGrowingParameter</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10139.htm">«interface» LC_WaterSalinity</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10104.htm">«interface» LC_IceCategory</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10107.htm">«interface» LC_LandCoverElementCharacteristic</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">Strong</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10079.htm">«interface» LC_Artificiality</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10126.htm">«interface» LC_SnowCategory</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA10040.htm">«interface» LC_WaterBodyAndAssociatedSurfaceElement</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Weak</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA10138.htm">«interface» LC_WaterChemistry</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Coverage Core::CV_Coverage</title>
+<title>Coverage Core::CV_ContinuousCoverage</title>
 <link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_Coverage", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CV_ContinuousCoverage", " : "))</script>  : Public abstract &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -42,7 +42,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">28.03.2011 09:15:59</td>
+			<td class="ObjectDetailsValue">26.03.2010 11:13:12</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,18 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{765E63DD-DBAC-4f2f-A925-C1398036BC38}</td>
+			<td class="ObjectDetailsValue">{DB809222-8DA7-4e8d-B69F-2FDA57E97D27}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../../EA8/EA1/EA3/EA3155.htm">Fig 7: Attributes of feature types</a>, <a href="EA6565.htm">Main</a>, <a href="EA6559.htm">Fig 02 -  CV_Coverage</a>, <a href="EA6561.htm">Fig 03  - CV_Coverage subclasses</a>, <a href="EA6567.htm">Used in 19131 D3</a>, <a href="EA6547.htm">Context Diagram: CV_Coverage</a>, <a href="EA6545.htm">Context Diagram: CV_ContinuousCoverage</a>, <a href="../EA2/EA6581.htm">Context Diagram: CV_DiscreteCoverage</a>, <a href="../../../EA23/EA2/EA4/EA1/EA7410.htm">Context Diagram: DPS_CoverageInformation</a>, <a href="../../../EA32/EA1/EA9854.htm">Fig 04 Elements of a Coverage</a>, <a href="../../../EA32/EA1/EA9856.htm">Fig 05 Elements of a Discrete Coverage</a>, <a href="../../../EA46/EA1/EA2/EA15119.htm">IE_ImageryandGriddedData</a></td>
+			<td class="ObjectDetailsValue"><a href="EA6566.htm">Main</a>, <a href="EA6560.htm">Fig 02 -  CV_Coverage</a>, <a href="EA6562.htm">Fig 03  - CV_Coverage subclasses</a>, <a href="EA6564.htm">Fig 04  - Continuous Coverages</a>, <a href="EA6568.htm">Used in 19131 D3</a>, <a href="EA6548.htm">Context Diagram: CV_Coverage</a>, <a href="EA6546.htm">Context Diagram: CV_ContinuousCoverage</a>, <a href="../EA3/EA6631.htm">Fig 12 - CV_ThiessenPolygonCoverage</a>, <a href="../EA3/EA6627.htm">Context Diagram: CV_ThiessenPolygonCoverage</a>, <a href="../EA4/EA6672.htm">Fig 18 - CV_ContinuousQuadrilateralGridCoverage</a>, <a href="../EA4/EA6636.htm">Context Diagram: CV_ContinuousQuadrilateralGridCoverage</a>, <a href="../EA5/EA6702.htm">Fig 21 - CV_HexagonalGridCoverage</a>, <a href="../EA5/EA6698.htm">Context Diagram: CV_HexagonalGridCoverage</a>, <a href="../EA6/EA6715.htm">Fig 23 - CV_TINCoverage</a>, <a href="../EA6/EA6711.htm">Context Diagram: CV_TINCoverage</a>, <a href="../EA7/EA6729.htm">Fig 24 - CV_SegmentedCurveCoverage</a>, <a href="../EA7/EA6723.htm">Context Diagram: CV_SegmentedCurveCoverage</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">A subtype of a feature.&#160;&#160;From the abstract specification, a Coverage is a two or more dimensional metaphor for features found on or near a portion of the Earth&#39;s Surface.&#160;&#160;Some examples of a Coverage would be a satellite image of a portion of the earth, a census tract for the city of New York and a DEM for a USGS 1x1 degree map sheet (Topic 6, OGC Abstract Specification, 1998)&lt;br/&gt;&lt;br/&gt;A coverage is a subtype of a feature that has pairs of distinguished properties consisting of a geometry property and a function that is defined over the coordinate set that is defined (delineated) by the geometry (Herring, J. OGC Change Proposal 95-039r2)&lt;br/&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -112,65 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA12/EA6/EA14/EA5652.htm">EX_Extent</a></i><br /><strong>&nbsp;&nbsp;domainExtent</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes13448')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes13448" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes13448_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes13448_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes13448_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The attribute domainExtent shall contain the extent of the spatiotemporal domain of the coverage.&#160;&#160;The data type EX_Extent, is defined in ISO 19103.&#160;&#160;Extents may be specified in both space and time.&#160;&#160;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public <a href="../../../EA4/EA2/EA1/EA2/EA3/EA1212.htm">RecordType</a></i><br /><strong>&nbsp;&nbsp;rangeType</strong>
+					<i>Public <a href="EA6578.htm">CV_InterpolationMethod</a></i><br /><strong>&nbsp;&nbsp;interpolationType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -218,7 +158,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public <a href="../EA7/EA6731.htm">CV_CommonPointRule</a></i><br /><strong>&nbsp;&nbsp;commonPointRule</strong>
+					<i>Public <a href="../../../EA4/EA2/EA1/EA2/EA3/EA1211.htm">Record</a></i><br /><strong>&nbsp;&nbsp;interpolationParametersType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -244,7 +184,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes13450_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
-							<td></td>
+							<td>Range:0 to 1</td>
 						</tr>
 						<tr id="DetailsImageAttributes13450_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
@@ -275,45 +215,26 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>evaluate</strong>(					<a href="#" onclick="parent.toggleData('param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2322.htm">DirectPosition</a></a>, 
+					<strong>locate</strong>(					<a href="#" onclick="parent.toggleData('param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2323.htm">DirectPosition</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}00" style="display: none;">
+						<tr id="param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}01" style="display: none;">
+						<tr id="param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}02" style="display: none;">
+						<tr id="param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{77A0C4BB-8123-4aaa-BDCD-3510F4441ECD}03" style="display: none;">
+						<tr id="param{2CDE4E79-1D17-4dff-A2A0-5510F13DB27C}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-					<a href="#" onclick="parent.toggleData('param{347F0947-8A24-466e-ACD7-4493C45E3897}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{347F0947-8A24-466e-ACD7-4493C45E3897}" border="0" />list: Sequence&lt;CharacterString&gt;</a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{347F0947-8A24-466e-ACD7-4493C45E3897}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{347F0947-8A24-466e-ACD7-4493C45E3897}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{347F0947-8A24-466e-ACD7-4493C45E3897}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{347F0947-8A24-466e-ACD7-4493C45E3897}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):<a href="../../../EA4/EA2/EA1/EA2/EA3/EA1210.htm">Record</a>
+):Set&lt;CV_ValueObject&gt;
 				</td>
 			</tr>
 			<tr>
@@ -329,17 +250,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-					<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The operation evaluate&#160;&#160;shall accept a DirectPosition as input and return the record of attribute values for that direct position.&#160;&#160;The data type Record is defined in ISO 19103.&#160;&#160;If the direct position passed is not in the spatiotemporal domain, then an error message shall be generated&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					
 						</div>
 					</div>
 				</td>
@@ -347,190 +258,32 @@ function nameClassifier(name, separator)
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<strong>evaluateInverse</strong>(					<a href="#" onclick="parent.toggleData('param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}" border="0" />v: <a href="../../../EA4/EA2/EA1/EA2/EA3/EA1210.htm">Record</a></a>, 
+					<strong>locateRegion</strong>(					<a href="#" onclick="parent.toggleData('param{D525D8D1-9062-446f-B122-7573094D4D67}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{D525D8D1-9062-446f-B122-7573094D4D67}" border="0" />region: <a href="../../../EA6/EA5/EA1/EA5/EA2515.htm">GM_Object</a></a>, 
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}00" style="display: none;">
+						<tr id="param{D525D8D1-9062-446f-B122-7573094D4D67}00" style="display: none;">
 							<td width="50"><strong>Default:</strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}01" style="display: none;">
+						<tr id="param{D525D8D1-9062-446f-B122-7573094D4D67}01" style="display: none;">
 							<td width="50"><strong>Kind:</strong></td>
 							<td>inout</td>
 						</tr>
-						<tr id="param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}02" style="display: none;">
+						<tr id="param{D525D8D1-9062-446f-B122-7573094D4D67}02" style="display: none;">
 							<td width="50"><strong>Stereotype: </strong></td>
 							<td></td>
 						</tr>
-						<tr id="param{8FD7FD6E-CBE1-40c7-9F23-C4F3072F4C55}03" style="display: none;">
+						<tr id="param{D525D8D1-9062-446f-B122-7573094D4D67}03" style="display: none;">
 							<td width="50"></td>
 							<td></td>
 						</tr>
 					</table>
-):Set&lt;CV_DomainObject&gt;
+):Set&lt;CV_ValueObject&gt;
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations13452" onclick="parent.toggleDiv('detailsDIVOperations13452','DetailsImageOperations13452')" />Details:
 						<div id="detailsDIVOperations13452" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The operation &quot;evaluateInverse&quot; shall accept a Record of values as input and return a set of CV_DomainObjects.&#160;&#160;Normally, this will be the set of CV_DomainObjects in the Domain that are associated with values equal to those in the input Record.&#160;&#160;However, the operation may return other CV_DomainObjects derived from those in the Domain, as specified by the application schema.&#160;&#160;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>find</strong>(					<a href="#" onclick="parent.toggleData('param{99181C63-EC64-42a4-ABDA-E67F32B975E8}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{99181C63-EC64-42a4-ABDA-E67F32B975E8}" border="0" />p: <a href="../../../EA6/EA5/EA1/EA1/EA2322.htm">DirectPosition</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{99181C63-EC64-42a4-ABDA-E67F32B975E8}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{99181C63-EC64-42a4-ABDA-E67F32B975E8}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{99181C63-EC64-42a4-ABDA-E67F32B975E8}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{99181C63-EC64-42a4-ABDA-E67F32B975E8}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-					<a href="#" onclick="parent.toggleData('param{950AED44-5959-481d-83FA-88C37158285A}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{950AED44-5959-481d-83FA-88C37158285A}" border="0" />limit: <a href="../../../EA4/EA2/EA1/EA3/EA4/EA1305.htm">Integer</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{950AED44-5959-481d-83FA-88C37158285A}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td>1</td>
-						</tr>
-						<tr id="param{950AED44-5959-481d-83FA-88C37158285A}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{950AED44-5959-481d-83FA-88C37158285A}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{950AED44-5959-481d-83FA-88C37158285A}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):Sequence&lt;CV_GeometryValuePair&gt;
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations13453" onclick="parent.toggleDiv('detailsDIVOperations13453','DetailsImageOperations13453')" />Details:
-						<div id="detailsDIVOperations13453" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>list</strong>():Set&lt;CV_GeometryValuePair&gt;
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations13454" onclick="parent.toggleDiv('detailsDIVOperations13454','DetailsImageOperations13454')" />Details:
-						<div id="detailsDIVOperations13454" class="DetailsDiv" >
-					<i>sequential  </i>
-					<table>
-						<tr>
-							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
-							<td></td>
-						</tr>
-					</table>
-					
-					
-					
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<strong>select</strong>(					<a href="#" onclick="parent.toggleData('param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}" border="0" />s: <a href="../../../EA6/EA5/EA1/EA5/EA2514.htm">GM_Object</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{BD75B2BA-0AE7-4982-B30A-0227B4C3669E}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-					<a href="#" onclick="parent.toggleData('param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}" border="0" />t: <a href="../../../EA7/EA1/EA1/EA2722.htm">TM_Period</a></a>, 
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-						<tr id="param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}00" style="display: none;">
-							<td width="50"><strong>Default:</strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}01" style="display: none;">
-							<td width="50"><strong>Kind:</strong></td>
-							<td>inout</td>
-						</tr>
-						<tr id="param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}02" style="display: none;">
-							<td width="50"><strong>Stereotype: </strong></td>
-							<td></td>
-						</tr>
-						<tr id="param{62A02081-8DE9-4898-ACFF-7B73348DA0EB}03" style="display: none;">
-							<td width="50"></td>
-							<td></td>
-						</tr>
-					</table>
-):Set&lt;CV_GeometryValuePair&gt;
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations13455" onclick="parent.toggleDiv('detailsDIVOperations13455','DetailsImageOperations13455')" />Details:
-						<div id="detailsDIVOperations13455" class="DetailsDiv" >
 					<i>sequential  </i>
 					<table>
 						<tr>
@@ -547,7 +300,7 @@ function nameClassifier(name, separator)
 			</tr>
 
 		</table>
-</div>		<div class="ItemBody" id="AssociationsToTable">
+</div>		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -556,67 +309,11 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA10/EA1/EA3/EA3499.htm">«interface» CRS</a><br />
+						<a href="EA6579.htm">«type» CV_ValueObject</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13456" onclick="parent.toggleDiv('detailsDIVLink13456','DetailsImageLink13456')" />Details:
-							<div id="detailsDIVLink13456" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA10/EA2/EA2/EA3717.htm">«type» SC_CRS</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> CRS<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13457" onclick="parent.toggleDiv('detailsDIVLink13457','DetailsImageLink13457')" />Details:
-							<div id="detailsDIVLink13457" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA6575.htm">«type» CV_DomainObject</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> domainElement<br />
+						<strong>Name:</strong> element<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -626,31 +323,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13458" onclick="parent.toggleDiv('detailsDIVLink13458','DetailsImageLink13458')" />Details:
-							<div id="detailsDIVLink13458" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA6571.htm">«type» CV_AttributeValues</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> rangeElement<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> collection<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13459" onclick="parent.toggleDiv('detailsDIVLink13459','DetailsImageLink13459')" />Details:
-							<div id="detailsDIVLink13459" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink13453" onclick="parent.toggleDiv('detailsDIVLink13453','DetailsImageLink13453')" />Details:
+							<div id="detailsDIVLink13453" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -671,8 +345,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13460" onclick="parent.toggleDiv('detailsDIVScenario13460','DetailsImageScenario13460')" />Details:
-						<div id="detailsDIVScenario13460" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario13454" onclick="parent.toggleDiv('detailsDIVScenario13454','DetailsImageScenario13454')" />Details:
+						<div id="detailsDIVScenario13454" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -689,58 +363,44 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA6573.htm">«type» CV_ContinuousCoverage</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA6719.htm">«type» CV_TINCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA3/EA3168.htm">«Metaclass» FeatureType</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA6575.htm">«type» CV_Coverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA6617.htm">«type» CV_DiscreteCoverage</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA6634.htm">«type» CV_ThiessenPolygonCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA46/EA1/EA2/EA15133.htm">IE_ImageryAndGriddedData</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA4/EA6683.htm">«type» CV_ContinuousQuadrilateralGridCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA2/EA1/EA3255.htm">«metaclass» GF_FeatureType</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA6709.htm">«type» CV_HexagonalGridCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA2/EA1/EA3255.htm">«metaclass» GF_FeatureType</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA6733.htm">«type» CV_SegmentedCurveCoverage</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA3/EA3168.htm">«Metaclass» FeatureType</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA8/EA1/EA3/EA3163.htm">«Metaclass» CoverageFunctionAttributeType</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
