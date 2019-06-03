@@ -1,0 +1,1446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Positioning Service Model::PS_PositioningService</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PS_PositioningService", " : "))</script>  : Public  &lt;&lt;interface&gt;&gt; Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">22.05.2019 06:45:22</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">22.05.2019 06:45:22</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">knjetl</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">2017</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">CD</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{8009CB7C-D4BC-4c29-BB11-C10041007CCF}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA5708.htm">Fig 3: Major classes of positioning services</a>, <a href="EA5702.htm">Fig 11: Operations of positioning services</a>, <a href="EA5714.htm">Fig 6: Observation Mode</a>, <a href="EA5712.htm">Fig 5: Session Information</a>, <a href="EA5710.htm">Fig 4: System and Instrument Information</a>, <a href="EA5716.htm">Fig 7: Observation</a>, <a href="EA5704.htm">Fig 12:Reliability model</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">a service that provides means to obtain position information regarding a point or object.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>setSystemInfo</strong>(					<a href="#" onclick="parent.toggleData('param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}" border="0" />initialization: <a href="EA5753.htm">PS_System</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2FE9F910-56B3-48ea-8AD8-1C10EA4876CC}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5753.htm">PS_System</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12501" onclick="parent.toggleDiv('detailsDIVOperations12501','DetailsImageOperations12501')" />Details:
+						<div id="detailsDIVOperations12501" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			this operation will cause the positioning service to return a result object instance of the PS_System class with attribute values reflecting current information regarding the description of the positioning service itself.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getSystemInfo</strong>():<a href="EA5753.htm">PS_System</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12502" onclick="parent.toggleDiv('detailsDIVOperations12502','DetailsImageOperations12502')" />Details:
+						<div id="detailsDIVOperations12502" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to set current information regarding the description of the positioning service itself to values held in an argument &#39;initialization&#39; that is of the PS_System class.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getInstumentID</strong>():<a href="EA5731.htm">PS_InstrumentId</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12503" onclick="parent.toggleDiv('detailsDIVOperations12503','DetailsImageOperations12503')" />Details:
+						<div id="detailsDIVOperations12503" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result instance of the PS_InstrumentID class with attribute values reflecting current information regarding the identification of the instrumentation employed by the positioning service for the determination of positioning observations.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>newSession</strong>(					<a href="#" onclick="parent.toggleData('param{89E7B768-53FA-4695-8B80-3444BAC91088}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{89E7B768-53FA-4695-8B80-3444BAC91088}" border="0" />sessionID: <a href="../../../EA4/EA1/EA1/EA3/EA698.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{89E7B768-53FA-4695-8B80-3444BAC91088}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{89E7B768-53FA-4695-8B80-3444BAC91088}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{89E7B768-53FA-4695-8B80-3444BAC91088}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{89E7B768-53FA-4695-8B80-3444BAC91088}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5752.htm">PS_Session</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12504" onclick="parent.toggleDiv('detailsDIVOperations12504','DetailsImageOperations12504')" />Details:
+						<div id="detailsDIVOperations12504" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to create one instance of a data object of the PS_Session class populated with current values of parameters identifying an operating session of the service and set the current value of its sessionID attribute to the value contained in the argument &#39;sessionID&#39;, which is of the CharacterString type.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>setSessionInfo</strong>(					<a href="#" onclick="parent.toggleData('param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}" border="0" />sessionID: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A891ED99-A536-4e0b-8BDB-B78718EF7D15}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{D6929899-23B1-4293-9976-06751CF73D06}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{D6929899-23B1-4293-9976-06751CF73D06}" border="0" />sessionInfo: <a href="EA5752.htm">PS_Session</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{D6929899-23B1-4293-9976-06751CF73D06}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{D6929899-23B1-4293-9976-06751CF73D06}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{D6929899-23B1-4293-9976-06751CF73D06}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{D6929899-23B1-4293-9976-06751CF73D06}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA1/EA4/EA707.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12505" onclick="parent.toggleDiv('detailsDIVOperations12505','DetailsImageOperations12505')" />Details:
+						<div id="detailsDIVOperations12505" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to set current information describing an object of the PS_Session class, of which the sessionID attribute value matches the sessionID argument value, to the values contained in the sessionInfo argument, which is of the PS_Session class.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getSessionInfo</strong>(					<a href="#" onclick="parent.toggleData('param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}" border="0" />sessionID: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{543CA60B-0DB0-4227-81C1-08A5E6D4C3CA}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5752.htm">PS_Session</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12506" onclick="parent.toggleDiv('detailsDIVOperations12506','DetailsImageOperations12506')" />Details:
+						<div id="detailsDIVOperations12506" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to get current information describing an object of the PS_Session class.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>endSession</strong>(					<a href="#" onclick="parent.toggleData('param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}" border="0" />sessionID: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1FD48BD-BD58-48f2-9205-0ECED2626EB0}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA1/EA4/EA707.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12507" onclick="parent.toggleDiv('detailsDIVOperations12507','DetailsImageOperations12507')" />Details:
+						<div id="detailsDIVOperations12507" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to disable aggregation of operating mode class objects to the instance of a PS_Session class object that has a sessionID attribute value matching the sessionID argument value of the operation and cause all instances of PS_ObservationMode objects within it to cease aggregating positioning observations and quality measures.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>newObservationMode</strong>(					<a href="#" onclick="parent.toggleData('param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}" border="0" />name: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1BCEBD1-DBD5-4838-B9B7-4DC6EE6AE7FD}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5736.htm">PS_ObservationMode</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12508" onclick="parent.toggleDiv('detailsDIVOperations12508','DetailsImageOperations12508')" />Details:
+						<div id="detailsDIVOperations12508" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to create an instance of the PS_ObservationMode class and assign to its &#39;name&#39; attribute the value of the &#39;name&#39; argument of the operation, associate it with the currently active instance of the PS_Session class if such exists, and enable it to aggregate one or more PS_Observation objects and associate with zero or more PS_QualityMode objects with their quality records that are held in PS_Observation objects as qualityResult(s).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>setObservationMode</strong>(					<a href="#" onclick="parent.toggleData('param{382F21D1-435B-457c-808A-D1DF36BCFE68}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{382F21D1-435B-457c-808A-D1DF36BCFE68}" border="0" />name: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{382F21D1-435B-457c-808A-D1DF36BCFE68}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{382F21D1-435B-457c-808A-D1DF36BCFE68}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{382F21D1-435B-457c-808A-D1DF36BCFE68}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{382F21D1-435B-457c-808A-D1DF36BCFE68}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}" border="0" />desiredMode: <a href="EA5736.htm">PS_ObservationMode</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DAE70ECF-7EDF-4e98-8B4D-CE48D946A2A5}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA1/EA4/EA707.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12509" onclick="parent.toggleDiv('detailsDIVOperations12509','DetailsImageOperations12509')" />Details:
+						<div id="detailsDIVOperations12509" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to set operating mode parameters of the positioning instruments employed to the values contained in the desiredObservationMode argument so far as possible, and to set the values of the PS_ObservationMode attributes to reflect the operating mode actually achieved.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getObservationMode</strong>(					<a href="#" onclick="parent.toggleData('param{BF803C3C-9EA0-413e-A225-7D700E54F17F}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{BF803C3C-9EA0-413e-A225-7D700E54F17F}" border="0" />name: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{BF803C3C-9EA0-413e-A225-7D700E54F17F}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{BF803C3C-9EA0-413e-A225-7D700E54F17F}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{BF803C3C-9EA0-413e-A225-7D700E54F17F}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{BF803C3C-9EA0-413e-A225-7D700E54F17F}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5736.htm">PS_ObservationMode</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12510" onclick="parent.toggleDiv('detailsDIVOperations12510','DetailsImageOperations12510')" />Details:
+						<div id="detailsDIVOperations12510" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_ObservationMode class with attributes holding the current values of the instance of PS_ObservationMode with a name attribute matching the value of the name argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>endObservationMode</strong>(					<a href="#" onclick="parent.toggleData('param{4787A752-B0CE-43cd-B735-4C0E387EB055}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{4787A752-B0CE-43cd-B735-4C0E387EB055}" border="0" />name: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{4787A752-B0CE-43cd-B735-4C0E387EB055}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4787A752-B0CE-43cd-B735-4C0E387EB055}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{4787A752-B0CE-43cd-B735-4C0E387EB055}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4787A752-B0CE-43cd-B735-4C0E387EB055}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA2/EA1/EA3/EA6/EA1343.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12511" onclick="parent.toggleDiv('detailsDIVOperations12511','DetailsImageOperations12511')" />Details:
+						<div id="detailsDIVOperations12511" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to disable the instance of PS_ObservationMode with name attribute matching the value of the name argument from aggregating PS_Observation objects, from associating with PS_QualityMode objects, and destroy that instance of PS_ObservationMode.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getObservation</strong>(					<a href="#" onclick="parent.toggleData('param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}" border="0" />observationModeName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{726B76CE-A561-47a3-9E0E-7C54F15FDC0C}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5735.htm">PS_Observation</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12512" onclick="parent.toggleDiv('detailsDIVOperations12512','DetailsImageOperations12512')" />Details:
+						<div id="detailsDIVOperations12512" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_Observation type with attributes reflecting the current position values including the dateTime of observation and the result vector. The observation may optionally have quality result(s) obtained by use of the getPositionQuality operation.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>setQualityElement</strong>(					<a href="#" onclick="parent.toggleData('param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}" border="0" />observationModeName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A8E1C39-9185-4b1e-AE3D-72445916E12E}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}" border="0" />desiredQualityElement: <a href="../../../EA13/EA5/EA5/EA5175.htm">DQ_Element</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C28D7662-E51C-4cc1-BA13-AE706A77BB9B}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA1/EA4/EA707.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12513" onclick="parent.toggleDiv('detailsDIVOperations12513','DetailsImageOperations12513')" />Details:
+						<div id="detailsDIVOperations12513" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			this operation will cause the positioning service to create an instance of the PS_QualityMode class having attributes with the values contained in the desiredQualityElement argument and associate it with the PS_ObservationMode instance with a name attribute matching the PS_ObservationMode.name argument and to act upon the instruments and computational components of the positioning service to effect the performance of quality evaluations of the positioning observations in accordance with the desiredQualityElement argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getQualityElement</strong>(					<a href="#" onclick="parent.toggleData('param{71934F19-2B0F-4f7e-90D7-057CA02F652B}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{71934F19-2B0F-4f7e-90D7-057CA02F652B}" border="0" />observationModeName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{71934F19-2B0F-4f7e-90D7-057CA02F652B}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{71934F19-2B0F-4f7e-90D7-057CA02F652B}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{71934F19-2B0F-4f7e-90D7-057CA02F652B}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{71934F19-2B0F-4f7e-90D7-057CA02F652B}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA44/EA1/EA2/EA14052.htm">DQ_Element</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12514" onclick="parent.toggleDiv('detailsDIVOperations12514','DetailsImageOperations12514')" />Details:
+						<div id="detailsDIVOperations12514" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_QualityMode class with attributes reflecting the currently selected quality evaluation parameters associated with the PS_ObservationMode instance with a name attribute matching the value of the PS_ObservationMode.name argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getPositionQuality</strong>(					<a href="#" onclick="parent.toggleData('param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}" border="0" />observationModeName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{07A07122-1531-47bf-ADC9-15FCBFD1DABB}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA6/EA812.htm">Record</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12515" onclick="parent.toggleDiv('detailsDIVOperations12515','DetailsImageOperations12515')" />Details:
+						<div id="detailsDIVOperations12515" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a quality result record with attributes reflecting the results of quality evaluation performed upon the currently associated PS_Observation by the procedures specified in the PS_QualityMode instance associated with this PS_ObservationMode instance.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>setOperatingConditions</strong>(					<a href="#" onclick="parent.toggleData('param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}" border="0" />instrumentName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{ACD6F57A-C212-49f8-8728-DD091FDC6AC2}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}" border="0" />desiredOperatingConditions: PS_OperatingConditions</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{5357BC6B-A58F-4499-93BE-D17C2F8F3AE7}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="../../../EA4/EA1/EA1/EA4/EA707.htm">Boolean</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12516" onclick="parent.toggleDiv('detailsDIVOperations12516','DetailsImageOperations12516')" />Details:
+						<div id="detailsDIVOperations12516" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to set user adjustable parameters of the instrument with a name matching the instrumentName argument to the values contained in the desiredOperatingCondtitions.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getOperatingConditions</strong>(					<a href="#" onclick="parent.toggleData('param{4300D80B-6264-424b-B2A5-745A78D78698}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{4300D80B-6264-424b-B2A5-745A78D78698}" border="0" />instrumentName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{4300D80B-6264-424b-B2A5-745A78D78698}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4300D80B-6264-424b-B2A5-745A78D78698}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{4300D80B-6264-424b-B2A5-745A78D78698}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4300D80B-6264-424b-B2A5-745A78D78698}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):PS_OperatingConditions
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12517" onclick="parent.toggleDiv('detailsDIVOperations12517','DetailsImageOperations12517')" />Details:
+						<div id="detailsDIVOperations12517" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_OperatingConditions class with attributes reflecting the current operating conditions of the instrument with a name matching the instrumentName argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getPerformanceIndicators</strong>(					<a href="#" onclick="parent.toggleData('param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}" border="0" />instrumentName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{F1E46CB4-3270-4a88-99F0-0E779FB880FD}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5740.htm">PS_PerformanceIndicators</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12518" onclick="parent.toggleDiv('detailsDIVOperations12518','DetailsImageOperations12518')" />Details:
+						<div id="detailsDIVOperations12518" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_PerformanceIndicators class with attributes reflecting the current performance indicators of the instrument with a name matching the instrumentName argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getMeasurementConditions</strong>(					<a href="#" onclick="parent.toggleData('param{28F3766C-B470-4f98-B890-679E74A16E96}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{28F3766C-B470-4f98-B890-679E74A16E96}" border="0" />instrumentName: <a href="../../../EA4/EA2/EA1/EA3/EA5/EA1325.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{28F3766C-B470-4f98-B890-679E74A16E96}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{28F3766C-B470-4f98-B890-679E74A16E96}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{28F3766C-B470-4f98-B890-679E74A16E96}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{28F3766C-B470-4f98-B890-679E74A16E96}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5733.htm">PS_MeasurementConditions</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12519" onclick="parent.toggleDiv('detailsDIVOperations12519','DetailsImageOperations12519')" />Details:
+						<div id="detailsDIVOperations12519" class="DetailsDiv" >
+					<i>sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return a result object of the PS_MeasurementConditions class with attributes reflecting the current measurement conditions of the instrument with a name matching the instrumentName argument.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getReliabilityTables</strong>():PS_ReliabilityTable[]
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12520" onclick="parent.toggleDiv('detailsDIVOperations12520','DetailsImageOperations12520')" />Details:
+						<div id="detailsDIVOperations12520" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return all PS_ReliabilityTable objects which are aggregated by the service through the role &quot;reliabilityTable&quot;.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>getReliabilityParameter</strong>(					<a href="#" onclick="parent.toggleData('param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}" border="0" />name: <a href="../../../EA4/EA1/EA1/EA3/EA698.htm">CharacterString</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{1B4F943F-BEEC-4143-8C5F-6292E4F0B6E9}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{C65EAB06-D8D7-4439-B720-A5777E26A355}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{C65EAB06-D8D7-4439-B720-A5777E26A355}" border="0" />position: <a href="../../../EA7/EA4/EA2/EA1559.htm">Point</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{C65EAB06-D8D7-4439-B720-A5777E26A355}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C65EAB06-D8D7-4439-B720-A5777E26A355}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{C65EAB06-D8D7-4439-B720-A5777E26A355}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{C65EAB06-D8D7-4439-B720-A5777E26A355}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+					<a href="#" onclick="parent.toggleData('param{40267066-D026-40f4-A3C0-2E62F3C23456}')" style="text-decoration: none; color: #000000;"><img src="../../../../../images/plus03.gif" align="absmiddle" id="param{40267066-D026-40f4-A3C0-2E62F3C23456}" border="0" />time: <a href="../../../EA4/EA1/EA1/EA1/EA674.htm">DateTime</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{40267066-D026-40f4-A3C0-2E62F3C23456}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{40267066-D026-40f4-A3C0-2E62F3C23456}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{40267066-D026-40f4-A3C0-2E62F3C23456}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{40267066-D026-40f4-A3C0-2E62F3C23456}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA5751.htm">PS_ReliabilityValue</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12521" onclick="parent.toggleDiv('detailsDIVOperations12521','DetailsImageOperations12521')" />Details:
+						<div id="detailsDIVOperations12521" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to return an object of PS_ReliabilityValue which matches the specified position and time from the specified object of PS_ReliabilityTable.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>calculateReliability</strong>():
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations12522" onclick="parent.toggleDiv('detailsDIVOperations12522','DetailsImageOperations12522')" />Details:
+						<div id="detailsDIVOperations12522" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			This operation will cause the positioning service to calculate positioning reliability using reliability parameters which are received through a getReliabilityParameter operation.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA5736.htm">«interface» PS_ObservationMode</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> mode<br />
+						a role to link this positioning service to its mode information which identifies the configuration used in each mode of operation, the positioning observations (results) and any associated quality information	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12523" onclick="parent.toggleDiv('detailsDIVLink12523','DetailsImageLink12523')" />Details:
+							<div id="detailsDIVLink12523" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">mode of operation&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA5753.htm">«interface» PS_System</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> system<br />
+						a role to link this positioning service to its system information which identifies the system and its capabilities	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12524" onclick="parent.toggleDiv('detailsDIVLink12524','DetailsImageLink12524')" />Details:
+							<div id="detailsDIVLink12524" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">system information&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA5752.htm">«interface» PS_Session</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> session<br />
+						a role to link this positioning service to its session information which identifies a session of system operation	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12525" onclick="parent.toggleDiv('detailsDIVLink12525','DetailsImageLink12525')" />Details:
+							<div id="detailsDIVLink12525" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">session information&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA5750.htm">«interface» PS_ReliabilityTable</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> reliabilityTable<br />
+						a role to link this positioning service to its reliability table	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink12526" onclick="parent.toggleDiv('detailsDIVLink12526','DetailsImageLink12526')" />Details:
+							<div id="detailsDIVLink12526" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">reliability information&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">persistence</td>
+				<td width="50%" class="TableRow" valign="top">persistent</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario12527" onclick="parent.toggleDiv('detailsDIVScenario12527','DetailsImageScenario12527')" />Details:
+						<div id="detailsDIVScenario12527" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

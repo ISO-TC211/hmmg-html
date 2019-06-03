@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Linking</title>
+<link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA12561.png" usemap="#EA12561" border="0" />
+
+<MAP NAME="EA12561">
+<area shape="rect" coords="39,618,361,743" href="EA12566.htm" target="_self">
+<area shape="rect" coords="497,83,702,224" href="./EA2/EA12643.htm" target="_self">
+<area shape="rect" coords="66,450,234,526" href="EA12568.htm" target="_self">
+<area shape="rect" coords="20,70,272,214" href="EA12567.htm" target="_self">
+<area shape="rect" coords="493,435,733,550" href="EA12598.htm" target="_self">
+<area shape="rect" coords="272,268,448,405" href="../EA3/EA1/EA12709.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Linking : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 13:43:36</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">10.04.2008 13:53:15</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">brinkl</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">2012</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C941E3B2-5BB0-4ef2-8B16-27A7B754BC66}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">De XLink attributegroup is een XML Schema (XSD) specifieke toevoeging die aangeeft dat de klassen waarmee hij gekoppeld is, klassen zijn waarnaar middels een link verwezen kan worden. Zo kunnen objecten uit deze klassen, die in een bestand vaker voorkomen, toch maar op één plek met al hun gegevens opgenomen worden. Vanuit verschillende objecten in het bestand kan er dan naar verwezen worden met een XLink. &lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>
