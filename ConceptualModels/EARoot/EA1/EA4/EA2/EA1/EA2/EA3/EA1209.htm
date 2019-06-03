@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Records and Class Metadata::ClassTypeDescriptor</title>
+<title>Records and Class Metadata::Any</title>
 <link href="../../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,7 +34,7 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ClassTypeDescriptor", " : "))</script>  : Public  &lt;&lt;metaclass&gt;&gt; Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Any", " : "))</script>  : Public  &lt;&lt;type&gt;&gt; Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -87,21 +87,22 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{3D7F1C40-5E71-4089-B93A-C6DCDC03761E}</td>
+			<td class="ObjectDetailsValue">{087A1BB5-46DC-4a64-A35A-C6E66D104C6D}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1194.htm">Context Diagram: RecordType</a>, <a href="EA1186.htm">Context Diagram: ClassTypeDescriptor</a>, <a href="EA1188.htm">Context Diagram: OperationType</a>, <a href="EA1200.htm">Records and Class Types</a></td>
+			<td class="ObjectDetailsValue"><a href="../../../../../EA29/EA2/EA13/EA9458.htm">Figure D.43 ? Base types</a>, <a href="../../../../../EA29/EA2/EA13/EA9454.htm">Context Diagram: AbstractObject</a>, <a href="../../../../../EA29/EA2/EA15/EA9476.htm">Context Diagram: Observation</a>, <a href="../../../../../EA29/EA1/EA13/EA9024.htm">Figure D.43 ? Base types</a>, <a href="../../../../../EA29/EA1/EA13/EA9020.htm">Context Diagram: AbstractObject</a>, <a href="../../../../../EA29/EA1/EA15/EA9042.htm">Context Diagram: Observation</a>, <a href="../../../../../EA43/EA1/EA1/EA13760.htm">Figure 2: Observation Core</a>, <a href="../../../../../EA43/EA1/EA1/EA1/EA13784.htm">Overview: Observation</a>, <a href="../../../../../EA43/EA1/EA1/EA1/EA13780.htm">Context diagram: OM_Observation</a>, <a href="../EA1/EA1112.htm">Context Diagram: CodeList</a>, <a href="EA1185.htm">Context Diagram: Any</a>, <a href="../../../../../EA9/EA1/EA3/EA3144.htm">Context Diagram: PropertyType</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">#lt;UsedBy#gt;&lt;br/&gt;#lt;NameSpace#gt;ISO 19103 Conceptual Schema Language#lt;/NameSpace#gt;&lt;br/&gt;#lt;Class#gt;Record#lt;/Class#gt;&lt;br/&gt;#lt;Package#gt;Records and Class Metadata#lt;/Package#gt;&lt;br/&gt;#lt;Operation#gt;locate#lt;/Operation#gt;&lt;br/&gt;#lt;Parameter#gt;Return#lt;/Parameter#gt;&lt;br/&gt;#lt;Type#gt;Any#lt;/Type#gt;&lt;br/&gt;#lt;UsedBy#gt;&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-		<div class="ItemBody" id="AssociationsToTable">
+		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -110,22 +111,46 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1210.htm">«metaclass» OperationType</a><br />
+						<a href="../../../../../EA43/EA1/EA1/EA1/EA13789.htm">«FeatureType» OM_Observation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> theClassTypeDescriptor<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> operationType<br />
+						<strong>Name:</strong> result<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1013" onclick="parent.toggleDiv('detailsDIVLink1013','DetailsImageLink1013')" />Details:
-							<div id="detailsDIVLink1013" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1014" onclick="parent.toggleDiv('detailsDIVLink1014','DetailsImageLink1014')" />Details:
+							<div id="detailsDIVLink1014" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The association &lt;i&gt;Range&lt;/i&gt; shall link the OM_Observation to the value generated by the procedure.The value has the role &lt;i&gt;result &lt;/i&gt;with respect to the observation. The type of the result is shown as Any, since it may represent the value of any feature property. &lt;br/&gt;NOTE&#160;&#160;&#160;&#160;&#160;&#160;OGC SWE Common provides a model suitable for describing many kinds of observation results. &lt;br/&gt;The type of the observation result shall be consistent with the observed property, and the scale or scope for the value shall be consistent with the quantity or category type. If the observed property (6.2.2.8) is a spatial operation or function, the type of the result may be a coverage, &lt;br/&gt;NOTE&#160;&#160;&#160;&#160;&#160;&#160;In some contexts, particularly in earth and environmental sciences, the term &#8220;observation&#8221; is used to refer to the &lt;i&gt;result &lt;/i&gt;itself. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA1/EA1146.htm">«type» CodeList</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> actualValue<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1015" onclick="parent.toggleDiv('detailsDIVLink1015','DetailsImageLink1015')" />Details:
+							<div id="detailsDIVLink1015" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -146,8 +171,8 @@ function nameClassifier(name, separator)
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
-					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1014" onclick="parent.toggleDiv('detailsDIVScenario1014','DetailsImageScenario1014')" />Details:
-						<div id="detailsDIVScenario1014" class="DetailsDiv" >
+					<div class="DetailsDivParent"><img src="../../../../../../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1016" onclick="parent.toggleDiv('detailsDIVScenario1016','DetailsImageScenario1016')" />Details:
+						<div id="detailsDIVScenario1016" class="DetailsDiv" >
 						&nbsp;
 						</div>
 					</div>
@@ -164,10 +189,45 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1213.htm">«type» RecordType</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA1150.htm">«parameter» KeyType</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA29/EA1/EA13/EA9030.htm">«type» AbstractObject</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA1154.htm">«parameter» T</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA29/EA2/EA13/EA9464.htm">«type» AbstractObject</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA1156.htm">«parameter» ValueType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA9/EA1/EA3/EA3189.htm">«Metaclass» PropertyType</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
